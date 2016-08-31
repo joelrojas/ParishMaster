@@ -14,6 +14,7 @@
 <body>
 	<?php
 		require_once '../clases/parroquia.php';
+		require_once '../clases/sacerdote.php'
 	?>
 	<div class="container">
 		<div class="page-header">
@@ -32,30 +33,32 @@
 				<label for="fechanac">Fecha Nacimiento:</label>
 				<input type="date" class="form-control" id="fechanac">
 			</div>
-			<?php
-			$parr= new parroquia(1,"aa");
-			$parrs=$parr->GetAll();
-			while($fila=mysql_fetch_array($parrs)){
-				echo $fila['idParroquia'];
-			}
-			?>
 			<div class="form-group">
-				<label class="col-xs-3 control-label">Size</label>
-				<div class="col-xs-5 selectContainer">
-					<select class="form-control" name="size">
-						<option value="">Escoja una parroquia</option>
-						<?php
-							$parr= new parroquia(1,"aa");
-							$parrs=$parr->GetAll();
-							while($fila=mysql_fetch_array($parrs)){
-								echo "<option value='".$fila['idParroquia']."'>".$fila['nombre']."</option>";
-							}
-						?>
-					</select>
-				</div>
+				<label for="parroquia">Parroquia:</label>
+				<select class="form-control" name="parroquia">
+					<option value="">Escoja una parroquia</option>
+					<?php
+					$parr= new parroquia(1,"aa");
+					$parrs=$parr->GetAll();
+					while($fila=mysql_fetch_array($parrs)){
+						echo "<option value='".$fila['idParroquia']."'>".$fila['Nombre']."</option>";
+					}
+					?>
+				</select>
 			</div>
-
-
+			<div class="form-group">
+				<label for="sacerdote">Sacerdote:</label>
+				<select class="form-control" name="sacerdote">
+					<option value="">Escoja un sacerdote</option>
+					<?php
+					$sac= new sacerdote();
+					$sacs=$sac->GetAll();
+					while($fila=mysql_fetch_array($sacs)){
+						echo "<option value='".$fila['idSacerdote']."'>".$fila['Nombre']." ".$fila['Apellido']."</option>";
+					}
+					?>
+				</select>
+			</div>
 			<button type="submit" class="btn btn-default">Registrar</button>
 		</form>
 
