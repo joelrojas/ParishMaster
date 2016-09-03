@@ -14,7 +14,8 @@
 <body>
 	<?php
 		require_once '../clases/parroquia.php';
-		require_once '../clases/sacerdote.php'
+		require_once '../clases/sacerdote.php';
+		require_once '../clases/Lugar.php';
 	?>
 	<div class="container">
 		<div class="page-header">
@@ -55,6 +56,33 @@
 					$sacs=$sac->GetAll();
 					while($fila=mysql_fetch_array($sacs)){
 						echo "<option value='".$fila['idSacerdote']."'>".$fila['Nombre']." ".$fila['Apellido']."</option>";
+					}
+					?>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="certificante">Certificante:</label>
+				<select class="form-control" name="certificante">
+					<option value="">Escoja un certificante:</option>
+					<?php
+					$sac= new sacerdote();
+					$sacs=$sac->GetAll();
+					while($fila=mysql_fetch_array($sacs)){
+						echo "<option value='".$fila['idSacerdote']."'>".$fila['Nombre']." ".$fila['Apellido']."</option>";
+					}
+					?>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="lugar">Lugar de Nacimiento:</label>
+				<select class="form-control" name="lugar">
+					<option value="">Seleccione un Departamento</option>
+					<?php
+					echo 'asd';
+					$lug= new Lugar();
+					$lugs=$lug->GetAll();
+					while($fila2=mysql_fetch_array($lugs)){
+						echo "<option value='".$fila2['lugar']."'>".$fila2['lugar']." </option>";
 					}
 					?>
 				</select>
