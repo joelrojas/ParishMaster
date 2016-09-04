@@ -31,7 +31,7 @@ class sacerdote
     public function GetAll(){
         $q="select sacerdote.idSacerdote, tipo_sacerdote.tipo,persona.Nombre,persona.Apellido
             from sacerdote, tipo_sacerdote,persona
-            where sacerdote.idPersona=persona.idPersona
+            where sacerdote.idPersona=persona.ci
             and sacerdote.idtipo_sacerdote=tipo_sacerdote.idtipo_sacerdote";
         $res=$this->dbh->exequery($q);
         if(!$res) die('Invalid query'.mysql_error());

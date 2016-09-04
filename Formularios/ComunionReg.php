@@ -20,7 +20,7 @@
 	?>
 	<div class="container">
 		<div class="page-header">
-		  <h1>Registro de Sacramento <small>Nacimiento</small></h1>
+		  <h1>Registro de Sacramento <small>Primera Comunion</small></h1>
 		</div>
 		<form>
 			<div class="form-group">
@@ -36,6 +36,10 @@
 				<input type="date" class="form-control" id="fechanac">
 			</div>
 			<div class="form-group">
+				<label for="fechacom">Fecha Comunion:</label>
+				<input type="date" class="form-control" id="fechacom">
+			</div>
+			<div class="form-group">
 				<label for="parroquia">Parroquia:</label>
 				<select class="form-control" name="parroquia">
 					<option value="">Escoja una parroquia</option>
@@ -49,33 +53,7 @@
 				</select>
 			</div>
 			<div class="form-group">
-				<label for="sacerdote">Sacerdote:</label>
-				<select class="form-control" name="sacerdote">
-					<option value="">Escoja un sacerdote</option>
-					<?php
-					$sac= new sacerdote(1,'nombre',1);
-					$sacs=$sac->GetAll();
-					while($fila=mysql_fetch_array($sacs)){
-						echo "<option value='".$fila['idSacerdote']."'>".$fila['Nombre']." ".$fila['Apellido']."</option>";
-					}
-					?>
-				</select>
-			</div>
-			<div class="form-group">
-				<label for="certificante">Certificante:</label>
-				<select class="form-control" name="certificante">
-					<option value="">Escoja un certificante:</option>
-					<?php
-					$sac= new sacerdote();
-					$sacs=$sac->GetAll();
-					while($fila=mysql_fetch_array($sacs)){
-						echo "<option value='".$fila['idSacerdote']."'>".$fila['Nombre']." ".$fila['Apellido']."</option>";
-					}
-					?>
-				</select>
-			</div>
-			<div class="form-group">
-				<label for="lugar">Lugar de Nacimiento:</label>
+				<label for="lugar">Lugar de Comunion:</label>
 				<select class="form-control" name="lugar">
 					<option value="">Seleccione un Departamento</option>
 					<?php
@@ -89,14 +67,6 @@
 				</select>
 			</div>
 			<hr>
-			<div class="form-group">
-				<label for="nombre">CI Padre:</label>
-				<input type="text" class="form-control" id="cipadre">
-			</div>
-			<div class="form-group">
-				<label for="nombre">CI Madre:</label>
-				<input type="text" class="form-control" id="cimadre">
-			</div>
 			<div class="form-group">
 				<label for="nombre">CI Padrino/Madrina:</label>
 				<input type="text" class="form-control" id="cimadre">

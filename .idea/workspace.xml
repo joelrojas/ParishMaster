@@ -4,6 +4,9 @@
     <list default="true" id="ffdeb5a1-66c2-4ddc-a9bd-446da6e531a0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Formularios/NacimientoReg.php" afterPath="$PROJECT_DIR$/Formularios/NacimientoReg.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Formularios/regconfirm.php" afterPath="$PROJECT_DIR$/Formularios/regconfirm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clases/Lugar.php" afterPath="$PROJECT_DIR$/clases/Lugar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clases/sacerdote.php" afterPath="$PROJECT_DIR$/clases/sacerdote.php" />
     </list>
     <ignored path="ParishMaster.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -18,39 +21,99 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="ParishMaster" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="NacimientoReg.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NacimientoReg.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Formularios/NacimientoReg.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="81" column="36" selection-start-line="81" selection-start-column="36" selection-end-line="81" selection-end-column="36" />
+            <state relative-caret-position="464">
+              <caret line="44" column="57" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="57" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sacerdote.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/clases/sacerdote.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Formularios/login/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="37" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="parroquia.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/clases/parroquia.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="53" selection-end-column="5" />
+            <state relative-caret-position="666">
+              <caret line="56" column="48" selection-start-line="56" selection-start-column="48" selection-end-line="56" selection-end-column="48" />
               <folding>
-                <marker date="1472680024252" expanded="true" signature="830:871" ph="SELECT idPar... parroquia" />
+                <marker date="1473032548118" expanded="true" signature="2610:2631" ph="..." />
+                <marker date="1473032548118" expanded="true" signature="2610:2667" ph="..." />
+                <marker date="1473032548118" expanded="true" signature="2752:5123" ph="..." />
+                <marker date="1473032548118" expanded="true" signature="2797:5095" ph="..." />
+                <marker date="1473032548118" expanded="true" signature="2837:5076" ph="..." />
+                <marker date="1473032548118" expanded="true" signature="2875:3338" ph="..." />
+                <marker date="1473032548118" expanded="true" signature="2943:3311" ph="..." />
+                <marker date="1473032548118" expanded="true" signature="3070:3280" ph="..." />
+                <marker date="1473032548118" expanded="true" signature="3103:3245" ph="..." />
+                <marker date="1473032548118" expanded="true" signature="3376:5052" ph="..." />
+                <marker date="1473032548118" expanded="true" signature="3448:5025" ph="..." />
+                <marker date="1473032548118" expanded="true" signature="3496:3910" ph="..." />
+                <marker date="1473032548118" expanded="true" signature="3550:3733" ph="..." />
+                <marker date="1473032548118" expanded="true" signature="3788:3875" ph="..." />
+                <marker date="1473032548118" expanded="true" signature="3964:4994" ph="..." />
+                <marker date="1473032548118" expanded="true" signature="4049:4965" ph="..." />
+                <marker date="1473032548118" expanded="true" signature="4098:4343" ph="..." />
+                <marker date="1473032548118" expanded="true" signature="4395:4665" ph="..." />
+                <marker date="1473032548118" expanded="true" signature="5429:5522" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="persona.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/clases/persona.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="455">
+              <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+              <folding>
+                <marker date="1473032053677" expanded="true" signature="1034:1104" ph="INSERT INTO persona... " />
+                <marker date="1473032053677" expanded="true" signature="1034:1118" ph="INSERT INTO persona... " />
+                <marker date="1473032053677" expanded="true" signature="1034:1138" ph="INSERT INTO persona... " />
+                <marker date="1473032053677" expanded="true" signature="1034:1160" ph="INSERT INTO persona... " />
+                <marker date="1473032053677" expanded="true" signature="1034:1182" ph="INSERT INTO persona... " />
+                <marker date="1473032053677" expanded="true" signature="1034:1200" ph="INSERT INTO persona... " />
+                <marker date="1473032053677" expanded="true" signature="1034:1237" ph="INSERT INTO persona... " />
+                <marker date="1473032053677" expanded="true" signature="1034:2872" ph="INSERT INTO persona... " />
+                <marker date="1473032053677" expanded="true" signature="1412:1529" ph="select cuent... Cuenta" />
+                <marker date="1473032053677" expanded="true" signature="1412:1540" ph="select cuent... Cuenta" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ComunionReg.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Formularios/ComunionReg.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Lugar.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/clases/Lugar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="28" selection-end-column="20" />
+              <folding>
+                <marker date="1473017723543" expanded="true" signature="476:483" ph="select sacer... sacerdote" />
+                <marker date="1473017723543" expanded="true" signature="476:495" ph="select * fro... lugar" />
               </folding>
             </state>
           </provider>
@@ -59,19 +122,32 @@
       <file leaf-file-name="dbaccess.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/clases/dbaccess.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
+            <state relative-caret-position="459">
               <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/general/header.php">
+      <file leaf-file-name="PersonaReg.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Formularios/PersonaReg.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="36" selection-end-column="56" />
+            <state relative-caret-position="205">
+              <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="regconfirm.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Formularios/regconfirm.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+              <folding>
+                <marker date="1473030827202" expanded="true" signature="367:386" ph="..." />
+                <marker date="1473030827202" expanded="true" signature="708:1189" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -88,9 +164,20 @@
         <option value="$PROJECT_DIR$/general/header.php" />
         <option value="$PROJECT_DIR$/clases/dbaccess.php" />
         <option value="$PROJECT_DIR$/clases/parroquia.php" />
-        <option value="$PROJECT_DIR$/clases/sacerdote.php" />
+        <option value="$PROJECT_DIR$/Formularios/login/assets/css/form-elements.css" />
+        <option value="$PROJECT_DIR$/Formularios/login/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/Formularios/login/assets/js/scripts.js" />
+        <option value="$PROJECT_DIR$/Formularios/ComunionReg.php" />
         <option value="$PROJECT_DIR$/clases/Lugar.php" />
+        <option value="$PROJECT_DIR$/Principal/principal.css" />
+        <option value="$PROJECT_DIR$/Principal/principal.html" />
+        <option value="$PROJECT_DIR$/clases/sacerdote.php" />
         <option value="$PROJECT_DIR$/Formularios/NacimientoReg.php" />
+        <option value="$PROJECT_DIR$/Formularios/login/index.html" />
+        <option value="$PROJECT_DIR$/Formularios/PersonaReg.php" />
+        <option value="$PROJECT_DIR$/Formularios/regconfirm.php" />
+        <option value="$PROJECT_DIR$/clases/persona.php" />
+        <option value="$PROJECT_DIR$/Formularios/login/index.php" />
       </list>
     </option>
   </component>
@@ -103,7 +190,7 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP from XAMPP" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
@@ -135,6 +222,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -151,6 +239,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ParishMaster" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParishMaster" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParishMaster" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Principal" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -192,21 +294,39 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Formularios" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="login" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParishMaster" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParishMaster" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="clases" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="copyright" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -215,6 +335,15 @@
   </component>
   <component name="RunManager" selected="JavaScript Debug.NacimientoReg.php">
     <configuration default="false" name="NacimientoReg.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ParishMaster/Formularios/NacimientoReg.php">
+      <method />
+    </configuration>
+    <configuration default="false" name="PersonaReg.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ParishMaster/Formularios/PersonaReg.php">
+      <method />
+    </configuration>
+    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ParishMaster/Formularios/login/index.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="ComunionReg.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ParishMaster/Formularios/ComunionReg.php">
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -263,12 +392,18 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <list size="1">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.NacimientoReg.php" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.PersonaReg.php" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.ComunionReg.php" />
     </list>
     <recent_temporary>
-      <list size="1">
+      <list size="4">
         <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.NacimientoReg.php" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.PersonaReg.php" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.ComunionReg.php" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
   </component>
@@ -287,25 +422,29 @@
       <updated>1472672638746</updated>
       <workItem from="1472672640248" duration="2587000" />
       <workItem from="1472676261279" duration="5333000" />
-      <workItem from="1472942327091" duration="1951000" />
+      <workItem from="1472942327091" duration="3507000" />
+      <workItem from="1473003197848" duration="16347000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9871000" />
+    <option name="totallyTimeSpent" value="27774000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09322917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09322917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16197917" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39957717" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -313,7 +452,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -335,6 +473,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Formularios/NacimientoReg.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Formularios/NacimientoReg.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -400,22 +546,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/general/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="36" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clases/dbaccess.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/clases/parroquia.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
@@ -426,30 +556,193 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/clases/sacerdote.php">
+    <entry file="file://$PROJECT_DIR$/general/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="37" selection-end-column="20" />
+        <state relative-caret-position="544">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="36" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/clases/Lugar.php">
+    <entry file="file://$PROJECT_DIR$/Formularios/login/assets/css/form-elements.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        <state relative-caret-position="540">
+          <caret line="61" column="20" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Formularios/login/assets/img/backgrounds/1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Formularios/login/assets/js/placeholder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Formularios/login/assets/js/jquery-1.11.1.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1472944113954" expanded="true" signature="251:258" ph="select sacer... sacerdote" />
-            <marker date="1472944113954" expanded="true" signature="251:270" ph="select * fro... lugar" />
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Formularios/login/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="113" column="33" selection-start-line="113" selection-start-column="33" selection-end-line="113" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Formularios/login/assets/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Principal/principal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="27" column="59" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Principal/principal.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="3954" column="6" selection-start-line="3954" selection-start-column="3" selection-end-line="3954" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Formularios/login/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="55" column="32" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clases/sacerdote.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+          <folding>
+            <marker date="1473029184275" expanded="true" signature="593:849" ph="select sacer... sacerdote" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Formularios/NacimientoReg.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="81" column="36" selection-start-line="81" selection-start-column="36" selection-end-line="81" selection-end-column="36" />
+        <state relative-caret-position="464">
+          <caret line="44" column="57" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="57" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Formularios/PersonaReg.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Formularios/regconfirm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding>
+            <marker date="1473030827202" expanded="true" signature="367:386" ph="..." />
+            <marker date="1473030827202" expanded="true" signature="708:1189" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clases/dbaccess.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clases/Lugar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="28" selection-end-column="20" />
+          <folding>
+            <marker date="1473017723543" expanded="true" signature="476:483" ph="select sacer... sacerdote" />
+            <marker date="1473017723543" expanded="true" signature="476:495" ph="select * fro... lugar" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Formularios/ComunionReg.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clases/persona.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+          <folding>
+            <marker date="1473032053677" expanded="true" signature="1034:1104" ph="INSERT INTO persona... " />
+            <marker date="1473032053677" expanded="true" signature="1034:1118" ph="INSERT INTO persona... " />
+            <marker date="1473032053677" expanded="true" signature="1034:1138" ph="INSERT INTO persona... " />
+            <marker date="1473032053677" expanded="true" signature="1034:1160" ph="INSERT INTO persona... " />
+            <marker date="1473032053677" expanded="true" signature="1034:1182" ph="INSERT INTO persona... " />
+            <marker date="1473032053677" expanded="true" signature="1034:1200" ph="INSERT INTO persona... " />
+            <marker date="1473032053677" expanded="true" signature="1034:1237" ph="INSERT INTO persona... " />
+            <marker date="1473032053677" expanded="true" signature="1034:2872" ph="INSERT INTO persona... " />
+            <marker date="1473032053677" expanded="true" signature="1412:1529" ph="select cuent... Cuenta" />
+            <marker date="1473032053677" expanded="true" signature="1412:1540" ph="select cuent... Cuenta" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Formularios/login/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="56" column="48" selection-start-line="56" selection-start-column="48" selection-end-line="56" selection-end-column="48" />
+          <folding>
+            <marker date="1473032548118" expanded="true" signature="2610:2631" ph="..." />
+            <marker date="1473032548118" expanded="true" signature="2610:2667" ph="..." />
+            <marker date="1473032548118" expanded="true" signature="2752:5123" ph="..." />
+            <marker date="1473032548118" expanded="true" signature="2797:5095" ph="..." />
+            <marker date="1473032548118" expanded="true" signature="2837:5076" ph="..." />
+            <marker date="1473032548118" expanded="true" signature="2875:3338" ph="..." />
+            <marker date="1473032548118" expanded="true" signature="2943:3311" ph="..." />
+            <marker date="1473032548118" expanded="true" signature="3070:3280" ph="..." />
+            <marker date="1473032548118" expanded="true" signature="3103:3245" ph="..." />
+            <marker date="1473032548118" expanded="true" signature="3376:5052" ph="..." />
+            <marker date="1473032548118" expanded="true" signature="3448:5025" ph="..." />
+            <marker date="1473032548118" expanded="true" signature="3496:3910" ph="..." />
+            <marker date="1473032548118" expanded="true" signature="3550:3733" ph="..." />
+            <marker date="1473032548118" expanded="true" signature="3788:3875" ph="..." />
+            <marker date="1473032548118" expanded="true" signature="3964:4994" ph="..." />
+            <marker date="1473032548118" expanded="true" signature="4049:4965" ph="..." />
+            <marker date="1473032548118" expanded="true" signature="4098:4343" ph="..." />
+            <marker date="1473032548118" expanded="true" signature="4395:4665" ph="..." />
+            <marker date="1473032548118" expanded="true" signature="5429:5522" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

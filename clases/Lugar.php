@@ -10,14 +10,20 @@ class Lugar
 {
     private $lugar;
 
+    private $dbh;
+    private $conexion;
+
     public function __construct($lugar)
     {
         $this->lugar = $lugar;
+        require_once 'dbaccess.php';
+        $this->dbh=DatabaseHandler::Instance();
+        $this->dbh->init($this->dbh->getDb());
+        $this->conexion=$this->dbh->connecttodb();
     }
 
     public function GetAll(){
         $q="select * from lugar";
-        echo $q;
         $res=$this->dbh->exequery($q);
         if(!$res) die('Invalid query'.mysql_error());
         return $res;
