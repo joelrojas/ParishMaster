@@ -20,20 +20,24 @@
 	?>
 	<div class="container">
 		<div class="page-header">
-		  <h1>Registro de Sacramento <small>Nacimiento</small></h1>
+		  <h1>Registro de Sacramento <small>Bautizo</small></h1>
 		</div>
-		<form>
+		<form action="nacimconfirm.php" method="post">
 			<div class="form-group">
 				<label for="nombre">Nombre:</label>
-				<input type="text" class="form-control" id="nombre">
+				<input type="text" class="form-control" id="nombre" name="nombre" >
 			</div>
 			<div class="form-group">
 				<label for="apellido">Apellido:</label>
-				<input type="text" class="form-control" id="apellido">
+				<input type="text" class="form-control" id="apellido" name="apellido">
 			</div>
 			<div class="form-group">
 				<label for="fechanac">Fecha Nacimiento:</label>
-				<input type="date" class="form-control" id="fechanac">
+				<input type="date" class="form-control" id="fechanac" name="fechanac">
+			</div>
+			<div class="form-group">
+				<label for="fechabau">Fecha Bautizo:</label>
+				<input type="date" class="form-control" id="fechabau" name="fechabau">
 			</div>
 			<div class="form-group">
 				<label for="parroquia">Parroquia:</label>
@@ -79,28 +83,42 @@
 				<select class="form-control" name="lugar">
 					<option value="">Seleccione un Departamento</option>
 					<?php
-					echo 'asd';
-					$lug= new Lugar();
+					$lug= new Lugar('l');
 					$lugs=$lug->GetAll();
 					while($fila2=mysql_fetch_array($lugs)){
-						echo "<option value='".$fila2['lugar']."'>".$fila2['lugar']." </option>";
+						echo "<option value='".$fila2['idLugar']."'>".$fila2['lugar']." </option>";
 					}
 					?>
 				</select>
 			</div>
 			<hr>
 			<div class="form-group">
-				<label for="nombre">CI Padre:</label>
-				<input type="text" class="form-control" id="cipadre">
+				<label for="cipadre">CI Padre:</label>
+				<input type="text" class="form-control" id="cipadre" name="cipadre">
 			</div>
 			<div class="form-group">
-				<label for="nombre">CI Madre:</label>
-				<input type="text" class="form-control" id="cimadre">
+				<label for="cimadre">CI Madre:</label>
+				<input type="text" class="form-control" id="cimadre" name="cimadre">
 			</div>
 			<div class="form-group">
-				<label for="nombre">CI Padrino/Madrina:</label>
-				<input type="text" class="form-control" id="cimadre">
+				<label for="cipadrino">CI Padrino/Madrina:</label>
+				<input type="text" class="form-control" id="cipadrino" name="cipadrino">
 			</div>
+			<hr>
+			<div class="form-group">
+				<label for="oficialia">Oficialia:</label>
+				<input type="text" class="form-control" id="oficialia" name="oficialia">
+			</div>
+
+			<div class="form-group">
+				<label for="libro">Libro:</label>
+				<input type="text" class="form-control" id="libro" name="libro">
+			</div>
+			<div class="form-group">
+				<label for="partida">Partida:</label>
+				<input type="text" class="form-control" id="partida" name="partida">
+			</div>
+
 			<button type="submit" class="btn btn-default">Registrar</button>
 		</form>
 
