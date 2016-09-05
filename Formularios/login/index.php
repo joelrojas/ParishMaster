@@ -45,9 +45,15 @@
                 if($fila['password']==$_POST['password']){
                     $_SESSION['password']=$_POST['password'];
                     $_SESSION['ci']=$_POST['ci'];
-                    $_SESSION['nombre']=$fila['nombre'];
-                    $_SESSION['apellido']=$fila['apellido'];
-                    echo "<script>window.location = '../../Principal/principal.html';</script>";
+                    $_SESSION['nombre']=$fila['Nombre'];
+                    $_SESSION['apellido']=$fila['Apellido'];
+                    $_SESSION['fechanac']=$fila['fechanac'];
+                    if($p->isSacerdote($_POST['ci'])) $_SESSION['sacerdote']=1;
+                    else $_SESSION['sacerdote']=0;
+
+
+
+                    echo "<script>window.location = '../../Principal/principal.php';</script>";
 
                 }
                 else $text= 'Clave incorrecta';

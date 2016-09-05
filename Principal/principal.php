@@ -5,7 +5,9 @@
     <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="principal.css" rel="stylesheet" type="text/css">
-  </head><body>
+  </head>
+<body>
+
     <div class="navbar navbar-default navbar-static-top">
       <div class="container">
         <div class="navbar-header">
@@ -28,7 +30,7 @@
                   <a href="../Formularios/NacimientoReg.php">Nacimiento</a>
                 </li>
                 <li>
-                  <a href="#">Comunion</a>
+                  <a href="../Formularios/ComunionReg.php">Comunion</a>
                 </li>
                 <li>
                   <a href="#">Confirmacion</a>
@@ -62,7 +64,7 @@
             <a href="../Formularios/NacimientoReg.php"> <img src="img/b.png" class="center-block img-circle img-responsive"></a>
           </div>
           <div class="col-md-4">
-             <h3 class="text-left">Nacimiento</h3>
+             <h3 class="text-left">Bautizo</h3>
             <p class="text-left">El primer sacramento que nos inicia en nuestra vida como catolicos.</p>
           </div>
           <div class="col-md-2">
@@ -75,7 +77,7 @@
         </div>
         <div class="row">
           <div class="col-md-2">
-            <a href=""><img src="img/pc.png" class="center-block img-circle img-responsive"></a>
+            <a href="../Formularios/ComunionReg.php"><img src="img/pc.png" class="center-block img-circle img-responsive"></a>
           </div>
           <div class="col-md-4">
             <h3 class="text-left">Primera Comunion</h3>

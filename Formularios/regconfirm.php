@@ -7,9 +7,8 @@
  */
     require_once '../clases/persona.php';
 
-    $per = new persona($_POST["ci"],$_POST['nombre'],$_POST['apellido'],$_POST['fechanac'],$_POST['genero'],$_POST['email']);
+    $per = new persona($_POST["ci"],$_POST['nombre'],$_POST['apellido'],$_POST['fechanac'],$_POST['genero'],$_POST['email'],$_POST['password']);
     $per->registrar();
-    $per->crear_cuenta($_POST['password']);
 ?>
 <!doctype html>
 <html lang="en">

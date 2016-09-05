@@ -67,6 +67,20 @@ class certificado
 
     }
 
+    public function reg_comunion($nombre,$apellido,$cipadrino,$cicreador){
+        $q="INSERT INTO certificado(fecha, idParroquia, idSacramento, idLugar,idSacerdote,idCertificante) VALUES ('".$this->fecha."',".$this->parroquia.",2,".$this->lugar.",".$this->sacerdote.",".$this->certificante.")";
+        $res=$this->dbh->exequery($q);
+        $certnum=mysql_insert_id();
+        if(!$res) die('Invalid query'.mysql_error());
+        $q1= "INSERT INTO certificado_padrino(idCertificado, idPersona) VALUES ('".$certnum."',".$cipadrino.")";
+        $res=$this->dbh->exequery($q1);
+        if(!$res) die('Invalid query'.mysql_error());
+        $q3="INSERT INTO certificado_beneficiario(idCertificado, idPersona) VALUES (".$certnum.",".$cicreador.")";
+        $res=$this->dbh->exequery($q3);
+        if(!$res) die('Invalid query'.mysql_error());
+    }
+
+
     public function certificado_com(){
         $q1= "INSERT INTO certificado_beneficiario(idCertificado, idPersona) VALUES ([value-1],[value-2])";
     }

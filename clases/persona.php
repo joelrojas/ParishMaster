@@ -46,14 +46,14 @@ class persona
     }
 
     public function registrar(){
-        $q="REPLACE INTO persona(CI, Nombre, Apellido, fechanac, idGenero,email) VALUES (".$this->ci.",'".$this->nombre."','".$this->apellido."','".$this->fechanac."',".$this->genero.",'".$this->email."','".$this->pass."')";
+        $q="REPLACE INTO persona(CI, Nombre, Apellido, fechanac, idGenero,email,password) VALUES (".$this->ci.",'".$this->nombre."','".$this->apellido."','".$this->fechanac."',".$this->genero.",'".$this->email."','".$this->pass."')";
         $res=$this->dbh->exequery($q);
         if(!$res) die('Invalid query'.mysql_error());
         return $res;
     }
 
     public function buscar($username){
-        $q="select persona.ci, persona.Nombre, persona.Apellido, persona.password 
+        $q="select persona.ci, persona.Nombre, persona.Apellido, persona.password , persona.fechanac
         from persona
         where persona.ci=".$username;
         $res=$this->dbh->exequery($q);
@@ -61,9 +61,16 @@ class persona
         return $res;
     }
 
-    /**
-     * @return mixed
-     */
+    public function isSacerdote($ci){
+        $q="SELECT * from sacerdote
+            where sacerdote.idPersona=".$ci;
+        echo $q;
+        $res=$this->dbh->exequery($q);
+        if(!$res) die('Invalid query'.mysql_error());
+        return (mysql_num_rows($res)>=1);
+    }
+
+
     public function getCi()
     {
         return $this->ci;
