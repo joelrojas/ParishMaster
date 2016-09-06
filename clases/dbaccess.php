@@ -7,6 +7,7 @@ class DatabaseHandler
 	private $pass='';
 	private $db='parishmaster';
 	private $conexion;
+	public $mysqli;
 
 	//patron singleton
 	//devuelve instancia en vez de un nuevo objeto
@@ -26,20 +27,23 @@ class DatabaseHandler
 
 	//begin connection (empezar conexion)
 	function connecttodb(){
-		$this->conexion= mysql_connect($this->host ,$this->usr,$this->pass);
-    	mysql_select_db($this->db,$this->conexion);	
+		//$this->conexion= mysql_connect($this->host ,$this->usr,$this->pass);
+    	//mysql_select_db($this->db,$this->conexion);	
+    	$this->mysqli = new mysqli($this->host,$this->usr,$this->pass,$this->db);
     	return $this->conexion;
 	}
 
 	//execute query (ejecutar consulta)
 	function exequery($q){
-		$resultado=mysql_query($q, $this->conexion);
+		//$resultado=mysql_query($q, $this->conexion);
+		$resultado = $this->mysqli->query($q);
 		return $resultado;
 	}
 
 	//fetch one row from query result (sacar una fila de un resultado)
 	function fetchrow($qresul){
-		$res=mysql_fetch_array($qresul);
+		//$res=mysql_fetch_array($qresul);
+		$res = $qresul->fetch_array(MYSQLI_ASSOC);
 		return $res;
 	}
 
