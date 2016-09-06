@@ -52,16 +52,17 @@ class persona
         $res=$this->dbh->exequery($q);
         if(!$res) die('Invalid query'.mysql_error());
         $idpers=mysql_insert_id();
-        $q1="INSERT INTO cuenta(email, passowrd, idPersona) VALUES ('".$this->email."','".$this->pass."',".$idpers.")";
+        $q1="INSERT INTO cuenta(email, password, idPersona) VALUES ('".$this->email."','".$this->pass."',".$idpers.")";
         $res=$this->dbh->exequery($q1);
         if(!$res) die('Invalid query'.mysql_error());
         return $res;
     }
 
-    public function buscar($username){
-        $q="select persona.ci, persona.Nombre, persona.Apellido, persona.password , persona.fechanac
-        from persona
-        where persona.ci=".$username;
+    public function buscar($email){
+        $q="select persona.ci, persona.Nombre, persona.Apellido , persona.fechanac, cuenta.email, cuenta.password
+            from persona, cuenta
+            where cuenta.idPersona=persona.idPersona
+            and cuenta.email='".$email."'";
         $res=$this->dbh->exequery($q);
         if(!$res) die('Invalid query'.mysql_error());
         return $res;
@@ -70,7 +71,6 @@ class persona
     public function isSacerdote($ci){
         $q="SELECT * from sacerdote
             where sacerdote.idPersona=".$ci;
-        echo $q;
         $res=$this->dbh->exequery($q);
         if(!$res) die('Invalid query'.mysql_error());
         return (mysql_num_rows($res)>=1);
