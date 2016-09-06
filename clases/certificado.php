@@ -113,6 +113,24 @@ class certificado
         $q="INSERT INTO registro_civil(oficialia, nro_libro, partida, idCertificado) VALUES ('".$oficialia."','".$nro_libro."','".$partida."','".$certnum."')";
         $res=$this->dbh->exequery($q);
     }
+    public function reg_confirmacion($cipadrino1,$cipadrino2,$cipersona){
+        $q="INSERT INTO certificado(fecha, idParroquia, idSacramento, idLugar,idSacerdote,idCertificante) VALUES ('".$this->fecha."',".$this->parroquia.",3,".$this->lugar.",".$this->sacerdote.",".$this->certificante.")";
+        $certnum=$this->dbh->insert($q);
+        //if(!$res) die('Invalid query'.mysql_error());
+        if(!empty($cipadrino1))
+        {
+            $q1= "INSERT INTO certificado_padrino(idCertificado, idPersona) VALUES ('".$certnum."',".$cipadrino1.")";
+            $res=$this->dbh->exequery($q1);
+        }
+        if(!empty($cipadrino2))
+        {
+            $q1= "INSERT INTO certificado_padrino(idCertificado, idPersona) VALUES ('".$certnum."',".$cipadrino2.")";
+            $res=$this->dbh->exequery($q1);
+        }
+        //if(!$res) die('Invalid query'.mysql_error());
+        $q3="INSERT INTO certificado_beneficiario(idCertificado, idPersona) VALUES (".$certnum.",".$cipersona.")";
+        $res=$this->dbh->exequery($q3);
+    }
 
 
     public function certificado_com(){
