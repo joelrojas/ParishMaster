@@ -24,6 +24,13 @@ require_once '../clases/Lugar.php';
     </div>
     <form action="regconfirm.php" method="post">
 
+        <h2>Informacion Personal:</h2>
+
+        <div class="form-group">
+            <label for="ci">CI:</label>
+            <input type="text" class="form-control" id="ci" name="ci">
+        </div>
+
         <div class="form-group">
             <label for="nombre">Nombre:</label>
             <input type="text" class="form-control" id="nombre" name="nombre">
@@ -44,15 +51,13 @@ require_once '../clases/Lugar.php';
             </select>
         </div>
 
+        <hr>
+
+        <h2> Informacion de la cuenta: </h2>
+
         <div class="form-group">
             <label for="email">Email:</label>
             <input type="text" class="form-control" id="email" name="email">
-        </div>
-
-
-        <div class="form-group">
-            <label for="ci">CI:</label>
-            <input type="text" class="form-control" id="ci" name="ci">
         </div>
         <div class="form-group">
             <label for="password">Password:</label>

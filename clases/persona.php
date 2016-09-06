@@ -36,6 +36,8 @@ class persona
         $this->apellido = $apellido;
         $this->fechanac = $fechanac;
         $this->genero = $genero;
+
+
         $this->email = $email;
         $this->pass=$pass;
 
@@ -46,8 +48,12 @@ class persona
     }
 
     public function registrar(){
-        $q="REPLACE INTO persona(CI, Nombre, Apellido, fechanac, idGenero,email,password) VALUES (".$this->ci.",'".$this->nombre."','".$this->apellido."','".$this->fechanac."',".$this->genero.",'".$this->email."','".$this->pass."')";
+        $q="INSERT INTO persona(CI, Nombre, Apellido, fechanac, idGenero) VALUES (".$this->ci.",'".$this->nombre."','".$this->apellido."','".$this->fechanac."',".$this->genero.")";
         $res=$this->dbh->exequery($q);
+        if(!$res) die('Invalid query'.mysql_error());
+        $idpers=mysql_insert_id();
+        $q1="INSERT INTO cuenta(email, passowrd, idPersona) VALUES ('".$this->email."','".$this->pass."',".$idpers.")";
+        $res=$this->dbh->exequery($q1);
         if(!$res) die('Invalid query'.mysql_error());
         return $res;
     }
