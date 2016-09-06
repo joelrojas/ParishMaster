@@ -8,7 +8,16 @@
     require_once '../clases/persona.php';
 
     $per = new persona($_POST["ci"],$_POST['nombre'],$_POST['apellido'],$_POST['fechanac'],$_POST['genero'],$_POST['email'],$_POST['password']);
-    $per->registrar();
+    $res=$per->buscarper($_POST["ci"]);
+    if(mysql_num_rows($res)==1){
+        $fila=mysql_fetch_array($res);
+        $per->regcuenta($fila['idPersona']);
+    }
+    else{
+        $idpersona=$per->registrar();
+        $per->regcuenta($idpersona);
+    }
+
 ?>
 <!doctype html>
 <html lang="en">

@@ -52,6 +52,10 @@ class persona
         $res=$this->dbh->exequery($q);
         if(!$res) die('Invalid query'.mysql_error());
         $idpers=mysql_insert_id();
+        return $idpers;
+    }
+
+    public function regcuenta($idpers){
         $q1="INSERT INTO cuenta(email, password, idPersona) VALUES ('".$this->email."','".$this->pass."',".$idpers.")";
         $res=$this->dbh->exequery($q1);
         if(!$res) die('Invalid query'.mysql_error());
@@ -59,10 +63,19 @@ class persona
     }
 
     public function buscar($email){
-        $q="select persona.ci, persona.Nombre, persona.Apellido , persona.fechanac, cuenta.email, cuenta.password
+        $q="select persona.idPersona persona.ci, persona.Nombre, persona.Apellido , persona.fechanac, cuenta.email, cuenta.password
             from persona, cuenta
             where cuenta.idPersona=persona.idPersona
             and cuenta.email='".$email."'";
+        $res=$this->dbh->exequery($q);
+        if(!$res) die('Invalid query'.mysql_error());
+        return $res;
+    }
+
+    public function buscarper($ci){
+        $q="select persona.idPersona, persona.ci, persona.Nombre, persona.Apellido , persona.fechanac
+            from persona
+            where persona.ci='".$ci."'";
         $res=$this->dbh->exequery($q);
         if(!$res) die('Invalid query'.mysql_error());
         return $res;
