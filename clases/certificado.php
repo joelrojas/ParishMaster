@@ -80,6 +80,40 @@ class certificado
         if(!$res) die('Invalid query'.mysql_error());
     }
 
+    public function reg_matrimonio($cipadrino1,$cipadrino2,$cipadrino3,$cipadrino4,$ciesposo,$ciesposa,$oficialia,$nro_libro,$partida){
+        $q="INSERT INTO certificado(fecha, idParroquia, idSacramento, idLugar,idSacerdote,idCertificante) VALUES ('".$this->fecha."',".$this->parroquia.",4,".$this->lugar.",".$this->sacerdote.",".$this->certificante.")";
+        $certnum=$this->dbh->insert($q);
+        //if(!$res) die('Invalid query'.mysql_error());
+        if(!empty($cipadrino1))
+        {
+            $q1= "INSERT INTO certificado_padrino(idCertificado, idPersona) VALUES ('".$certnum."',".$cipadrino1.")";
+            $res=$this->dbh->exequery($q1);
+        }
+        if(!empty($cipadrino2))
+        {
+            $q1= "INSERT INTO certificado_padrino(idCertificado, idPersona) VALUES ('".$certnum."',".$cipadrino2.")";
+            $res=$this->dbh->exequery($q1);
+        }
+        if(!empty($cipadrino3))
+        {
+            $q1= "INSERT INTO certificado_padrino(idCertificado, idPersona) VALUES ('".$certnum."',".$cipadrino3.")";
+            $res=$this->dbh->exequery($q1);
+        }
+        if(!empty($cipadrino4))
+        {
+            $q1= "INSERT INTO certificado_padrino(idCertificado, idPersona) VALUES ('".$certnum."',".$cipadrino4.")";
+            $res=$this->dbh->exequery($q1);
+        }
+        //if(!$res) die('Invalid query'.mysql_error());
+        $q3="INSERT INTO certificado_beneficiario(idCertificado, idPersona) VALUES (".$certnum.",".$ciesposa.")";
+        $res=$this->dbh->exequery($q3);
+        $q3="INSERT INTO certificado_beneficiario(idCertificado, idPersona) VALUES (".$certnum.",".$ciesposo.")";
+        $res=$this->dbh->exequery($q3);
+        //if(!$res) die('Invalid query'.mysql_error());
+        $q="INSERT INTO registro_civil(oficialia, nro_libro, partida, idCertificado) VALUES ('".$oficialia."','".$nro_libro."','".$partida."','".$certnum."')";
+        $res=$this->dbh->exequery($q);
+    }
+
 
     public function certificado_com(){
         $q1= "INSERT INTO certificado_beneficiario(idCertificado, idPersona) VALUES ([value-1],[value-2])";

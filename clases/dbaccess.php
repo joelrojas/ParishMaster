@@ -59,7 +59,11 @@ class DatabaseHandler
 		return $this->db;
 	}
 
-
+	function insert($q)
+	{
+		$this->mysqli->query($q);
+		return $this->mysqli->insert_id;
+	}
 
 }
 

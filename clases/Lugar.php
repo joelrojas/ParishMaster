@@ -25,7 +25,7 @@ class Lugar
     public function GetAll(){
         $q="select * from lugar";
         $res=$this->dbh->exequery($q);
-        if(!$res) die('Invalid query'.mysql_error());
+        //if(!$res) die('Invalid query'.mysql_error());
         return $res;
     }
 }

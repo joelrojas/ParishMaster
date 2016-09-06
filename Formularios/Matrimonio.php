@@ -16,6 +16,8 @@
 		require_once '../clases/parroquia.php';
 		require_once '../clases/sacerdote.php';
 		require_once '../clases/fiel.php';
+		require_once '../clases/lugar.php';
+		require_once '../clases/certificado.php';
 		function set_id($persona)
 		{
 
@@ -79,7 +81,25 @@
 							$parr= new parroquia(1,"aa");
 							$parrs=$parr->GetAll();
 							while($fila=DatabaseHandler::fetchrow($parrs)){
-								echo "<option value='".$fila['idParroquia']."'>".$fila['Nombre']."</option>";
+								echo "<option value='".$fila['idParroquia']."'";
+								if(isset($_GET['parroquia']))if($_GET['parroquia'] == $fila['idParroquia']){echo("selected");}
+								echo">".$fila['Nombre']."</option>";
+							}
+							?>
+						</select>
+					</div>
+
+     				<div class="form-group">
+						<label for="lugar">Lugar:</label>
+						<select class="form-control" name="lugar">
+							<option value="">Escoja un Lugar</option>
+							<?php
+							$lug= new Lugar("aa");
+							$lugs=$lug->GetAll();
+							while($fila=DatabaseHandler::fetchrow($lugs)){
+								echo "<option value='".$fila['idLugar']."'";
+								if(isset($_GET['lugar']))if($_GET['lugar'] == $fila['idLugar']){echo("selected");}
+								echo">".$fila['lugar']."</option>";
 							}
 							?>
 						</select>
@@ -93,7 +113,10 @@
 							$sac= new sacerdote(1,"aa","a");
 							$sacs=$sac->GetAll();
 							while($fila=DatabaseHandler::fetchrow($sacs)){
-								echo "<option value='".$fila['idSacerdote']."'>".$fila['Nombre']." ".$fila['Apellido']."</option>";
+								echo "<option value='".$fila['idSacerdote']."'";
+								if(isset($_GET['presbitero']))if($_GET['presbitero'] == $fila['idSacerdote']){echo("selected");}
+								echo">".$fila['Nombre']." ".$fila['Apellido']."</option>";
+
 							}
 							?>
 						</select>
@@ -152,15 +175,24 @@
 						<label for="partido">Partido:</label>
 						<input type="text" class="form-control" id="partido" name="partido">
 						<label for="numero">Numero:</label>
-						<input type="text" class="form-control" id="numero"  name"numero">
+						<input type="text" class="form-control" id="numero" name="numero">
 					</div>
 					
 				</div>
 			</div>
 
-			<button type="submit" class="btn btn-success btn-lg btn-block" name="coso" value="coso">Registrar</button>
+			<button type="submit" class="btn btn-success btn-lg btn-block" name="enviar" value="true">Registrar</button>
 		</form>
-
+ 		<?php
+ 			if(!empty($_GET['parroquia'])&&!empty($_GET['lugar'])&&!empty($_GET['presbitero'])&&!empty($_GET['fecha'])&&!empty($_GET['oficialia'])&&!empty($_GET['numero'])&&!empty($_GET['enviar'])) 
+ 			{
+ 				$cert=new certificado($_GET['parroquia'], $_GET['presbitero'], $_GET['presbitero'], $_GET['lugar'], $_GET['fecha']);
+ 				$cert->reg_matrimonio($_GET['padrino1'],$_GET['padrino2'],$_GET['padrino3'],$_GET['padrino4'],$_GET['esposa'],$_GET['esposo'],$_GET['oficialia'],$_GET['numero'],$_GET['partido']);
+ 				echo ("<SCRIPT LANGUAGE='JavaScript'>
+ 					window.alert('Se guardaron sus cambios')
+ 					window.location.href='Matrimonio.php';</SCRIPT>");
+ 			}
+ 		?>
 
 
 
