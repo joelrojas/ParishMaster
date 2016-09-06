@@ -17,27 +17,41 @@
 		require_once '../clases/sacerdote.php';
 		require_once '../clases/Lugar.php';
 
+		session_start();
+		$n=""; $a=""; $fn=""; $ci="";
+		if($_SESSION['sacerdote']=='0'){
+			$n=$_SESSION['nombre'];
+			$a=$_SESSION['apellido'];
+			$fn=$_SESSION['fechanac'];
+			$ci =$_SESSION['ci'];
+		}
+
+
 	?>
 	<div class="container">
 		<div class="page-header">
-		  <h1>Registro de Sacramento <small>Bautizo</small></h1>
+		  <h1>Registro de Sacramento <small>Primera Comunion</small></h1>
 		</div>
-		<form action="nacimconfirm.php" method="post">
+		<form action="comunconfirm.php" method="post">
+			<div class="form-group">
+				<label for="ci">CI:</label>
+				<input value="<?php echo $ci; ?>" type="text" class="form-control" id="ci" name="ci">
+			</div>
 			<div class="form-group">
 				<label for="nombre">Nombre:</label>
-				<input type="text" class="form-control" id="nombre" name="nombre" >
+				<input value="<?php echo $n; ?>" type="text" class="form-control" id="nombre" name="nombre">
 			</div>
 			<div class="form-group">
 				<label for="apellido">Apellido:</label>
-				<input type="text" class="form-control" id="apellido" name="apellido">
+				<input value="<?php echo $a; ?>" type="text" class="form-control" id="apellido" name="apellido">
 			</div>
 			<div class="form-group">
 				<label for="fechanac">Fecha Nacimiento:</label>
-				<input type="date" class="form-control" id="fechanac" name="fechanac">
+				<input value="<?php echo $fn; ?>" type="date" class="form-control" id="fechanac" name="fechanac">
 			</div>
 			<div class="form-group">
-				<label for="fechabau">Fecha Bautizo:</label>
-				<input type="date" class="form-control" id="fechabau" name="fechabau">
+				<label for="fechacom">Fecha Comunion:</label>
+				<input type="date" class="form-control" id="fechacom" name="fechacom">
 			</div>
 			<div class="form-group">
 				<label for="parroquia">Parroquia:</label>
@@ -66,24 +80,11 @@
 				</select>
 			</div>
 			<div class="form-group">
-				<label for="certificante">Certificante:</label>
-				<select class="form-control" name="certificante">
-					<option value="">Escoja un certificante:</option>
-					<?php
-					$sac= new sacerdote();
-					$sacs=$sac->GetAll();
-					while($fila=mysql_fetch_array($sacs)){
-						echo "<option value='".$fila['idSacerdote']."'>".$fila['Nombre']." ".$fila['Apellido']."</option>";
-					}
-					?>
-				</select>
-			</div>
-			<div class="form-group">
-				<label for="lugar">Lugar de Nacimiento:</label>
+				<label for="lugar">Lugar de Comunion:</label>
 				<select class="form-control" name="lugar">
 					<option value="">Seleccione un Departamento</option>
 					<?php
-					$lug= new Lugar('l');
+					$lug= new Lugar();
 					$lugs=$lug->GetAll();
 					while($fila2=mysql_fetch_array($lugs)){
 						echo "<option value='".$fila2['idLugar']."'>".$fila2['lugar']." </option>";
@@ -93,32 +94,9 @@
 			</div>
 			<hr>
 			<div class="form-group">
-				<label for="cipadre">CI Padre:</label>
-				<input type="text" class="form-control" id="cipadre" name="cipadre">
-			</div>
-			<div class="form-group">
-				<label for="cimadre">CI Madre:</label>
-				<input type="text" class="form-control" id="cimadre" name="cimadre">
-			</div>
-			<div class="form-group">
 				<label for="cipadrino">CI Padrino/Madrina:</label>
 				<input type="text" class="form-control" id="cipadrino" name="cipadrino">
 			</div>
-			<hr>
-			<div class="form-group">
-				<label for="oficialia">Oficialia:</label>
-				<input type="text" class="form-control" id="oficialia" name="oficialia">
-			</div>
-
-			<div class="form-group">
-				<label for="libro">Libro:</label>
-				<input type="text" class="form-control" id="libro" name="libro">
-			</div>
-			<div class="form-group">
-				<label for="partida">Partida:</label>
-				<input type="text" class="form-control" id="partida" name="partida">
-			</div>
-
 			<button type="submit" class="btn btn-default">Registrar</button>
 		</form>
 
