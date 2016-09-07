@@ -82,8 +82,9 @@ class persona
     }
 
     public function isSacerdote($ci){
-        $q="SELECT * from sacerdote
-            where sacerdote.idPersona=".$ci;
+        $q="SELECT * from sacerdote, persona
+            where sacerdote.idPersona=persona.idPersona
+            and persona.ci=".$ci;
         $res=$this->dbh->exequery($q);
         if(!$res) die('Invalid query'.mysql_error());
         return (mysql_num_rows($res)>=1);

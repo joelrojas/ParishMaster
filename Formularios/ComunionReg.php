@@ -18,13 +18,6 @@
 		require_once '../clases/Lugar.php';
 
 		session_start();
-		$n=""; $a=""; $fn=""; $ci="";
-		if($_SESSION['sacerdote']=='0'){
-			$n=$_SESSION['nombre'];
-			$a=$_SESSION['apellido'];
-			$fn=$_SESSION['fechanac'];
-			$ci =$_SESSION['ci'];
-		}
 
 
 	?>
@@ -37,19 +30,19 @@
 
 			<div class="form-group">
 				<label for="ci">CI:</label>
-				<input value="<?php echo $ci; ?>" type="text" class="form-control" id="ci" name="ci">
+				<input value="" type="text" class="form-control" id="ci" name="ci">
 			</div>
 			<div class="form-group">
 				<label for="nombre">Nombre:</label>
-				<input value="<?php echo $n; ?>" type="text" class="form-control" id="nombre" name="nombre">
+				<input value="" type="text" class="form-control" id="nombre" name="nombre">
 			</div>
 			<div class="form-group">
 				<label for="apellido">Apellido:</label>
-				<input value="<?php echo $a; ?>" type="text" class="form-control" id="apellido" name="apellido">
+				<input value="" type="text" class="form-control" id="apellido" name="apellido">
 			</div>
 			<div class="form-group">
 				<label for="fechanac">Fecha Nacimiento:</label>
-				<input value="<?php echo $fn; ?>" type="date" class="form-control" id="fechanac" name="fechanac">
+				<input value="" type="date" class="form-control" id="fechanac" name="fechanac">
 			</div>
 			<div class="form-group">
 				<label for="fechacom">Fecha Comunion:</label>
@@ -74,6 +67,20 @@
 					<option value="">Escoja un sacerdote</option>
 					<?php
 					$sac= new sacerdote(1,'nombre',1);
+					$sacs=$sac->GetAll();
+					while($fila=mysql_fetch_array($sacs)){
+						echo "<option value='".$fila['idSacerdote']."'>".$fila['Nombre']." ".$fila['Apellido']."</option>";
+					}
+					?>
+				</select>
+			</div>
+
+			<div class="form-group">
+				<label for="certificante">Certificante:</label>
+				<select class="form-control" name="certificante">
+					<option value="">Escoja un certificante:</option>
+					<?php
+					$sac= new sacerdote();
 					$sacs=$sac->GetAll();
 					while($fila=mysql_fetch_array($sacs)){
 						echo "<option value='".$fila['idSacerdote']."'>".$fila['Nombre']." ".$fila['Apellido']."</option>";

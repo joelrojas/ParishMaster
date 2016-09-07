@@ -49,10 +49,13 @@
                     $_SESSION['apellido']=$fila['Apellido'];
                     $_SESSION['fechanac']=$fila['fechanac'];
                     $_SESSION['email']=$fila['email'];
-                    if($p->isSacerdote($fila['ci'])) $_SESSION['sacerdote']=1;
+
+                    $pag="../../Formularios/appointment.php";
+
+                    if($p->isSacerdote($fila['ci'])) {$_SESSION['sacerdote']=1; $pag='../../Principal/principal.php';}
                     else $_SESSION['sacerdote']=0;
 
-                    echo "<script>window.location = '../../Principal/principal.php';</script>";
+                    echo "<script>window.location = '".$pag."'</script>";
 
                 }
                 else $text= 'Clave incorrecta';
