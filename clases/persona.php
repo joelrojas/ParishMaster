@@ -63,7 +63,7 @@ class persona
     }
 
     public function buscar($email){
-        $q="select persona.idPersona persona.ci, persona.Nombre, persona.Apellido , persona.fechanac, cuenta.email, cuenta.password
+        $q="select persona.idPersona, persona.ci, persona.Nombre, persona.Apellido , persona.fechanac, cuenta.email, cuenta.password
             from persona, cuenta
             where cuenta.idPersona=persona.idPersona
             and cuenta.email='".$email."'";
@@ -87,6 +87,14 @@ class persona
         $res=$this->dbh->exequery($q);
         if(!$res) die('Invalid query'.mysql_error());
         return (mysql_num_rows($res)>=1);
+    }
+
+    public function idfromci($ci){
+        $q="SELECT persona.idPersona from persona where persona.CI='".$ci."'";
+        $res=$this->dbh->exequery($q);
+        if(!$res) die('Invalid query'.mysql_error());
+        $fila=mysql_fetch_array($res);
+        return $fila['idPersona'];
     }
 
 

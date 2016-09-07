@@ -33,6 +33,8 @@
 		  <h1>Registro de Sacramento <small>Primera Comunion</small></h1>
 		</div>
 		<form action="comunconfirm.php" method="post">
+
+
 			<div class="form-group">
 				<label for="ci">CI:</label>
 				<input value="<?php echo $ci; ?>" type="text" class="form-control" id="ci" name="ci">

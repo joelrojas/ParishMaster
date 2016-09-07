@@ -48,19 +48,22 @@ class certificado
         if(!$res) die('Invalid query'.mysql_error());
     }
 
-    public function reg_bautizo($nombre,$apellido,$fechanac,$cipadrino,$cipadre,$cimadre,$cicreador){
+    public function reg_bautizo($nombre,$apellido,$fechanac,$idpadrino,$idpadre,$idmadre,$idp){
 
         $q="INSERT INTO certificado(fecha, idParroquia, idSacerdote, idSacramento, idCertificante, idLugar) VALUES ('".$this->fecha."',".$this->parroquia.",".$this->sacerdote.",1,".$this->certificante.",".$this->lugar.")";
         $res=$this->dbh->exequery($q);
         if(!$res) die('Invalid query'.mysql_error());
         $certnum =mysql_insert_id();
-        $q1= "INSERT INTO certificado_padrino(idCertificado, idPersona) VALUES ('".$certnum."',".$cipadrino.")";
+        $q1= "INSERT INTO certificado_padrino(idCertificado, idPersona) VALUES ('".$certnum."',".$idpadrino.")";
         $res=$this->dbh->exequery($q1);
         if(!$res) die('Invalid query'.mysql_error());
-        $q2= "INSERT INTO hijo(nombre, apellido, fechanac, idPadre, idMadre) VALUES ('".$nombre."','".$apellido."','".$fechanac."','".$cipadre."','".$cimadre."')";
-        $res=$this->dbh->exequery($q2);
+        $q4="INSERT INTO persona_padre(idPersona, idPadre) VALUES (".$idp.",".$idpadre.")";
+        $res=$this->dbh->exequery($q4);
         if(!$res) die('Invalid query'.mysql_error());
-        $q3="INSERT INTO certificado_beneficiario(idCertificado, idPersona) VALUES (".$certnum.",".$cicreador.")";
+        $q5="INSERT INTO persona_padre(idPersona, idPadre) VALUES (".$idp.",".$idmadre.")";
+        $res=$this->dbh->exequery($q5);
+        if(!$res) die('Invalid query'.mysql_error());
+        $q3="INSERT INTO certificado_beneficiario(idCertificado, idPersona) VALUES (".$certnum.",".$idp.")";
         $res=$this->dbh->exequery($q3);
         if(!$res) die('Invalid query'.mysql_error());
         return $certnum;

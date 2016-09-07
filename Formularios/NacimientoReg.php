@@ -24,6 +24,10 @@
 		</div>
 		<form action="nacimconfirm.php" method="post">
 			<div class="form-group">
+				<label for="ci">CI:</label>
+				<input type="text" class="form-control" id="ci" name="ci">
+			</div>
+			<div class="form-group">
 				<label for="nombre">Nombre:</label>
 				<input type="text" class="form-control" id="nombre" name="nombre" >
 			</div>

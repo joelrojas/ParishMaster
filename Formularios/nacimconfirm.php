@@ -7,9 +7,20 @@
  */
 session_start();
 require_once '../clases/certificado.php';
-echo $_POST['lugar'];
+require_once '../clases/persona.php';
+
+$per= new persona($_POST['ci'], $_POST['nombre'], $_POST['apellido'], $_POST['fechanac'], 1, "", "");
+$per->registrar();
+$pid=mysql_insert_id();
+
+$personax= new persona("", "", "", "", "", "", "");
+
+$idmadre=$personax->idfromci($_POST['cimadre']);
+$idpadre=$personax->idfromci($_POST['cipadre']);
+$idpadrino=$personax->idfromci($_POST['cipadrino']);
+
 $cer = new certificado($_POST['parroquia'],$_POST['sacerdote'],$_POST['certificante'],$_POST['lugar'],$_POST['fechabau']);
-$cerid=$cer->reg_bautizo($_POST['nombre'],$_POST['apellido'],$_POST['fechanac'],$_POST['cipadrino'],$_POST['cipadre'],$_POST['cimadre'],$_SESSION['ci']);
+$cerid=$cer->reg_bautizo($_POST['nombre'],$_POST['apellido'],$_POST['fechanac'],$idpadrino,$idpadre,$idmadre,$pid);
 $cer->addregciv($_POST['oficialia'], $_POST['libro'], $_POST['partida'], $cerid);
 
 
