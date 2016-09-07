@@ -6,14 +6,18 @@
  * Date: 9/4/2016
  * Time: 8:21 PM
  */
+require_once 'fiel.php';
 class certificado
 {
+    private $id;
     private $parroquia;
     private $sacerdote;
     private $certificante;
     private $lugar;
     private $legacy;
     private $fecha;
+    private $sacramento;
+    private $fiel;
 
     private $dbh;
     private $conexion;
@@ -40,6 +44,78 @@ class certificado
         $this->dbh->init($this->dbh->getDb());
         $this->conexion=$this->dbh->connecttodb();
 
+    }
+    public function getid()
+    {
+        return $this->id;
+    }
+    public function getparroquia()
+    {
+        return $this->parroquia;
+    }
+    public function getsacerdote()
+    {
+        return $this->sacerdote;
+    }
+    public function getlugar()
+    {
+        return $this->lugar;
+    }
+    public function getfecha()
+    {
+        return $this->fecha;
+    }
+    public function getsacramento()
+    {
+        return $this->sacramento;
+    }
+    public function getfiel()
+    {
+        return $this->fiel;
+    }
+    public static function withID($id)                                        //llamada publica para otras clases
+    {
+        $instance = new self("","","","","");
+        $instance->loadByID($id);
+        return $instance;
+    }
+    protected function loadByID($id)                                          //Buscar los atributos del ID
+    {
+        $q="SELECT cer.idCertificado, cer.fecha, pa.Nombre as parroquia, concat(concat(ps.Nombre,' '),ps.Apellido) as parroco, sac.Nombre as sacramento, l.lugar, concat(concat(fiel.Nombre,' '),fiel.Apellido) as fiel, fiel.CI 
+            FROM certificado cer, parroquia pa, sacerdote sa, sacramento sac, persona ps, persona fiel, certificado_beneficiario cb, lugar l 
+            WHERE cer.idParroquia=pa.idParroquia
+            and cer.idSacerdote=sa.idSacerdote
+            and cer.idSacramento=sac.idSacramento
+            and cer.idLugar=l.idLugar
+            and ps.CI=sa.idPersona
+            and cb.idCertificado=cer.idCertificado
+            and cb.idPersona=fiel.CI
+            and fiel.CI=".$id;        
+        $res=$this->dbh->exequery($q);
+        if ($this->dbh->mysqli->error)
+        {
+            printf("Errormessage: %s\n", $this->dbh->mysqli->error);
+        }
+
+        $res=$this->dbh->fetchrow($res);
+        if(is_null($res))
+        $res = array('idCertificado' =>"ERROR");
+        $this->fill($res);
+    }
+
+    protected function fill(array $row)                                       //llenar el objeto con los valores de la BDD
+    {
+        $this->id=$row['idCertificado'];
+        if($this->id !="ERROR")
+        {
+            $this->parroquia=$row['parroquia'];
+            $this->sacerdote=$row['parroco'];
+            $this->lugar=$row['lugar'];
+            $this->fecha=$row['fecha'];
+            $this->sacramento=$row['sacramento'];
+            $this->fiel=$row['fiel'];
+        }
+        
     }
 
     public function addregciv($oficialia,$nro_libro,$partida,$idcertificado){
