@@ -39,6 +39,7 @@ $cert->reg_comunion($padrinoid , $pid);
     <div class="jumbotron">
         <h1>El certificado fue creado exitosamente!</h1>
         <p><a class='btn btn-primary btn-lg' href='imprimir.php' role='button'>Imprimir</a></p>
+        <p><a class='btn btn-primary btn-lg' href='../Principal/principal.php' role='button'>Volver al Menu</a></p>
     </div>
 </div>
 

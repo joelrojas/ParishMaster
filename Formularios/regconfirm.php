@@ -37,6 +37,7 @@
         <h1>Su cuenta ha sido creada exitosamente!</h1>
         <p>Ahora puede ingresar a su cuenta.</p>
         <p><a class="btn btn-primary btn-lg" href="../Formularios/login" role="button">Login</a></p>
+
     </div>
 </div>
 

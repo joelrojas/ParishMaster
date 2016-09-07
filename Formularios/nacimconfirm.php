@@ -45,6 +45,7 @@ $cer->addregciv($_POST['oficialia'], $_POST['libro'], $_POST['partida'], $cerid)
         <h1>Su certificado fue creado exitosamente!</h1>
         <p>Ahora puede pasar por la parroquia mas cercana y reclamar su certificado.</p>
         <p><a class="btn btn-primary btn-lg" href="../Formularios/imprimir.php" role="button">Imprimir</a></p>
+        <p><a class='btn btn-primary btn-lg' href='../Principal/principal.php' role='button'>Volver al Menu</a></p>
     </div>
 </div>
 
