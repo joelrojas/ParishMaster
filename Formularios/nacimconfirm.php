@@ -23,7 +23,7 @@ $cer = new certificado($_POST['parroquia'],$_POST['sacerdote'],$_POST['certifica
 $cerid=$cer->reg_bautizo($_POST['nombre'],$_POST['apellido'],$_POST['fechanac'],$idpadrino,$idpadre,$idmadre,$pid);
 $cer->addregciv($_POST['oficialia'], $_POST['libro'], $_POST['partida'], $cerid);
 
-
+$_SESSION['idPersona']=$pid;
 
 ?>
 
@@ -44,7 +44,7 @@ $cer->addregciv($_POST['oficialia'], $_POST['libro'], $_POST['partida'], $cerid)
     <div class="jumbotron">
         <h1>Su certificado fue creado exitosamente!</h1>
         <p>Ahora puede pasar por la parroquia mas cercana y reclamar su certificado.</p>
-        <p><a class="btn btn-primary btn-lg" href="../Formularios/imprimir.php" role="button">Imprimir</a></p>
+        <p><a class="btn btn-primary btn-lg" href="../Formularios/imprimirnac.php" role="button">Imprimir</a></p>
         <p><a class='btn btn-primary btn-lg' href='../Principal/principal.php' role='button'>Volver al Menu</a></p>
     </div>
 </div>

@@ -60,4 +60,16 @@ class sacerdote
         return $res;
     }
 
+    public function gettipo($ids){
+        $q="SELECT tipo_sacerdote.tipo 
+            from tipo_sacerdote, sacerdote, persona
+            where persona.idPersona=sacerdote.idPersona
+            and tipo_sacerdote.idtipo_sacerdote=sacerdote.idtipo_sacerdote
+            and sacerdote.idSacerdote=".$ids;
+        $res=$this->dbh->exequery($q);
+        if(!$res) die('Invalida query'.mysql_error());
+        $fila=mysql_fetch_array($res);
+        return $fila['tipo'];
+    }
+
 }

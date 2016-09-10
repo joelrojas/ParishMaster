@@ -57,10 +57,10 @@ class certificado
         $q1= "INSERT INTO certificado_padrino(idCertificado, idPersona) VALUES ('".$certnum."',".$idpadrino.")";
         $res=$this->dbh->exequery($q1);
         if(!$res) die('Invalid query'.mysql_error());
-        $q4="INSERT INTO persona_padre(idPersona, idPadre) VALUES (".$idp.",".$idpadre.")";
+        $q4="INSERT INTO persona_padre(idPersona, idPadre,tipo) VALUES (".$idp.",".$idpadre.",'p')";
         $res=$this->dbh->exequery($q4);
         if(!$res) die('Invalid query'.mysql_error());
-        $q5="INSERT INTO persona_padre(idPersona, idPadre) VALUES (".$idp.",".$idmadre.")";
+        $q5="INSERT INTO persona_padre(idPersona, idPadre,tipo) VALUES (".$idp.",".$idmadre.",'m')";
         $res=$this->dbh->exequery($q5);
         if(!$res) die('Invalid query'.mysql_error());
         $q3="INSERT INTO certificado_beneficiario(idCertificado, idPersona) VALUES (".$certnum.",".$idp.")";
@@ -81,6 +81,36 @@ class certificado
         $q3="INSERT INTO certificado_beneficiario(idCertificado, idPersona) VALUES (".$certnum.",".$idcreador.")";
         $res=$this->dbh->exequery($q3);
         if(!$res) die('Invalidc query'.mysql_error());
+    }
+
+    public function get_bau_info($idp){
+
+
+        $q="SELECT certificado.idCertificado, certificado.idSacerdote, certificado.idCertificante, certificado.fecha as fechabautizo, parroquia.Nombre as parroquiabautizo, cura.Nombre as nombrecura, cura.Apellido as apellidocura,
+            lugar.lugar as lugarnacimiento, cert.Nombre as nombrecertificante,cert.Apellido as apellidocertificante,  fiel.Nombre as nombrefiel, fiel.Apellido as apellidofiel, fiel.fechanac as fechanacimiento,
+            padre.Nombre as nombrepadre, padre.Apellido as apellidopadre, madre.Nombre as nombremadre, madre.Apellido as apellidomadre,
+            padrino.Nombre as nombrepadrino, padrino.Apellido as apellidopadrino, registro_civil.oficialia, registro_civil.nro_libro as libro, registro_civil.partida
+            from certificado, parroquia, persona cura, lugar, persona cert, persona fiel, certificado_beneficiario, persona madre, persona padre, persona padrino, persona_padre ppm, persona_padre ppp, sacerdote sac, sacerdote certificante, registro_civil
+            where certificado.idParroquia=parroquia.idParroquia
+            and sac.idPersona=cura.idPersona
+            and sac.idSacerdote=certificado.idSacerdote
+            and certificante.idSacerdote=certificado.idCertificante
+            and lugar.idLugar=certificado.idLugar
+            and cert.idPersona=certificante.idPersona
+            and fiel.idPersona=certificado_beneficiario.idPersona
+            and certificado.idCertificado=certificado_beneficiario.idCertificado
+            and madre.idPersona=ppm.idPadre
+            and fiel.idPersona=ppm.idPersona
+            and ppm.tipo='m'
+            and padre.idPersona=ppp.idPadre
+            and fiel.idPersona=ppp.idPersona
+            and ppp.tipo='p'
+            and registro_civil.idCertificado=certificado.idCertificado
+            and certificado.idSacramento=1
+            and fiel.idPersona=".$idp." GROUP BY(certificado.idCertificado)";
+        $res=$this->dbh->exequery($q);
+        if(!$res) die('Invalida query'.mysql_error());
+        return $res;
     }
 
 
