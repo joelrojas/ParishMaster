@@ -107,6 +107,17 @@ class persona
         return $rows>=1;
     }
 
+    public function tienesacramento($idp, $ids){
+        $q="select * from persona, certificado, certificado_beneficiario
+            WHERE persona.idPersona=certificado_beneficiario.idPersona
+            and certificado.idCertificado=certificado_beneficiario.idCertificado
+            and persona.idPersona=".$idp." and certificado.idSacramento=".$ids;
+        $res=$this->dbh->exequery($q);
+        if(!$res) die('Invalid query'.mysql_error());
+        $rows=mysql_num_rows($res);
+        return $rows>=1;
+    }
+
 
     public function getCi()
     {

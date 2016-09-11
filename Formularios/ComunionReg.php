@@ -24,10 +24,13 @@
 
 		$civalido=false;
 		$cipadvalido=false;
+		$escat=false;
 		$nombre=""; $apellido=""; $fechanac=""; $pid ="";
 
 		$msj="<div class='alert alert-danger'><strong>Error!</strong> Este CI es incorrecto.</div>";
 		$msjval="<div class='alert alert-success'><strong>Exito!</strong> Este CI es correcto.</div>";
+		$msjcat="<div class='alert alert-success'><strong>Exito!</strong> Esta ersona ha sido bautizada en la Fe Catolica.</div>";
+		$msjnonac="<div class='alert alert-danger'><strong>Error!</strong> Esta persona no ha sido bautizada en la Fe Catolica.</div>";
 
 		if(isset($_POST['ci']) || !empty($_POST['ci']) ){
 			$pp= new persona('','','','','','','','');
@@ -39,6 +42,9 @@
 				$apellido=$fila['Apellido'];
 				$fechanac=$fila['fechanac'];
 				$pid=$fila['idPersona'];
+
+				$cat=$pp->tienesacramento($pid,2);
+				if($cat) $escat=true;
 			}
 		}
 
@@ -48,7 +54,7 @@
 			if($res!='ERROR') {$cipadvalido=true;}
 		}
 
-		if($civalido && $cipadvalido && !empty($_POST['fechacom']) &&!empty($_POST['parroquia']) && !empty($_POST['certificante']) && !empty($_POST['lugar']) && !empty($_POST['sacerdote']) ){
+		if($escat && $civalido && $cipadvalido && !empty($_POST['fechacom']) &&!empty($_POST['parroquia']) && !empty($_POST['certificante']) && !empty($_POST['lugar']) && !empty($_POST['sacerdote']) ){
 			$per = new persona($_POST['ci'], $nombre,$apellido, $fechanac, "", "", "");
 			$pid=$fila['idPersona'];
 			$padrinoid=$per->idfromci($_POST['cipadrino']);
@@ -82,7 +88,9 @@
 			<?php
 				if(isset($_POST['ci']) || !empty($_POST['ci'])){
 					if(!$civalido) echo $msj;
-					else echo $msjval;
+					else if($civalido)  echo $msjval;
+					if(!$escat) echo $msjnonac;
+					else if($escat) echo $escat;
 				}
 			?>
 
