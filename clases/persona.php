@@ -99,6 +99,14 @@ class persona
         return $fila['idPersona'];
     }
 
+    public function buscarmail($email){
+        $q="SELECT * from cuenta where cuenta.email='".$email."'";
+        $res=$this->dbh->exequery($q);
+        if(!$res) die('Invalidasd query'.mysql_error());
+        $rows=mysql_num_rows($res);
+        return $rows>=1;
+    }
+
 
     public function getCi()
     {
