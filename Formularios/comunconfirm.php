@@ -1,28 +1,3 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Pamela
- * Date: 9/5/2016
- * Time: 11:02 AM
- */
-
-session_start();
-
-require_once '../clases/certificado.php';
-require_once '../clases/persona.php';
-
-$per = new persona($_POST['ci'], $_POST['nombre'],$_POST['apellido'], $_POST['fechanac'], "", "", "");
-$p=$per->buscarper($_POST['ci']);
-$fila= mysql_fetch_array($p);
-$pid=$fila['idPersona'];
-$padrinoid=$per->idfromci($_POST['cipadrino']);
-
-$cert = new certificado($_POST['parroquia'],$_POST['sacerdote'],$_POST['certificante'],$_POST['lugar'],$_POST['fechacom']);
-$cert->reg_comunion($padrinoid , $pid);
-
-$_SESSION['idPersona']=$pid;
-
-?>
 
 <!doctype html>
 <html lang="en">

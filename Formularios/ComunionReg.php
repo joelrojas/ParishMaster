@@ -57,6 +57,10 @@
 			$cert->reg_comunion($padrinoid , $pid);
 
 			$_SESSION['idPersona']=$pid;
+
+			echo ("<SCRIPT LANGUAGE='JavaScript'>
+ 					window.alert('Se guardaron sus cambios')
+ 					window.location.href='comunconfirm.php';</SCRIPT>");
 		}
 
 
