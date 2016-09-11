@@ -59,7 +59,6 @@
 			$_SESSION['idPersona']=$pid;
 
 			echo ("<SCRIPT LANGUAGE='JavaScript'>
- 					window.alert('Se guardaron sus cambios')
  					window.location.href='comunconfirm.php';</SCRIPT>");
 		}
 
@@ -147,7 +146,6 @@
 					$sac= new sacerdote();
 					$sacs=$sac->GetAll();
 					while($fila=mysql_fetch_array($sacs)){
-						echo "<option value='".$fila['idSacerdote']."'>".$fila['Nombre']." ".$fila['Apellido']."</option>";
 						echo "<option value='".$fila['idSacerdote']."'";
 						if(isset($_POST['certificante']))
 							if($_POST['certificante'] == $fila['idSacerdote'])
