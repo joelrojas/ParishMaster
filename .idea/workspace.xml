@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffdeb5a1-66c2-4ddc-a9bd-446da6e531a0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Formularios/sacerdotereg.php" afterPath="$PROJECT_DIR$/Formularios/sacerdotereg.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Formularios/ComunionReg.php" afterPath="$PROJECT_DIR$/Formularios/ComunionReg.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clases/persona.php" afterPath="$PROJECT_DIR$/clases/persona.php" />
     </list>
     <ignored path="ParishMaster.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,93 +33,67 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Formularios/login/index.php">
+      <file leaf-file-name="comunconfirm.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Formularios/comunconfirm.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="52" column="61" selection-start-line="52" selection-start-column="61" selection-end-line="52" selection-end-column="61" />
-              <folding>
-                <marker date="1473284180695" expanded="true" signature="2943:2964" ph="..." />
-                <marker date="1473284180695" expanded="true" signature="2943:3000" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="principal.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Principal/principal.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
+            <state relative-caret-position="357">
+              <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nac.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Certificados/Nacimiento/nac.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1232">
-              <caret line="74" column="14" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sacerdote.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/clases/sacerdote.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="671">
-              <caret line="67" column="45" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
-              <folding>
-                <marker date="1473543885179" expanded="true" signature="746:1009" ph="select sacer... sacerdote" />
-                <marker date="1473543885179" expanded="true" signature="1177:1205" ph="select * fro... tipo_sacerdote" />
-                <marker date="1473543885179" expanded="true" signature="1368:1440" ph="INSERT INTO sacerdote... " />
-                <marker date="1473543885179" expanded="true" signature="1368:1461" ph="INSERT INTO sacerdote... " />
-                <marker date="1473543885179" expanded="true" signature="1368:1479" ph="INSERT INTO sacerdote... " />
-                <marker date="1473543885179" expanded="true" signature="1368:1497" ph="INSERT INTO sacerdote... " />
-                <marker date="1473543885179" expanded="true" signature="1668:1917" ph="SELECT tipo_... tipo_sacerdote" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ComunionReg.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ComunionReg.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Formularios/ComunionReg.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="106" column="125" selection-start-line="106" selection-start-column="125" selection-end-line="106" selection-end-column="125" />
-              <folding />
+            <state relative-caret-position="51">
+              <caret line="51" column="87" selection-start-line="51" selection-start-column="87" selection-end-line="51" selection-end-column="87" />
+              <folding>
+                <marker date="1473563661122" expanded="true" signature="3069:3198" ph="..." />
+                <marker date="1473563661122" expanded="true" signature="3360:3563" ph="..." />
+                <marker date="1473563661122" expanded="true" signature="3591:3808" ph="..." />
+                <marker date="1473563661122" expanded="true" signature="3836:4141" ph="..." />
+                <marker date="1473563661122" expanded="true" signature="3942:4141" ph="..." />
+                <marker date="1473563661122" expanded="true" signature="4397:4593" ph="..." />
+                <marker date="1473563661122" expanded="true" signature="4503:4593" ph="..." />
+                <marker date="1473563661122" expanded="true" signature="4984:5291" ph="..." />
+                <marker date="1473563661122" expanded="true" signature="5099:5291" ph="..." />
+                <marker date="1473563661122" expanded="true" signature="5682:5954" ph="..." />
+                <marker date="1473563661122" expanded="true" signature="5788:5954" ph="..." />
+                <marker date="1473563661122" expanded="true" signature="6286:6404" ph="..." />
+                <marker date="1473563661122" expanded="true" signature="6566:6679" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NacimientoReg.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Formularios/NacimientoReg.php">
+      <file leaf-file-name="persona.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/clases/persona.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="31" column="112" selection-start-line="31" selection-start-column="112" selection-end-line="31" selection-end-column="112" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PersonaReg.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Formularios/PersonaReg.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="59" column="147" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="147" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sacerdotereg.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Formularios/sacerdotereg.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="87" column="43" selection-start-line="87" selection-start-column="43" selection-end-line="87" selection-end-column="43" />
-              <folding />
+            <state relative-caret-position="531">
+              <caret line="80" column="51" selection-start-line="80" selection-start-column="51" selection-end-line="80" selection-end-column="51" />
+              <folding>
+                <marker date="1473559661302" expanded="true" signature="1029:1195" ph="INSERT INTO persona... " />
+                <marker date="1473559661302" expanded="true" signature="1035:1099" ph="INSERT INTO persona... " />
+                <marker date="1473559661302" expanded="true" signature="1035:1113" ph="INSERT INTO persona... " />
+                <marker date="1473559661302" expanded="true" signature="1035:1133" ph="INSERT INTO persona... " />
+                <marker date="1473559661302" expanded="true" signature="1035:1155" ph="INSERT INTO persona... " />
+                <marker date="1473559661302" expanded="true" signature="1035:1177" ph="INSERT INTO persona... " />
+                <marker date="1473559661302" expanded="true" signature="1035:1194" ph="INSERT INTO persona... " />
+                <marker date="1473559661302" expanded="true" signature="1035:1195" ph="INSERT INTO persona... " />
+                <marker date="1473559661302" expanded="true" signature="1410:1514" ph="INSERT INTO cuenta... " />
+                <marker date="1473559661302" expanded="true" signature="1687:1923" ph="select cuent... Cuenta" />
+                <marker date="1473559661302" expanded="true" signature="1687:1924" ph="select perso... persona" />
+                <marker date="1473559661302" expanded="true" signature="1687:1927" ph="select cuent... Cuenta" />
+                <marker date="1473559661302" expanded="true" signature="1687:1935" ph="select perso... persona" />
+                <marker date="1473559661302" expanded="true" signature="1687:1936" ph="select perso... persona" />
+                <marker date="1473559661302" expanded="true" signature="2107:2260" ph="select perso... persona" />
+                <marker date="1473559661302" expanded="true" signature="2486:2602" ph="SELECT * fro... sacerdote" />
+                <marker date="1473559661302" expanded="true" signature="2798:2853" ph="SELECT perso... persona" />
+                <marker date="1473559661302" expanded="true" signature="2798:2854" ph="SELECT perso... persona" />
+                <marker date="1473559661302" expanded="true" signature="2798:2862" ph="SELECT perso... persona" />
+                <marker date="1473559661302" expanded="true" signature="2798:2863" ph="SELECT perso... persona" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -144,7 +120,6 @@
         <option value="$PROJECT_DIR$/Principal/principal.php" />
         <option value="$PROJECT_DIR$/Formularios/sacerdoteconfirm.php" />
         <option value="$PROJECT_DIR$/Formularios/login/index.php" />
-        <option value="$PROJECT_DIR$/clases/persona.php" />
         <option value="$PROJECT_DIR$/Formularios/regconfirm.php" />
         <option value="$PROJECT_DIR$/Certificados/Nacimiento/nac.css" />
         <option value="$PROJECT_DIR$/Certificados/Nacimiento/nac.html" />
@@ -156,9 +131,10 @@
         <option value="$PROJECT_DIR$/Formularios/comunconfirm.php" />
         <option value="$PROJECT_DIR$/Formularios/imprimircomun.php" />
         <option value="$PROJECT_DIR$/Formularios/NacimientoReg.php" />
-        <option value="$PROJECT_DIR$/Formularios/ComunionReg.php" />
         <option value="$PROJECT_DIR$/Formularios/PersonaReg.php" />
         <option value="$PROJECT_DIR$/Formularios/sacerdotereg.php" />
+        <option value="$PROJECT_DIR$/clases/persona.php" />
+        <option value="$PROJECT_DIR$/Formularios/ComunionReg.php" />
       </list>
     </option>
   </component>
@@ -418,15 +394,15 @@
       <workItem from="1473189381213" duration="11546000" />
       <workItem from="1473276058027" duration="8917000" />
       <workItem from="1473476864011" duration="3846000" />
-      <workItem from="1473523867782" duration="18867000" />
+      <workItem from="1473523867782" duration="24635000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97008000" />
+    <option name="totallyTimeSpent" value="102776000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1765625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -568,26 +544,26 @@
         <state relative-caret-position="833">
           <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="51" selection-end-column="20" />
           <folding>
-            <marker date="1473284180655" expanded="true" signature="1029:1195" ph="INSERT INTO persona... " />
-            <marker date="1473284180655" expanded="true" signature="1035:1099" ph="INSERT INTO persona... " />
-            <marker date="1473284180655" expanded="true" signature="1035:1113" ph="INSERT INTO persona... " />
-            <marker date="1473284180655" expanded="true" signature="1035:1133" ph="INSERT INTO persona... " />
-            <marker date="1473284180655" expanded="true" signature="1035:1155" ph="INSERT INTO persona... " />
-            <marker date="1473284180655" expanded="true" signature="1035:1177" ph="INSERT INTO persona... " />
-            <marker date="1473284180655" expanded="true" signature="1035:1194" ph="INSERT INTO persona... " />
-            <marker date="1473284180655" expanded="true" signature="1035:1195" ph="INSERT INTO persona... " />
-            <marker date="1473284180655" expanded="true" signature="1410:1514" ph="INSERT INTO cuenta... " />
-            <marker date="1473284180655" expanded="true" signature="1687:1923" ph="select cuent... Cuenta" />
-            <marker date="1473284180655" expanded="true" signature="1687:1924" ph="select perso... persona" />
-            <marker date="1473284180655" expanded="true" signature="1687:1927" ph="select cuent... Cuenta" />
-            <marker date="1473284180655" expanded="true" signature="1687:1935" ph="select perso... persona" />
-            <marker date="1473284180655" expanded="true" signature="1687:1936" ph="select perso... persona" />
-            <marker date="1473284180655" expanded="true" signature="2107:2260" ph="select perso... persona" />
-            <marker date="1473284180655" expanded="true" signature="2434:2550" ph="SELECT * fro... sacerdote" />
-            <marker date="1473284180655" expanded="true" signature="2746:2801" ph="SELECT perso... persona" />
-            <marker date="1473284180655" expanded="true" signature="2746:2802" ph="SELECT perso... persona" />
-            <marker date="1473284180655" expanded="true" signature="2746:2810" ph="SELECT perso... persona" />
-            <marker date="1473284180655" expanded="true" signature="2746:2811" ph="SELECT perso... persona" />
+            <marker date="1473559661302" expanded="true" signature="1029:1195" ph="INSERT INTO persona... " />
+            <marker date="1473559661302" expanded="true" signature="1035:1099" ph="INSERT INTO persona... " />
+            <marker date="1473559661302" expanded="true" signature="1035:1113" ph="INSERT INTO persona... " />
+            <marker date="1473559661302" expanded="true" signature="1035:1133" ph="INSERT INTO persona... " />
+            <marker date="1473559661302" expanded="true" signature="1035:1155" ph="INSERT INTO persona... " />
+            <marker date="1473559661302" expanded="true" signature="1035:1177" ph="INSERT INTO persona... " />
+            <marker date="1473559661302" expanded="true" signature="1035:1194" ph="INSERT INTO persona... " />
+            <marker date="1473559661302" expanded="true" signature="1035:1195" ph="INSERT INTO persona... " />
+            <marker date="1473559661302" expanded="true" signature="1410:1514" ph="INSERT INTO cuenta... " />
+            <marker date="1473559661302" expanded="true" signature="1687:1923" ph="select cuent... Cuenta" />
+            <marker date="1473559661302" expanded="true" signature="1687:1924" ph="select perso... persona" />
+            <marker date="1473559661302" expanded="true" signature="1687:1927" ph="select cuent... Cuenta" />
+            <marker date="1473559661302" expanded="true" signature="1687:1935" ph="select perso... persona" />
+            <marker date="1473559661302" expanded="true" signature="1687:1936" ph="select perso... persona" />
+            <marker date="1473559661302" expanded="true" signature="2107:2260" ph="select perso... persona" />
+            <marker date="1473559661302" expanded="true" signature="2486:2602" ph="SELECT * fro... sacerdote" />
+            <marker date="1473559661302" expanded="true" signature="2798:2853" ph="SELECT perso... persona" />
+            <marker date="1473559661302" expanded="true" signature="2798:2854" ph="SELECT perso... persona" />
+            <marker date="1473559661302" expanded="true" signature="2798:2862" ph="SELECT perso... persona" />
+            <marker date="1473559661302" expanded="true" signature="2798:2863" ph="SELECT perso... persona" />
           </folding>
         </state>
       </provider>
@@ -778,20 +754,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Formularios/regconfirm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="586">
-          <caret line="38" column="100" selection-start-line="38" selection-start-column="100" selection-end-line="38" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Formularios/sacerdoteconfirm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="100" selection-start-line="46" selection-start-column="100" selection-end-line="46" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Certificados/Nacimiento/nac.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="508">
@@ -814,55 +776,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/clases/persona.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="820">
-          <caret line="86" column="33" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
-          <folding>
-            <marker date="1473284180655" expanded="true" signature="1029:1195" ph="INSERT INTO persona... " />
-            <marker date="1473284180655" expanded="true" signature="1035:1099" ph="INSERT INTO persona... " />
-            <marker date="1473284180655" expanded="true" signature="1035:1113" ph="INSERT INTO persona... " />
-            <marker date="1473284180655" expanded="true" signature="1035:1133" ph="INSERT INTO persona... " />
-            <marker date="1473284180655" expanded="true" signature="1035:1155" ph="INSERT INTO persona... " />
-            <marker date="1473284180655" expanded="true" signature="1035:1177" ph="INSERT INTO persona... " />
-            <marker date="1473284180655" expanded="true" signature="1035:1194" ph="INSERT INTO persona... " />
-            <marker date="1473284180655" expanded="true" signature="1035:1195" ph="INSERT INTO persona... " />
-            <marker date="1473284180655" expanded="true" signature="1410:1514" ph="INSERT INTO cuenta... " />
-            <marker date="1473284180655" expanded="true" signature="1687:1923" ph="select cuent... Cuenta" />
-            <marker date="1473284180655" expanded="true" signature="1687:1924" ph="select perso... persona" />
-            <marker date="1473284180655" expanded="true" signature="1687:1927" ph="select cuent... Cuenta" />
-            <marker date="1473284180655" expanded="true" signature="1687:1935" ph="select perso... persona" />
-            <marker date="1473284180655" expanded="true" signature="1687:1936" ph="select perso... persona" />
-            <marker date="1473284180655" expanded="true" signature="2107:2260" ph="select perso... persona" />
-            <marker date="1473284180655" expanded="true" signature="2434:2550" ph="SELECT * fro... sacerdote" />
-            <marker date="1473284180655" expanded="true" signature="2746:2801" ph="SELECT perso... persona" />
-            <marker date="1473284180655" expanded="true" signature="2746:2802" ph="SELECT perso... persona" />
-            <marker date="1473284180655" expanded="true" signature="2746:2810" ph="SELECT perso... persona" />
-            <marker date="1473284180655" expanded="true" signature="2746:2811" ph="SELECT perso... persona" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Certificados/Nacimiento/nac.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1232">
-          <caret line="74" column="14" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Formularios/nacimconfirm.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
           <caret line="22" column="53" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Principal/principal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -958,25 +875,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Formularios/comunconfirm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Formularios/login/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="52" column="61" selection-start-line="52" selection-start-column="61" selection-end-line="52" selection-end-column="61" />
-          <folding>
-            <marker date="1473284180695" expanded="true" signature="2943:2964" ph="..." />
-            <marker date="1473284180695" expanded="true" signature="2943:3000" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/clases/certificado.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="387">
@@ -1020,6 +918,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Formularios/NacimientoReg.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="31" column="112" selection-start-line="31" selection-start-column="112" selection-end-line="31" selection-end-column="112" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Formularios/sacerdotereg.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="87" column="43" selection-start-line="87" selection-start-column="43" selection-end-line="87" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Formularios/PersonaReg.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="59" column="147" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="147" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Formularios/sacerdoteconfirm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="654">
+          <caret line="46" column="100" selection-start-line="46" selection-start-column="100" selection-end-line="46" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Formularios/regconfirm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="100" selection-start-line="38" selection-start-column="100" selection-end-line="38" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/clases/sacerdote.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="671">
@@ -1036,35 +974,89 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Certificados/Nacimiento/nac.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1232">
+          <caret line="74" column="14" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Principal/principal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Formularios/login/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="52" column="61" selection-start-line="52" selection-start-column="61" selection-end-line="52" selection-end-column="61" />
+          <folding>
+            <marker date="1473284180695" expanded="true" signature="2943:2964" ph="..." />
+            <marker date="1473284180695" expanded="true" signature="2943:3000" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Formularios/comunconfirm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clases/persona.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="80" column="51" selection-start-line="80" selection-start-column="51" selection-end-line="80" selection-end-column="51" />
+          <folding>
+            <marker date="1473559661302" expanded="true" signature="1029:1195" ph="INSERT INTO persona... " />
+            <marker date="1473559661302" expanded="true" signature="1035:1099" ph="INSERT INTO persona... " />
+            <marker date="1473559661302" expanded="true" signature="1035:1113" ph="INSERT INTO persona... " />
+            <marker date="1473559661302" expanded="true" signature="1035:1133" ph="INSERT INTO persona... " />
+            <marker date="1473559661302" expanded="true" signature="1035:1155" ph="INSERT INTO persona... " />
+            <marker date="1473559661302" expanded="true" signature="1035:1177" ph="INSERT INTO persona... " />
+            <marker date="1473559661302" expanded="true" signature="1035:1194" ph="INSERT INTO persona... " />
+            <marker date="1473559661302" expanded="true" signature="1035:1195" ph="INSERT INTO persona... " />
+            <marker date="1473559661302" expanded="true" signature="1410:1514" ph="INSERT INTO cuenta... " />
+            <marker date="1473559661302" expanded="true" signature="1687:1923" ph="select cuent... Cuenta" />
+            <marker date="1473559661302" expanded="true" signature="1687:1924" ph="select perso... persona" />
+            <marker date="1473559661302" expanded="true" signature="1687:1927" ph="select cuent... Cuenta" />
+            <marker date="1473559661302" expanded="true" signature="1687:1935" ph="select perso... persona" />
+            <marker date="1473559661302" expanded="true" signature="1687:1936" ph="select perso... persona" />
+            <marker date="1473559661302" expanded="true" signature="2107:2260" ph="select perso... persona" />
+            <marker date="1473559661302" expanded="true" signature="2486:2602" ph="SELECT * fro... sacerdote" />
+            <marker date="1473559661302" expanded="true" signature="2798:2853" ph="SELECT perso... persona" />
+            <marker date="1473559661302" expanded="true" signature="2798:2854" ph="SELECT perso... persona" />
+            <marker date="1473559661302" expanded="true" signature="2798:2862" ph="SELECT perso... persona" />
+            <marker date="1473559661302" expanded="true" signature="2798:2863" ph="SELECT perso... persona" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Formularios/ComunionReg.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="106" column="125" selection-start-line="106" selection-start-column="125" selection-end-line="106" selection-end-column="125" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Formularios/NacimientoReg.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="31" column="112" selection-start-line="31" selection-start-column="112" selection-end-line="31" selection-end-column="112" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Formularios/PersonaReg.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="59" column="147" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="147" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Formularios/sacerdotereg.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="87" column="43" selection-start-line="87" selection-start-column="43" selection-end-line="87" selection-end-column="43" />
-          <folding />
+        <state relative-caret-position="51">
+          <caret line="51" column="87" selection-start-line="51" selection-start-column="87" selection-end-line="51" selection-end-column="87" />
+          <folding>
+            <marker date="1473563661122" expanded="true" signature="3069:3198" ph="..." />
+            <marker date="1473563661122" expanded="true" signature="3360:3563" ph="..." />
+            <marker date="1473563661122" expanded="true" signature="3591:3808" ph="..." />
+            <marker date="1473563661122" expanded="true" signature="3836:4141" ph="..." />
+            <marker date="1473563661122" expanded="true" signature="3942:4141" ph="..." />
+            <marker date="1473563661122" expanded="true" signature="4397:4593" ph="..." />
+            <marker date="1473563661122" expanded="true" signature="4503:4593" ph="..." />
+            <marker date="1473563661122" expanded="true" signature="4984:5291" ph="..." />
+            <marker date="1473563661122" expanded="true" signature="5099:5291" ph="..." />
+            <marker date="1473563661122" expanded="true" signature="5682:5954" ph="..." />
+            <marker date="1473563661122" expanded="true" signature="5788:5954" ph="..." />
+            <marker date="1473563661122" expanded="true" signature="6286:6404" ph="..." />
+            <marker date="1473563661122" expanded="true" signature="6566:6679" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

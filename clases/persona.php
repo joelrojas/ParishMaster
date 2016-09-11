@@ -78,6 +78,7 @@ class persona
             where persona.ci='".$ci."'";
         $res=$this->dbh->exequery($q);
         if(!$res) die('Invalid query'.mysql_error());
+        if(mysql_num_rows($res)==0) return "ERROR";
         return $res;
     }
 
