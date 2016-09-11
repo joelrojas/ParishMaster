@@ -113,6 +113,30 @@ class certificado
         return $res;
     }
 
+    public function get_comunion_info($idp){
+
+
+        $q="SELECT certificado.idCertificado, certificado.idSacerdote, certificado.idCertificante, certificado.fecha as fechacomunion, parroquia.Nombre as parroquiacomunion, cura.Nombre as nombrecura, cura.Apellido as apellidocura,
+            lugar.lugar as lugarcomunion, cert.Nombre as nombrecertificante,cert.Apellido as apellidocertificante,  fiel.Nombre as nombrefiel, fiel.Apellido as apellidofiel, fiel.fechanac as fechanacimiento,
+            padrino.Nombre as nombrepadrino, padrino.Apellido as apellidopadrino
+            from certificado, parroquia, persona cura, lugar, persona cert, persona fiel, certificado_beneficiario, persona padrino, sacerdote sac, sacerdote certificante, certificado_padrino
+            where certificado.idParroquia=parroquia.idParroquia
+            and sac.idPersona=cura.idPersona
+            and sac.idSacerdote=certificado.idSacerdote
+            and certificante.idSacerdote=certificado.idCertificante
+            and lugar.idLugar=certificado.idLugar
+            and cert.idPersona=certificante.idPersona
+            and fiel.idPersona=certificado_beneficiario.idPersona
+            and certificado.idCertificado=certificado_beneficiario.idCertificado
+            and certificado.idSacramento=2
+            and padrino.idPersona=certificado_padrino.idPersona
+            and certificado.idCertificado=certificado_padrino.idCertificado
+            and fiel.idPersona=".$idp." GROUP BY(certificado.idCertificado)";
+        $res=$this->dbh->exequery($q);
+        if(!$res) die('Invalida query'.mysql_error());
+        return $res;
+    }
+
 
 
 }

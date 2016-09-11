@@ -2,146 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffdeb5a1-66c2-4ddc-a9bd-446da6e531a0" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/classes/barcode.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/classes/bmp.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/classes/cssmgr.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/classes/directw.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/classes/form.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/classes/gif.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/classes/grad.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/classes/indic.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/classes/meter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/classes/svg.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/classes/tocontents.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/classes/ttfontsuni.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/classes/ttfontsuni_analysis.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/classes/wmf.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/compress.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/config.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/config_cp.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/config_fonts.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/font/ccourier.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/font/ccourierb.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/font/ccourierbi.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/font/ccourieri.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/font/chelvetica.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/font/chelveticab.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/font/chelveticabi.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/font/chelveticai.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/font/csymbol.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/font/ctimes.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/font/ctimesb.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/font/ctimesbi.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/font/ctimesi.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/font/czapfdingbats.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/graph.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/graph_cache/dummy.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/iccprofiles/SWOP2006_Coated5v2.icc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/iccprofiles/sRGB_IEC61966-2-1.icc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/includes/CJKdata.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/includes/functions.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/includes/ind_bn_1_001.volt.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/includes/ind_gu_1_001.volt.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/includes/ind_hi_1_001.volt.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/includes/ind_kn_1_001.volt.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/includes/ind_ml_1_001.volt.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/includes/ind_or_1_001.volt.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/includes/ind_pa_1_001.volt.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/includes/ind_ta_1_001.volt.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/includes/ind_te_1_001.volt.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/includes/no_image.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/includes/out.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/includes/subs_core.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/includes/subs_win-1252.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/includes/upperCase.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/mpdf.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/mpdf.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/mpdfi/filters/FilterASCII85.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/mpdfi/filters/FilterLZW.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/mpdfi/fpdi_pdf_parser.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/mpdfi/pdf_context.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/mpdfi/pdf_parser.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/patterns/NOTES.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/patterns/de.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/patterns/dictionary.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/patterns/en.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/patterns/es.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/patterns/fi.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/patterns/fr.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/patterns/it.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/patterns/nl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/patterns/pl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/patterns/ru.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/patterns/sv.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/progbar.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfontdata/dejavusanscondensed.cw.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfontdata/dejavusanscondensed.mtx.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfontdata/dejavusansmono.cw.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfontdata/dejavusansmono.mtx.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfontdata/dejavuserifcondensed.cw.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfontdata/dejavuserifcondensed.cw127.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfontdata/dejavuserifcondensed.mtx.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfontdata/dejavuserifcondensedB.cw.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfontdata/dejavuserifcondensedB.mtx.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfontdata/dummy.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/DejaVuSans-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/DejaVuSans-BoldOblique.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/DejaVuSans-Oblique.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/DejaVuSans.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/DejaVuSansCondensed-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/DejaVuSansCondensed-BoldOblique.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/DejaVuSansCondensed-Oblique.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/DejaVuSansCondensed.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/DejaVuSansMono-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/DejaVuSansMono-BoldOblique.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/DejaVuSansMono-Oblique.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/DejaVuSansMono.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/DejaVuSerif-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/DejaVuSerif-BoldItalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/DejaVuSerif-Italic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/DejaVuSerif.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/DejaVuSerifCondensed-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/DejaVuSerifCondensed-BoldItalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/DejaVuSerifCondensed-Italic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/DejaVuSerifCondensed.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/DejaVuinfo.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/GNUFreeFontinfo.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/Garuda-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/Garuda-BoldOblique.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/Garuda-Oblique.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/Garuda.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/Norasi-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/Norasi-BoldOblique.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/Norasi-Oblique.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/Norasi.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/Thai Fonts License.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/XB Riyaz.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/XB RiyazBd.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/XB RiyazBdIt.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/XB RiyazIt.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/XB Zar Bd.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/XB Zar BdIt.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/XB Zar It.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/XB Zar.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/XW Zar Font Info.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/ind_bn_1_001.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/ind_gu_1_001.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/ind_hi_1_001.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/ind_kn_1_001.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/ind_ml_1_001.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/ind_or_1_001.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/ind_pa_1_001.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/ind_ta_1_001.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/ind_te_1_001.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/ocrb10.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/ttfonts/ocrbinfo.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/utils/UnicodeData.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/utils/UnicodeRanges.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/utils/font_collections.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/utils/font_coverage.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/utils/font_dump.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/utils/font_names.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mpdf/utils/index.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Formularios/comunconfirm.php" afterPath="$PROJECT_DIR$/Formularios/comunconfirm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clases/certificado.php" afterPath="$PROJECT_DIR$/clases/certificado.php" />
     </list>
     <ignored path="ParishMaster.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -170,16 +32,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="nacimconfirm.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Formularios/nacimconfirm.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Formularios/login/index.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -193,49 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="principal.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Principal/principal.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nac.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Certificados/Nacimiento/nac.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1232">
-              <caret line="74" column="14" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sacerdote.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/clases/sacerdote.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="671">
-              <caret line="67" column="45" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
-              <folding>
-                <marker date="1473543885179" expanded="true" signature="746:1009" ph="select sacer... sacerdote" />
-                <marker date="1473543885179" expanded="true" signature="1177:1205" ph="select * fro... tipo_sacerdote" />
-                <marker date="1473543885179" expanded="true" signature="1368:1440" ph="INSERT INTO sacerdote... " />
-                <marker date="1473543885179" expanded="true" signature="1368:1461" ph="INSERT INTO sacerdote... " />
-                <marker date="1473543885179" expanded="true" signature="1368:1479" ph="INSERT INTO sacerdote... " />
-                <marker date="1473543885179" expanded="true" signature="1368:1497" ph="INSERT INTO sacerdote... " />
-                <marker date="1473543885179" expanded="true" signature="1668:1917" ph="SELECT tipo_... tipo_sacerdote" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="imprimirnac.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="imprimirnac.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Formularios/imprimirnac.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
+            <state relative-caret-position="391">
+              <caret line="28" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="95" selection-end-column="2" />
               <folding>
                 <marker date="1473543885176" expanded="true" signature="884:3867" ph="..." />
                 <marker date="1473543885176" expanded="true" signature="890:1453" ph="..." />
@@ -298,45 +112,122 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="imprimircomun.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Formularios/imprimircomun.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding>
+                <marker date="1473552518470" expanded="true" signature="887:3470" ph="..." />
+                <marker date="1473552518470" expanded="true" signature="893:1457" ph="..." />
+                <marker date="1473552518470" expanded="true" signature="1463:3463" ph="..." />
+                <marker date="1473552518470" expanded="true" signature="1489:2888" ph="..." />
+                <marker date="1473552518470" expanded="true" signature="1519:2877" ph="..." />
+                <marker date="1473552518470" expanded="true" signature="1545:2690" ph="..." />
+                <marker date="1473552518470" expanded="true" signature="1579:2675" ph="..." />
+                <marker date="1473552518470" expanded="true" signature="1971:2658" ph="..." />
+                <marker date="1473552518470" expanded="false" signature="2058:2064" ph=" " />
+                <marker date="1473552518470" expanded="true" signature="2299:2305" ph=" " />
+                <marker date="1473552518470" expanded="true" signature="2716:2864" ph="..." />
+                <marker date="1473552518470" expanded="true" signature="2750:2849" ph="..." />
+                <marker date="1473552518470" expanded="true" signature="2914:3450" ph="..." />
+                <marker date="1473552518470" expanded="true" signature="2944:3439" ph="..." />
+                <marker date="1473552518470" expanded="true" signature="2970:3426" ph="..." />
+                <marker date="1473552518470" expanded="true" signature="3003:3411" ph="..." />
+                <marker date="1473552518470" expanded="true" signature="3067:3147" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="comunconfirm.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Formularios/comunconfirm.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="principal.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Principal/principal.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nac.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Certificados/Nacimiento/nac.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1232">
+              <caret line="74" column="14" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sacerdote.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/clases/sacerdote.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="671">
+              <caret line="67" column="45" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
+              <folding>
+                <marker date="1473543885179" expanded="true" signature="746:1009" ph="select sacer... sacerdote" />
+                <marker date="1473543885179" expanded="true" signature="1177:1205" ph="select * fro... tipo_sacerdote" />
+                <marker date="1473543885179" expanded="true" signature="1368:1440" ph="INSERT INTO sacerdote... " />
+                <marker date="1473543885179" expanded="true" signature="1368:1461" ph="INSERT INTO sacerdote... " />
+                <marker date="1473543885179" expanded="true" signature="1368:1479" ph="INSERT INTO sacerdote... " />
+                <marker date="1473543885179" expanded="true" signature="1368:1497" ph="INSERT INTO sacerdote... " />
+                <marker date="1473543885179" expanded="true" signature="1668:1917" ph="SELECT tipo_... tipo_sacerdote" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="certificado.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/clases/certificado.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="83" column="5" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
+            <state relative-caret-position="387">
+              <caret line="117" column="0" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
               <folding>
-                <marker date="1473543885178" expanded="true" signature="1039:1121" ph="INSERT INTO registro_civil... " />
-                <marker date="1473543885178" expanded="true" signature="1039:1138" ph="INSERT INTO registro_civil... " />
-                <marker date="1473543885178" expanded="true" signature="1039:1154" ph="INSERT INTO registro_civil... " />
-                <marker date="1473543885178" expanded="true" signature="1039:1155" ph="INSERT INTO registro_civil... " />
-                <marker date="1473543885178" expanded="true" signature="1039:1170" ph="INSERT INTO registro_civil... " />
-                <marker date="1473543885178" expanded="true" signature="1039:1190" ph="INSERT INTO registro_civil... " />
-                <marker date="1473543885178" expanded="true" signature="1402:1506" ph="INSERT INTO certificado... " />
-                <marker date="1473543885178" expanded="true" signature="1402:1507" ph="INSERT INTO certificado... " />
-                <marker date="1473543885178" expanded="true" signature="1402:1525" ph="INSERT INTO certificado... " />
-                <marker date="1473543885178" expanded="true" signature="1402:1610" ph="INSERT INTO certificado... " />
-                <marker date="1473543885178" expanded="true" signature="1402:1612" ph="INSERT INTO certificado... " />
-                <marker date="1473543885178" expanded="true" signature="1757:1823" ph="INSERT INTO certificado_padrino... " />
-                <marker date="1473543885178" expanded="true" signature="1757:1824" ph="INSERT INTO certificado_padrino... " />
-                <marker date="1473543885178" expanded="true" signature="1757:1838" ph="INSERT INTO certificado_padrino... " />
-                <marker date="1473543885178" expanded="true" signature="1757:1853" ph="INSERT INTO certificado_padrino... " />
-                <marker date="1473543885178" expanded="true" signature="1963:2022" ph="INSERT INTO persona_padre... " />
-                <marker date="1473543885178" expanded="true" signature="1963:2031" ph="INSERT INTO persona_padre... " />
-                <marker date="1473543885178" expanded="true" signature="1963:2048" ph="INSERT INTO persona_padre... " />
-                <marker date="1473543885178" expanded="true" signature="2158:2243" ph="INSERT INTO persona_padre... " />
-                <marker date="1473543885178" expanded="true" signature="2353:2424" ph="INSERT INTO certificado_beneficiario... " />
-                <marker date="1473543885178" expanded="true" signature="2353:2437" ph="INSERT INTO certificado_beneficiario... " />
-                <marker date="1473543885178" expanded="true" signature="2353:2446" ph="INSERT INTO certificado_beneficiario... " />
-                <marker date="1473543885178" expanded="true" signature="2645:2787" ph="INSERT INTO certificado... " />
-                <marker date="1473543885178" expanded="true" signature="2645:2789" ph="INSERT INTO certificado... " />
-                <marker date="1473543885178" expanded="true" signature="2645:2806" ph="INSERT INTO certificado... " />
-                <marker date="1473543885178" expanded="true" signature="2645:2827" ph="INSERT INTO certificado... " />
-                <marker date="1473543885178" expanded="true" signature="2645:2851" ph="INSERT INTO certificado... " />
-                <marker date="1473543885178" expanded="true" signature="2998:3064" ph="INSERT INTO certificado_padrino... " />
-                <marker date="1473543885178" expanded="true" signature="2998:3092" ph="INSERT INTO certificado_padrino... " />
-                <marker date="1473543885178" expanded="true" signature="3203:3302" ph="INSERT INTO certificado_beneficiario... " />
-                <marker date="1473543885178" expanded="true" signature="3461:3880" ph="SELECT certi... certificado" />
-                <marker date="1473543885178" expanded="true" signature="3461:5311" ph="SELECT certi... certificado" />
-                <marker date="1473543885178" expanded="true" signature="3461:5355" ph="SELECT certi... certificado" />
+                <marker date="1473544785364" expanded="true" signature="1039:1121" ph="INSERT INTO registro_civil... " />
+                <marker date="1473544785364" expanded="true" signature="1039:1138" ph="INSERT INTO registro_civil... " />
+                <marker date="1473544785364" expanded="true" signature="1039:1154" ph="INSERT INTO registro_civil... " />
+                <marker date="1473544785364" expanded="true" signature="1039:1155" ph="INSERT INTO registro_civil... " />
+                <marker date="1473544785364" expanded="true" signature="1039:1170" ph="INSERT INTO registro_civil... " />
+                <marker date="1473544785364" expanded="true" signature="1039:1190" ph="INSERT INTO registro_civil... " />
+                <marker date="1473544785364" expanded="true" signature="1402:1506" ph="INSERT INTO certificado... " />
+                <marker date="1473544785364" expanded="true" signature="1402:1507" ph="INSERT INTO certificado... " />
+                <marker date="1473544785364" expanded="true" signature="1402:1525" ph="INSERT INTO certificado... " />
+                <marker date="1473544785364" expanded="true" signature="1402:1610" ph="INSERT INTO certificado... " />
+                <marker date="1473544785364" expanded="true" signature="1402:1612" ph="INSERT INTO certificado... " />
+                <marker date="1473544785364" expanded="true" signature="1757:1823" ph="INSERT INTO certificado_padrino... " />
+                <marker date="1473544785364" expanded="true" signature="1757:1824" ph="INSERT INTO certificado_padrino... " />
+                <marker date="1473544785364" expanded="true" signature="1757:1838" ph="INSERT INTO certificado_padrino... " />
+                <marker date="1473544785364" expanded="true" signature="1757:1853" ph="INSERT INTO certificado_padrino... " />
+                <marker date="1473544785364" expanded="true" signature="1963:2022" ph="INSERT INTO persona_padre... " />
+                <marker date="1473544785364" expanded="true" signature="1963:2031" ph="INSERT INTO persona_padre... " />
+                <marker date="1473544785364" expanded="true" signature="1963:2048" ph="INSERT INTO persona_padre... " />
+                <marker date="1473544785364" expanded="true" signature="2158:2243" ph="INSERT INTO persona_padre... " />
+                <marker date="1473544785364" expanded="true" signature="2353:2424" ph="INSERT INTO certificado_beneficiario... " />
+                <marker date="1473544785364" expanded="true" signature="2353:2437" ph="INSERT INTO certificado_beneficiario... " />
+                <marker date="1473544785364" expanded="true" signature="2353:2446" ph="INSERT INTO certificado_beneficiario... " />
+                <marker date="1473544785364" expanded="true" signature="2645:2787" ph="INSERT INTO certificado... " />
+                <marker date="1473544785364" expanded="true" signature="2645:2789" ph="INSERT INTO certificado... " />
+                <marker date="1473544785364" expanded="true" signature="2645:2806" ph="INSERT INTO certificado... " />
+                <marker date="1473544785364" expanded="true" signature="2645:2827" ph="INSERT INTO certificado... " />
+                <marker date="1473544785364" expanded="true" signature="2645:2851" ph="INSERT INTO certificado... " />
+                <marker date="1473544785364" expanded="true" signature="2998:3064" ph="INSERT INTO certificado_padrino... " />
+                <marker date="1473544785364" expanded="true" signature="2998:3092" ph="INSERT INTO certificado_padrino... " />
+                <marker date="1473544785364" expanded="true" signature="3203:3302" ph="INSERT INTO certificado_beneficiario... " />
+                <marker date="1473544785364" expanded="true" signature="3461:3880" ph="SELECT certi... certificado" />
+                <marker date="1473544785364" expanded="true" signature="3461:5311" ph="SELECT certi... certificado" />
+                <marker date="1473544785364" expanded="true" signature="3461:5355" ph="SELECT certi... certificado" />
+                <marker date="1473544785364" expanded="true" signature="5539:6982" ph="SELECT certi... certificado" />
               </folding>
             </state>
           </provider>
@@ -370,7 +261,6 @@
         <option value="$PROJECT_DIR$/Formularios/login/index.php" />
         <option value="$PROJECT_DIR$/clases/persona.php" />
         <option value="$PROJECT_DIR$/Formularios/regconfirm.php" />
-        <option value="$PROJECT_DIR$/Formularios/comunconfirm.php" />
         <option value="$PROJECT_DIR$/Certificados/Nacimiento/nac.css" />
         <option value="$PROJECT_DIR$/Certificados/Nacimiento/nac.html" />
         <option value="$PROJECT_DIR$/Formularios/imprimir.php" />
@@ -378,6 +268,8 @@
         <option value="$PROJECT_DIR$/clases/sacerdote.php" />
         <option value="$PROJECT_DIR$/Formularios/imprimirnac.php" />
         <option value="$PROJECT_DIR$/clases/certificado.php" />
+        <option value="$PROJECT_DIR$/Formularios/comunconfirm.php" />
+        <option value="$PROJECT_DIR$/Formularios/imprimircomun.php" />
       </list>
     </option>
   </component>
@@ -637,12 +529,12 @@
       <workItem from="1473189381213" duration="11546000" />
       <workItem from="1473276058027" duration="8917000" />
       <workItem from="1473476864011" duration="3846000" />
-      <workItem from="1473523867782" duration="11965000" />
+      <workItem from="1473523867782" duration="15501000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90106000" />
+    <option name="totallyTimeSpent" value="93642000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -708,51 +600,45 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Formularios/NacimientoReg.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1989">
-          <caret line="117" column="44" selection-start-line="117" selection-start-column="44" selection-end-line="117" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/clases/certificado.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="935">
           <caret line="55" column="36" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
           <folding>
-            <marker date="1473543885178" expanded="true" signature="1039:1121" ph="INSERT INTO registro_civil... " />
-            <marker date="1473543885178" expanded="true" signature="1039:1138" ph="INSERT INTO registro_civil... " />
-            <marker date="1473543885178" expanded="true" signature="1039:1154" ph="INSERT INTO registro_civil... " />
-            <marker date="1473543885178" expanded="true" signature="1039:1155" ph="INSERT INTO registro_civil... " />
-            <marker date="1473543885178" expanded="true" signature="1039:1170" ph="INSERT INTO registro_civil... " />
-            <marker date="1473543885178" expanded="true" signature="1039:1190" ph="INSERT INTO registro_civil... " />
-            <marker date="1473543885178" expanded="true" signature="1402:1506" ph="INSERT INTO certificado... " />
-            <marker date="1473543885178" expanded="true" signature="1402:1507" ph="INSERT INTO certificado... " />
-            <marker date="1473543885178" expanded="true" signature="1402:1525" ph="INSERT INTO certificado... " />
-            <marker date="1473543885178" expanded="true" signature="1402:1610" ph="INSERT INTO certificado... " />
-            <marker date="1473543885178" expanded="true" signature="1402:1612" ph="INSERT INTO certificado... " />
-            <marker date="1473543885178" expanded="true" signature="1757:1823" ph="INSERT INTO certificado_padrino... " />
-            <marker date="1473543885178" expanded="true" signature="1757:1824" ph="INSERT INTO certificado_padrino... " />
-            <marker date="1473543885178" expanded="true" signature="1757:1838" ph="INSERT INTO certificado_padrino... " />
-            <marker date="1473543885178" expanded="true" signature="1757:1853" ph="INSERT INTO certificado_padrino... " />
-            <marker date="1473543885178" expanded="true" signature="1963:2022" ph="INSERT INTO persona_padre... " />
-            <marker date="1473543885178" expanded="true" signature="1963:2031" ph="INSERT INTO persona_padre... " />
-            <marker date="1473543885178" expanded="true" signature="1963:2048" ph="INSERT INTO persona_padre... " />
-            <marker date="1473543885178" expanded="true" signature="2158:2243" ph="INSERT INTO persona_padre... " />
-            <marker date="1473543885178" expanded="true" signature="2353:2424" ph="INSERT INTO certificado_beneficiario... " />
-            <marker date="1473543885178" expanded="true" signature="2353:2437" ph="INSERT INTO certificado_beneficiario... " />
-            <marker date="1473543885178" expanded="true" signature="2353:2446" ph="INSERT INTO certificado_beneficiario... " />
-            <marker date="1473543885178" expanded="true" signature="2645:2787" ph="INSERT INTO certificado... " />
-            <marker date="1473543885178" expanded="true" signature="2645:2789" ph="INSERT INTO certificado... " />
-            <marker date="1473543885178" expanded="true" signature="2645:2806" ph="INSERT INTO certificado... " />
-            <marker date="1473543885178" expanded="true" signature="2645:2827" ph="INSERT INTO certificado... " />
-            <marker date="1473543885178" expanded="true" signature="2645:2851" ph="INSERT INTO certificado... " />
-            <marker date="1473543885178" expanded="true" signature="2998:3064" ph="INSERT INTO certificado_padrino... " />
-            <marker date="1473543885178" expanded="true" signature="2998:3092" ph="INSERT INTO certificado_padrino... " />
-            <marker date="1473543885178" expanded="true" signature="3203:3302" ph="INSERT INTO certificado_beneficiario... " />
-            <marker date="1473543885178" expanded="true" signature="3461:3880" ph="SELECT certi... certificado" />
-            <marker date="1473543885178" expanded="true" signature="3461:5311" ph="SELECT certi... certificado" />
-            <marker date="1473543885178" expanded="true" signature="3461:5355" ph="SELECT certi... certificado" />
+            <marker date="1473544785364" expanded="true" signature="1039:1121" ph="INSERT INTO registro_civil... " />
+            <marker date="1473544785364" expanded="true" signature="1039:1138" ph="INSERT INTO registro_civil... " />
+            <marker date="1473544785364" expanded="true" signature="1039:1154" ph="INSERT INTO registro_civil... " />
+            <marker date="1473544785364" expanded="true" signature="1039:1155" ph="INSERT INTO registro_civil... " />
+            <marker date="1473544785364" expanded="true" signature="1039:1170" ph="INSERT INTO registro_civil... " />
+            <marker date="1473544785364" expanded="true" signature="1039:1190" ph="INSERT INTO registro_civil... " />
+            <marker date="1473544785364" expanded="true" signature="1402:1506" ph="INSERT INTO certificado... " />
+            <marker date="1473544785364" expanded="true" signature="1402:1507" ph="INSERT INTO certificado... " />
+            <marker date="1473544785364" expanded="true" signature="1402:1525" ph="INSERT INTO certificado... " />
+            <marker date="1473544785364" expanded="true" signature="1402:1610" ph="INSERT INTO certificado... " />
+            <marker date="1473544785364" expanded="true" signature="1402:1612" ph="INSERT INTO certificado... " />
+            <marker date="1473544785364" expanded="true" signature="1757:1823" ph="INSERT INTO certificado_padrino... " />
+            <marker date="1473544785364" expanded="true" signature="1757:1824" ph="INSERT INTO certificado_padrino... " />
+            <marker date="1473544785364" expanded="true" signature="1757:1838" ph="INSERT INTO certificado_padrino... " />
+            <marker date="1473544785364" expanded="true" signature="1757:1853" ph="INSERT INTO certificado_padrino... " />
+            <marker date="1473544785364" expanded="true" signature="1963:2022" ph="INSERT INTO persona_padre... " />
+            <marker date="1473544785364" expanded="true" signature="1963:2031" ph="INSERT INTO persona_padre... " />
+            <marker date="1473544785364" expanded="true" signature="1963:2048" ph="INSERT INTO persona_padre... " />
+            <marker date="1473544785364" expanded="true" signature="2158:2243" ph="INSERT INTO persona_padre... " />
+            <marker date="1473544785364" expanded="true" signature="2353:2424" ph="INSERT INTO certificado_beneficiario... " />
+            <marker date="1473544785364" expanded="true" signature="2353:2437" ph="INSERT INTO certificado_beneficiario... " />
+            <marker date="1473544785364" expanded="true" signature="2353:2446" ph="INSERT INTO certificado_beneficiario... " />
+            <marker date="1473544785364" expanded="true" signature="2645:2787" ph="INSERT INTO certificado... " />
+            <marker date="1473544785364" expanded="true" signature="2645:2789" ph="INSERT INTO certificado... " />
+            <marker date="1473544785364" expanded="true" signature="2645:2806" ph="INSERT INTO certificado... " />
+            <marker date="1473544785364" expanded="true" signature="2645:2827" ph="INSERT INTO certificado... " />
+            <marker date="1473544785364" expanded="true" signature="2645:2851" ph="INSERT INTO certificado... " />
+            <marker date="1473544785364" expanded="true" signature="2998:3064" ph="INSERT INTO certificado_padrino... " />
+            <marker date="1473544785364" expanded="true" signature="2998:3092" ph="INSERT INTO certificado_padrino... " />
+            <marker date="1473544785364" expanded="true" signature="3203:3302" ph="INSERT INTO certificado_beneficiario... " />
+            <marker date="1473544785364" expanded="true" signature="3461:3880" ph="SELECT certi... certificado" />
+            <marker date="1473544785364" expanded="true" signature="3461:5311" ph="SELECT certi... certificado" />
+            <marker date="1473544785364" expanded="true" signature="3461:5355" ph="SELECT certi... certificado" />
+            <marker date="1473544785364" expanded="true" signature="5539:6982" ph="SELECT certi... certificado" />
           </folding>
         </state>
       </provider>
@@ -1038,14 +924,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Formularios/comunconfirm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="115" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Certificados/Nacimiento/nac.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="508">
@@ -1072,25 +950,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
           <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="57" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Formularios/login/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="52" column="61" selection-start-line="52" selection-start-column="61" selection-end-line="52" selection-end-column="61" />
-          <folding>
-            <marker date="1473284180695" expanded="true" signature="2943:2964" ph="..." />
-            <marker date="1473284180695" expanded="true" signature="2943:3000" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Principal/principal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -1124,14 +983,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Formularios/nacimconfirm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Certificados/Nacimiento/nac.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1232">
@@ -1158,50 +1009,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/clases/certificado.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="83" column="5" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
+        <state relative-caret-position="387">
+          <caret line="117" column="0" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
           <folding>
-            <marker date="1473543885178" expanded="true" signature="1039:1121" ph="INSERT INTO registro_civil... " />
-            <marker date="1473543885178" expanded="true" signature="1039:1138" ph="INSERT INTO registro_civil... " />
-            <marker date="1473543885178" expanded="true" signature="1039:1154" ph="INSERT INTO registro_civil... " />
-            <marker date="1473543885178" expanded="true" signature="1039:1155" ph="INSERT INTO registro_civil... " />
-            <marker date="1473543885178" expanded="true" signature="1039:1170" ph="INSERT INTO registro_civil... " />
-            <marker date="1473543885178" expanded="true" signature="1039:1190" ph="INSERT INTO registro_civil... " />
-            <marker date="1473543885178" expanded="true" signature="1402:1506" ph="INSERT INTO certificado... " />
-            <marker date="1473543885178" expanded="true" signature="1402:1507" ph="INSERT INTO certificado... " />
-            <marker date="1473543885178" expanded="true" signature="1402:1525" ph="INSERT INTO certificado... " />
-            <marker date="1473543885178" expanded="true" signature="1402:1610" ph="INSERT INTO certificado... " />
-            <marker date="1473543885178" expanded="true" signature="1402:1612" ph="INSERT INTO certificado... " />
-            <marker date="1473543885178" expanded="true" signature="1757:1823" ph="INSERT INTO certificado_padrino... " />
-            <marker date="1473543885178" expanded="true" signature="1757:1824" ph="INSERT INTO certificado_padrino... " />
-            <marker date="1473543885178" expanded="true" signature="1757:1838" ph="INSERT INTO certificado_padrino... " />
-            <marker date="1473543885178" expanded="true" signature="1757:1853" ph="INSERT INTO certificado_padrino... " />
-            <marker date="1473543885178" expanded="true" signature="1963:2022" ph="INSERT INTO persona_padre... " />
-            <marker date="1473543885178" expanded="true" signature="1963:2031" ph="INSERT INTO persona_padre... " />
-            <marker date="1473543885178" expanded="true" signature="1963:2048" ph="INSERT INTO persona_padre... " />
-            <marker date="1473543885178" expanded="true" signature="2158:2243" ph="INSERT INTO persona_padre... " />
-            <marker date="1473543885178" expanded="true" signature="2353:2424" ph="INSERT INTO certificado_beneficiario... " />
-            <marker date="1473543885178" expanded="true" signature="2353:2437" ph="INSERT INTO certificado_beneficiario... " />
-            <marker date="1473543885178" expanded="true" signature="2353:2446" ph="INSERT INTO certificado_beneficiario... " />
-            <marker date="1473543885178" expanded="true" signature="2645:2787" ph="INSERT INTO certificado... " />
-            <marker date="1473543885178" expanded="true" signature="2645:2789" ph="INSERT INTO certificado... " />
-            <marker date="1473543885178" expanded="true" signature="2645:2806" ph="INSERT INTO certificado... " />
-            <marker date="1473543885178" expanded="true" signature="2645:2827" ph="INSERT INTO certificado... " />
-            <marker date="1473543885178" expanded="true" signature="2645:2851" ph="INSERT INTO certificado... " />
-            <marker date="1473543885178" expanded="true" signature="2998:3064" ph="INSERT INTO certificado_padrino... " />
-            <marker date="1473543885178" expanded="true" signature="2998:3092" ph="INSERT INTO certificado_padrino... " />
-            <marker date="1473543885178" expanded="true" signature="3203:3302" ph="INSERT INTO certificado_beneficiario... " />
-            <marker date="1473543885178" expanded="true" signature="3461:3880" ph="SELECT certi... certificado" />
-            <marker date="1473543885178" expanded="true" signature="3461:5311" ph="SELECT certi... certificado" />
-            <marker date="1473543885178" expanded="true" signature="3461:5355" ph="SELECT certi... certificado" />
+            <marker date="1473544785364" expanded="true" signature="1039:1121" ph="INSERT INTO registro_civil... " />
+            <marker date="1473544785364" expanded="true" signature="1039:1138" ph="INSERT INTO registro_civil... " />
+            <marker date="1473544785364" expanded="true" signature="1039:1154" ph="INSERT INTO registro_civil... " />
+            <marker date="1473544785364" expanded="true" signature="1039:1155" ph="INSERT INTO registro_civil... " />
+            <marker date="1473544785364" expanded="true" signature="1039:1170" ph="INSERT INTO registro_civil... " />
+            <marker date="1473544785364" expanded="true" signature="1039:1190" ph="INSERT INTO registro_civil... " />
+            <marker date="1473544785364" expanded="true" signature="1402:1506" ph="INSERT INTO certificado... " />
+            <marker date="1473544785364" expanded="true" signature="1402:1507" ph="INSERT INTO certificado... " />
+            <marker date="1473544785364" expanded="true" signature="1402:1525" ph="INSERT INTO certificado... " />
+            <marker date="1473544785364" expanded="true" signature="1402:1610" ph="INSERT INTO certificado... " />
+            <marker date="1473544785364" expanded="true" signature="1402:1612" ph="INSERT INTO certificado... " />
+            <marker date="1473544785364" expanded="true" signature="1757:1823" ph="INSERT INTO certificado_padrino... " />
+            <marker date="1473544785364" expanded="true" signature="1757:1824" ph="INSERT INTO certificado_padrino... " />
+            <marker date="1473544785364" expanded="true" signature="1757:1838" ph="INSERT INTO certificado_padrino... " />
+            <marker date="1473544785364" expanded="true" signature="1757:1853" ph="INSERT INTO certificado_padrino... " />
+            <marker date="1473544785364" expanded="true" signature="1963:2022" ph="INSERT INTO persona_padre... " />
+            <marker date="1473544785364" expanded="true" signature="1963:2031" ph="INSERT INTO persona_padre... " />
+            <marker date="1473544785364" expanded="true" signature="1963:2048" ph="INSERT INTO persona_padre... " />
+            <marker date="1473544785364" expanded="true" signature="2158:2243" ph="INSERT INTO persona_padre... " />
+            <marker date="1473544785364" expanded="true" signature="2353:2424" ph="INSERT INTO certificado_beneficiario... " />
+            <marker date="1473544785364" expanded="true" signature="2353:2437" ph="INSERT INTO certificado_beneficiario... " />
+            <marker date="1473544785364" expanded="true" signature="2353:2446" ph="INSERT INTO certificado_beneficiario... " />
+            <marker date="1473544785364" expanded="true" signature="2645:2787" ph="INSERT INTO certificado... " />
+            <marker date="1473544785364" expanded="true" signature="2645:2789" ph="INSERT INTO certificado... " />
+            <marker date="1473544785364" expanded="true" signature="2645:2806" ph="INSERT INTO certificado... " />
+            <marker date="1473544785364" expanded="true" signature="2645:2827" ph="INSERT INTO certificado... " />
+            <marker date="1473544785364" expanded="true" signature="2645:2851" ph="INSERT INTO certificado... " />
+            <marker date="1473544785364" expanded="true" signature="2998:3064" ph="INSERT INTO certificado_padrino... " />
+            <marker date="1473544785364" expanded="true" signature="2998:3092" ph="INSERT INTO certificado_padrino... " />
+            <marker date="1473544785364" expanded="true" signature="3203:3302" ph="INSERT INTO certificado_beneficiario... " />
+            <marker date="1473544785364" expanded="true" signature="3461:3880" ph="SELECT certi... certificado" />
+            <marker date="1473544785364" expanded="true" signature="3461:5311" ph="SELECT certi... certificado" />
+            <marker date="1473544785364" expanded="true" signature="3461:5355" ph="SELECT certi... certificado" />
+            <marker date="1473544785364" expanded="true" signature="5539:6982" ph="SELECT certi... certificado" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Formularios/nacimconfirm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="22" column="53" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Formularios/login/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="52" column="61" selection-start-line="52" selection-start-column="61" selection-end-line="52" selection-end-column="61" />
+          <folding>
+            <marker date="1473284180695" expanded="true" signature="2943:2964" ph="..." />
+            <marker date="1473284180695" expanded="true" signature="2943:3000" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Formularios/imprimirnac.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
+        <state relative-caret-position="391">
+          <caret line="28" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="95" selection-end-column="2" />
           <folding>
             <marker date="1473543885176" expanded="true" signature="884:3867" ph="..." />
             <marker date="1473543885176" expanded="true" signature="890:1453" ph="..." />
@@ -1259,6 +1130,48 @@
             <marker date="1473543885176" expanded="true" signature="3464:3544" ph="..." />
             <marker date="1473543885176" expanded="true" signature="3561:3566" ph="..." />
             <marker date="1473543885176" expanded="true" signature="3561:3669" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Formularios/comunconfirm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Principal/principal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Formularios/imprimircomun.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <marker date="1473552518470" expanded="true" signature="887:3470" ph="..." />
+            <marker date="1473552518470" expanded="true" signature="893:1457" ph="..." />
+            <marker date="1473552518470" expanded="true" signature="1463:3463" ph="..." />
+            <marker date="1473552518470" expanded="true" signature="1489:2888" ph="..." />
+            <marker date="1473552518470" expanded="true" signature="1519:2877" ph="..." />
+            <marker date="1473552518470" expanded="true" signature="1545:2690" ph="..." />
+            <marker date="1473552518470" expanded="true" signature="1579:2675" ph="..." />
+            <marker date="1473552518470" expanded="true" signature="1971:2658" ph="..." />
+            <marker date="1473552518470" expanded="false" signature="2058:2064" ph=" " />
+            <marker date="1473552518470" expanded="true" signature="2299:2305" ph=" " />
+            <marker date="1473552518470" expanded="true" signature="2716:2864" ph="..." />
+            <marker date="1473552518470" expanded="true" signature="2750:2849" ph="..." />
+            <marker date="1473552518470" expanded="true" signature="2914:3450" ph="..." />
+            <marker date="1473552518470" expanded="true" signature="2944:3439" ph="..." />
+            <marker date="1473552518470" expanded="true" signature="2970:3426" ph="..." />
+            <marker date="1473552518470" expanded="true" signature="3003:3411" ph="..." />
+            <marker date="1473552518470" expanded="true" signature="3067:3147" ph="..." />
           </folding>
         </state>
       </provider>

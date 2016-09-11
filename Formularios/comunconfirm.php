@@ -20,6 +20,8 @@ $padrinoid=$per->idfromci($_POST['cipadrino']);
 $cert = new certificado($_POST['parroquia'],$_POST['sacerdote'],$_POST['certificante'],$_POST['lugar'],$_POST['fechacom']);
 $cert->reg_comunion($padrinoid , $pid);
 
+$_SESSION['idPersona']=$pid;
+
 ?>
 
 <!doctype html>
@@ -38,7 +40,7 @@ $cert->reg_comunion($padrinoid , $pid);
 <div class="container">
     <div class="jumbotron">
         <h1>El certificado fue creado exitosamente!</h1>
-        <p><a class='btn btn-primary btn-lg' href='imprimir.php' role='button'>Imprimir</a></p>
+        <p><a class='btn btn-primary btn-lg' href='imprimircomun.php' role='button'>Imprimir</a></p>
         <p><a class='btn btn-primary btn-lg' href='../Principal/principal.php' role='button'>Volver al Menu</a></p>
     </div>
 </div>
