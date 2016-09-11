@@ -28,24 +28,24 @@ require_once '../clases/Lugar.php';
 
         <div class="form-group">
             <label for="ci">CI:</label>
-            <input type="text" class="form-control" id="ci" name="ci">
+            <input  type="text"  required pattern ='^\d+$' title='Ingrese solo el numero de CI, sin letras' maxlength="10" class="form-control" id="ci" name="ci">
         </div>
 
         <div class="form-group">
             <label for="nombre">Nombre:</label>
-            <input type="text" class="form-control" id="nombre" name="nombre">
+            <input type="text" required pattern='^([ \u00c0-\u01ffa-zA-Z\-])+$' title='Ingrese sólo letras' class="form-control" id="nombre" name="nombre">
         </div>
         <div class="form-group">
             <label for="apellido">Apellido:</label>
-            <input type="text" class="form-control" id="apellido" name="apellido">
+            <input type="text" required pattern='^([ \u00c0-\u01ffa-zA-Z\-])+$' title='Ingrese sólo letras' class="form-control" id="apellido" name="apellido">
         </div>
         <div class="form-group">
             <label for="fechanac">Fecha Nacimiento:</label>
-            <input type="date" class="form-control" id="fechanac" name="fechanac">
+            <input type="date" required class="form-control" id="fechanac" name="fechanac">
         </div>
         <div class="form-group">
             <label for="genro">Genero:</label>
-            <select class="form-control" name="genero">
+            <select class="form-control" name="genero" required >
                 <option value="1">Masculino</option>
                 <option value="2">Femenino</option>
             </select>
@@ -57,11 +57,11 @@ require_once '../clases/Lugar.php';
 
         <div class="form-group">
             <label for="email">Email:</label>
-            <input type="text" class="form-control" id="email" name="email">
+            <input type="text" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Ingrese un email valido, ejemplo nombre@gmail.com" class="form-control" id="email" name="email">
         </div>
         <div class="form-group">
             <label for="password">Password:</label>
-            <input type="password" class="form-control" id="password" name="password">
+            <input type="password" required class="form-control" id="password" name="password">
         </div>
 
         <button type="submit" class="btn btn-default">Registrar</button>
