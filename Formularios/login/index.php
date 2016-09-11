@@ -35,25 +35,27 @@
 
     <?php
         session_start();
-        if(isset($_POST['ci']) && isset($_POST['password'])){
+        if(isset($_POST['email']) && isset($_POST['password'])){
             require_once '../../clases/persona.php';
             $p= new persona(1,1,1,1,1,1,1);
-            $res=$p->buscar($_POST['ci']);
+            $res=$p->buscar($_POST['email']);
             $text="";
             if(mysql_num_rows($res)==1){
                 $fila=mysql_fetch_array($res);
                 if($fila['password']==$_POST['password']){
                     $_SESSION['password']=$_POST['password'];
-                    $_SESSION['ci']=$_POST['ci'];
+                    $_SESSION['ci']=$fila['ci'];
                     $_SESSION['nombre']=$fila['Nombre'];
                     $_SESSION['apellido']=$fila['Apellido'];
                     $_SESSION['fechanac']=$fila['fechanac'];
-                    if($p->isSacerdote($_POST['ci'])) $_SESSION['sacerdote']=1;
+                    $_SESSION['email']=$fila['email'];
+
+                    $pag="../../Formularios/appointment.php";
+
+                    if($p->isSacerdote($fila['ci'])) {$_SESSION['sacerdote']=1; $pag='../../Principal/principal.php';}
                     else $_SESSION['sacerdote']=0;
 
-
-
-                    echo "<script>window.location = '../../Principal/principal.php';</script>";
+                    echo "<script>window.location = '".$pag."'</script>";
 
                 }
                 else $text= 'Clave incorrecta';
@@ -97,12 +99,12 @@
                             <div class="form-bottom">
 			                    <form role="form" action="" method="post" class="login-form">
 			                    	<div class="form-group">
-			                    		<label class="sr-only" for="form-username">CI</label>
-			                        	<input type="text" name="ci" placeholder="CI..." class="form-username form-control" id="form-username">
+			                    		<label class="sr-only" for="form-username">Email</label>
+			                        	<input type="text" name="email" placeholder="alguien@gmail.com" class="form-username form-control" id="form-username">
 			                        </div>
 			                        <div class="form-group">
 			                        	<label class="sr-only" for="form-password">Password</label>
-			                        	<input type="password" name="password" placeholder="Password..." class="form-password form-control" id="form-password">
+			                        	<input type="password" name="password" placeholder="Password" class="form-password form-control" id="form-password">
 			                        </div>
 			                        <button type="submit" class="btn">Entrar!</button>
                                     <br><br>

@@ -1,15 +1,4 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Pamela
- * Date: 9/4/2016
- * Time: 12:58 PM
- */
-    require_once '../clases/persona.php';
 
-    $per = new persona($_POST["ci"],$_POST['nombre'],$_POST['apellido'],$_POST['fechanac'],$_POST['genero'],$_POST['email'],$_POST['password']);
-    $per->registrar();
-?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -28,6 +17,7 @@
         <h1>Su cuenta ha sido creada exitosamente!</h1>
         <p>Ahora puede ingresar a su cuenta.</p>
         <p><a class="btn btn-primary btn-lg" href="../Formularios/login" role="button">Login</a></p>
+
     </div>
 </div>
 

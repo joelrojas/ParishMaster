@@ -1,26 +1,3 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Pamela
- * Date: 9/5/2016
- * Time: 11:02 AM
- */
-
-session_start();
-
-require_once '../clases/certificado.php';
-
-$cert = new certificado($_POST['parroquia'],$_POST['sacerdote'],$_POST['sacerdote'],$_POST['lugar'],$_POST['fechacom']);
-$cert->reg_comunion($_POST['nombre'],$_POST['apellido'], $_POST['cipadrino'], $_POST['ci']);
-
-$msj="<p>Ahora puede pasar por la parroquia mas cercana y reclamar su certificado.</p>
-        <p><a class='btn btn-primary btn-lg' href='../Principal/principal.php' role='button'>Inicio</a></p>";
-if($_SESSION['sacerdote']=='1'){
-        $msj="<p><a class='btn btn-primary btn-lg' href='imprimir.php' role='button'>Imprimir</a></p>";
-}
-
-
-?>
 
 <!doctype html>
 <html lang="en">
@@ -37,8 +14,9 @@ if($_SESSION['sacerdote']=='1'){
 <body>
 <div class="container">
     <div class="jumbotron">
-        <h1>Su certificado fue creado exitosamente!</h1>
-        <?php echo $msj; ?>
+        <h1>El certificado fue creado exitosamente!</h1>
+        <p><a class='btn btn-primary btn-lg' href='imprimircomun.php' role='button'>Imprimir</a></p>
+        <p><a class='btn btn-primary btn-lg' href='../Principal/principal.php' role='button'>Volver al Menu</a></p>
     </div>
 </div>
 

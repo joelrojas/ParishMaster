@@ -36,6 +36,8 @@ class persona
         $this->apellido = $apellido;
         $this->fechanac = $fechanac;
         $this->genero = $genero;
+
+
         $this->email = $email;
         $this->pass=$pass;
 
@@ -46,28 +48,74 @@ class persona
     }
 
     public function registrar(){
-        $q="REPLACE INTO persona(CI, Nombre, Apellido, fechanac, idGenero,email,password) VALUES (".$this->ci.",'".$this->nombre."','".$this->apellido."','".$this->fechanac."',".$this->genero.",'".$this->email."','".$this->pass."')";
+        $q="INSERT INTO persona(CI, Nombre, Apellido, fechanac, idGenero) VALUES (".$this->ci.",'".$this->nombre."','".$this->apellido."','".$this->fechanac."',".$this->genero.")";
+        $res=$this->dbh->exequery($q);
+        if(!$res) die('Invalid query'.mysql_error());
+        $idpers=mysql_insert_id();
+        return $idpers;
+    }
+
+    public function regcuenta($idpers){
+        $q1="INSERT INTO cuenta(email, password, idPersona) VALUES ('".$this->email."','".$this->pass."',".$idpers.")";
+        $res=$this->dbh->exequery($q1);
+        if(!$res) die('Invalid query'.mysql_error());
+        return $res;
+    }
+
+    public function buscar($email){
+        $q="select persona.idPersona, persona.ci, persona.Nombre, persona.Apellido , persona.fechanac, cuenta.email, cuenta.password
+            from persona, cuenta
+            where cuenta.idPersona=persona.idPersona
+            and cuenta.email='".$email."'";
         $res=$this->dbh->exequery($q);
         if(!$res) die('Invalid query'.mysql_error());
         return $res;
     }
 
-    public function buscar($username){
-        $q="select persona.ci, persona.Nombre, persona.Apellido, persona.password , persona.fechanac
-        from persona
-        where persona.ci=".$username;
+    public function buscarper($ci){
+        $q="select persona.idPersona, persona.ci, persona.Nombre, persona.Apellido , persona.fechanac
+            from persona
+            where persona.ci='".$ci."'";
         $res=$this->dbh->exequery($q);
         if(!$res) die('Invalid query'.mysql_error());
+        if(mysql_num_rows($res)==0) return "ERROR";
         return $res;
     }
 
     public function isSacerdote($ci){
-        $q="SELECT * from sacerdote
-            where sacerdote.idPersona=".$ci;
-        echo $q;
+        $q="SELECT * from sacerdote, persona
+            where sacerdote.idPersona=persona.idPersona
+            and persona.ci=".$ci;
         $res=$this->dbh->exequery($q);
         if(!$res) die('Invalid query'.mysql_error());
         return (mysql_num_rows($res)>=1);
+    }
+
+    public function idfromci($ci){
+        $q="SELECT persona.idPersona from persona where persona.CI='".$ci."'";
+        $res=$this->dbh->exequery($q);
+        if(!$res) die('Invalid query'.mysql_error());
+        $fila=mysql_fetch_array($res);
+        return $fila['idPersona'];
+    }
+
+    public function buscarmail($email){
+        $q="SELECT * from cuenta where cuenta.email='".$email."'";
+        $res=$this->dbh->exequery($q);
+        if(!$res) die('Invalidasd query'.mysql_error());
+        $rows=mysql_num_rows($res);
+        return $rows>=1;
+    }
+
+    public function tienesacramento($idp, $ids){
+        $q="select * from persona, certificado, certificado_beneficiario
+            WHERE persona.idPersona=certificado_beneficiario.idPersona
+            and certificado.idCertificado=certificado_beneficiario.idCertificado
+            and persona.idPersona=".$idp." and certificado.idSacramento=".$ids;
+        $res=$this->dbh->exequery($q);
+        if(!$res) die('Invalid query'.mysql_error());
+        $rows=mysql_num_rows($res);
+        return $rows>=1;
     }
 
 

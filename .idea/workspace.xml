@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffdeb5a1-66c2-4ddc-a9bd-446da6e531a0" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Principal/principal.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Certificados/New folder/nac.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Certificados/New folder/nacimiento.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Certificados/New folder/nacimiento.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Formularios/ComunionReg.php" afterPath="$PROJECT_DIR$/Formularios/ComunionReg.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Formularios/login/index.php" afterPath="$PROJECT_DIR$/Formularios/login/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Formularios/nacimconfirm.php" afterPath="$PROJECT_DIR$/Formularios/nacimconfirm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Formularios/regconfirm.php" afterPath="$PROJECT_DIR$/Formularios/regconfirm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clases/certificado.php" afterPath="$PROJECT_DIR$/clases/certificado.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clases/persona.php" afterPath="$PROJECT_DIR$/clases/persona.php" />
     </list>
     <ignored path="ParishMaster.iws" />
@@ -37,34 +35,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="nacimconfirm.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Formularios/nacimconfirm.php">
+      <file leaf-file-name="ComunionReg.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Formularios/ComunionReg.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="35" column="77" selection-start-line="35" selection-start-column="77" selection-end-line="35" selection-end-column="77" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="regconfirm.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Formularios/regconfirm.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+            <state relative-caret-position="952">
+              <caret line="91" column="20" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
               <folding>
-                <marker date="1473107454214" expanded="true" signature="342:361" ph="..." />
+                <marker date="1473575562333" expanded="true" signature="2394:2450" ph="..." />
+                <marker date="1473575562333" expanded="true" signature="3599:3728" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PersonaReg.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Formularios/PersonaReg.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
-              <caret line="58" column="33" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -72,124 +51,37 @@
       <file leaf-file-name="persona.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/clases/persona.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="48" column="233" selection-start-line="48" selection-start-column="233" selection-end-line="48" selection-end-column="233" />
+            <state relative-caret-position="429">
+              <caret line="113" column="79" selection-start-line="113" selection-start-column="79" selection-end-line="113" selection-end-column="79" />
               <folding>
-                <marker date="1473107495128" expanded="true" signature="1034:1113" ph="INSERT INTO persona... " />
-                <marker date="1473107495128" expanded="true" signature="1034:1127" ph="INSERT INTO persona... " />
-                <marker date="1473107495128" expanded="true" signature="1034:1147" ph="INSERT INTO persona... " />
-                <marker date="1473107495128" expanded="true" signature="1034:1169" ph="INSERT INTO persona... " />
-                <marker date="1473107495128" expanded="true" signature="1034:1191" ph="INSERT INTO persona... " />
-                <marker date="1473107495128" expanded="true" signature="1034:1209" ph="INSERT INTO persona... " />
-                <marker date="1473107495128" expanded="true" signature="1034:1246" ph="INSERT INTO persona... " />
-                <marker date="1473107495128" expanded="true" signature="1421:1556" ph="select cuent... Cuenta" />
-                <marker date="1473107495128" expanded="true" signature="1421:1567" ph="select cuent... Cuenta" />
-                <marker date="1473107495128" expanded="true" signature="1740:1802" ph="SELECT * fro... sacerdote" />
+                <marker date="1473575581094" expanded="true" signature="1029:1195" ph="INSERT INTO persona... " />
+                <marker date="1473575581094" expanded="true" signature="1035:1099" ph="INSERT INTO persona... " />
+                <marker date="1473575581094" expanded="true" signature="1035:1113" ph="INSERT INTO persona... " />
+                <marker date="1473575581094" expanded="true" signature="1035:1133" ph="INSERT INTO persona... " />
+                <marker date="1473575581094" expanded="true" signature="1035:1155" ph="INSERT INTO persona... " />
+                <marker date="1473575581094" expanded="true" signature="1035:1177" ph="INSERT INTO persona... " />
+                <marker date="1473575581094" expanded="true" signature="1035:1194" ph="INSERT INTO persona... " />
+                <marker date="1473575581094" expanded="true" signature="1035:1195" ph="INSERT INTO persona... " />
+                <marker date="1473575581094" expanded="true" signature="1410:1514" ph="INSERT INTO cuenta... " />
+                <marker date="1473575581094" expanded="true" signature="1687:1923" ph="select cuent... Cuenta" />
+                <marker date="1473575581094" expanded="true" signature="1687:1924" ph="select perso... persona" />
+                <marker date="1473575581094" expanded="true" signature="1687:1927" ph="select cuent... Cuenta" />
+                <marker date="1473575581094" expanded="true" signature="1687:1935" ph="select perso... persona" />
+                <marker date="1473575581094" expanded="true" signature="1687:1936" ph="select perso... persona" />
+                <marker date="1473575581094" expanded="true" signature="2107:2260" ph="select perso... persona" />
+                <marker date="1473575581094" expanded="true" signature="2486:2602" ph="SELECT * fro... sacerdote" />
+                <marker date="1473575581094" expanded="true" signature="2798:2853" ph="SELECT perso... persona" />
+                <marker date="1473575581094" expanded="true" signature="2798:2854" ph="SELECT perso... persona" />
+                <marker date="1473575581094" expanded="true" signature="2798:2862" ph="SELECT perso... persona" />
+                <marker date="1473575581094" expanded="true" signature="2798:2863" ph="SELECT perso... persona" />
+                <marker date="1473575581094" expanded="true" signature="3091:3131" ph="SELECT * fro... cuenta" />
+                <marker date="1473575581094" expanded="true" signature="3091:3132" ph="SELECT * fro... cuenta" />
+                <marker date="1473575581094" expanded="true" signature="3091:3143" ph="SELECT * fro... cuenta" />
+                <marker date="1473575581094" expanded="true" signature="3091:3144" ph="SELECT * fro... cuenta" />
+                <marker date="1473575581094" expanded="true" signature="3371:3444" ph="select * fro... persona" />
+                <marker date="1473575581094" expanded="true" signature="3371:3618" ph="select * fro... persona" />
+                <marker date="1473575581094" expanded="true" signature="3371:3656" ph="select * fro... persona" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Formularios/login/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="49" column="60" selection-start-line="49" selection-start-column="60" selection-end-line="49" selection-end-column="60" />
-              <folding>
-                <marker date="1473105023925" expanded="true" signature="2804:2825" ph="..." />
-                <marker date="1473105023925" expanded="true" signature="2804:2861" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ComunionReg.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Formularios/ComunionReg.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-591">
-              <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="comunconfirm.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Formularios/comunconfirm.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="713">
-              <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
-              <folding>
-                <element signature="e#6#89#0#PHP" expanded="true" />
-                <marker date="1473107641145" expanded="true" signature="740:1003" ph="..." />
-                <marker date="1473107641145" expanded="true" signature="747:766" ph="..." />
-                <marker date="1473107641145" expanded="true" signature="747:1003" ph="..." />
-                <marker date="1473107641145" expanded="true" signature="801:915" ph="..." />
-                <marker date="1473107641145" expanded="true" signature="1088:1100" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="certificado.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/clases/certificado.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="773">
-              <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-              <folding>
-                <marker date="1473106109570" expanded="true" signature="1039:1121" ph="INSERT INTO registro_civil... " />
-                <marker date="1473106109570" expanded="true" signature="1039:1138" ph="INSERT INTO registro_civil... " />
-                <marker date="1473106109570" expanded="true" signature="1039:1154" ph="INSERT INTO registro_civil... " />
-                <marker date="1473106109570" expanded="true" signature="1039:1155" ph="INSERT INTO registro_civil... " />
-                <marker date="1473106109570" expanded="true" signature="1039:1170" ph="INSERT INTO registro_civil... " />
-                <marker date="1473106109570" expanded="true" signature="1039:1190" ph="INSERT INTO registro_civil... " />
-                <marker date="1473106109570" expanded="true" signature="1408:1512" ph="INSERT INTO certificado... " />
-                <marker date="1473106109570" expanded="true" signature="1408:1513" ph="INSERT INTO certificado... " />
-                <marker date="1473106109570" expanded="true" signature="1408:1531" ph="INSERT INTO certificado... " />
-                <marker date="1473106109570" expanded="true" signature="1408:1616" ph="INSERT INTO certificado... " />
-                <marker date="1473106109570" expanded="true" signature="1408:1618" ph="INSERT INTO certificado... " />
-                <marker date="1473106109570" expanded="true" signature="1763:1829" ph="INSERT INTO certificado_padrino... " />
-                <marker date="1473106109570" expanded="true" signature="1763:1830" ph="INSERT INTO certificado_padrino... " />
-                <marker date="1473106109570" expanded="true" signature="1763:1844" ph="INSERT INTO certificado_padrino... " />
-                <marker date="1473106109570" expanded="true" signature="1763:1859" ph="INSERT INTO certificado_padrino... " />
-                <marker date="1473106109570" expanded="true" signature="1970:2042" ph="INSERT INTO hijo... " />
-                <marker date="1473106109570" expanded="true" signature="1970:2055" ph="INSERT INTO hijo... " />
-                <marker date="1473106109570" expanded="true" signature="1970:2056" ph="INSERT INTO hijo... " />
-                <marker date="1473106109570" expanded="true" signature="1970:2072" ph="INSERT INTO hijo... " />
-                <marker date="1473106109570" expanded="true" signature="1970:2088" ph="INSERT INTO hijo... " />
-                <marker date="1473106109570" expanded="true" signature="1970:2103" ph="INSERT INTO hijo... " />
-                <marker date="1473106109570" expanded="true" signature="1970:2117" ph="INSERT INTO hijo... " />
-                <marker date="1473106109570" expanded="true" signature="2227:2298" ph="INSERT INTO certificado_beneficiario... " />
-                <marker date="1473106109570" expanded="true" signature="2227:2311" ph="INSERT INTO certificado_beneficiario... " />
-                <marker date="1473106109570" expanded="true" signature="2227:2326" ph="INSERT INTO certificado_beneficiario... " />
-                <marker date="1473106109570" expanded="true" signature="2543:2685" ph="INSERT INTO certificado... " />
-                <marker date="1473106109570" expanded="true" signature="2543:2687" ph="INSERT INTO certificado... " />
-                <marker date="1473106109570" expanded="true" signature="2543:2704" ph="INSERT INTO certificado... " />
-                <marker date="1473106109570" expanded="true" signature="2543:2725" ph="INSERT INTO certificado... " />
-                <marker date="1473106109570" expanded="true" signature="2543:2749" ph="INSERT INTO certificado... " />
-                <marker date="1473106109570" expanded="true" signature="2895:2991" ph="INSERT INTO certificado_padrino... " />
-                <marker date="1473106109570" expanded="true" signature="3101:3200" ph="INSERT INTO certificado_beneficiario... " />
-                <marker date="1473106109570" expanded="true" signature="3358:3449" ph="INSERT INTO certificado_beneficiario... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="principal.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Principal/principal.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="57" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="imprimir.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Formularios/imprimir.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -211,19 +103,26 @@
         <option value="$PROJECT_DIR$/Formularios/login/assets/js/scripts.js" />
         <option value="$PROJECT_DIR$/clases/Lugar.php" />
         <option value="$PROJECT_DIR$/Principal/principal.css" />
-        <option value="$PROJECT_DIR$/clases/sacerdote.php" />
         <option value="$PROJECT_DIR$/Formularios/login/index.html" />
-        <option value="$PROJECT_DIR$/Formularios/PersonaReg.php" />
-        <option value="$PROJECT_DIR$/Formularios/NacimientoReg.php" />
         <option value="$PROJECT_DIR$/Principal/principal.html" />
-        <option value="$PROJECT_DIR$/Formularios/nacimconfirm.php" />
         <option value="$PROJECT_DIR$/Principal/principal.php" />
         <option value="$PROJECT_DIR$/Formularios/login/index.php" />
-        <option value="$PROJECT_DIR$/Formularios/ComunionReg.php" />
+        <option value="$PROJECT_DIR$/Certificados/Nacimiento/nac.css" />
+        <option value="$PROJECT_DIR$/Certificados/Nacimiento/nac.html" />
+        <option value="$PROJECT_DIR$/Formularios/imprimir.php" />
+        <option value="$PROJECT_DIR$/clases/sacerdote.php" />
+        <option value="$PROJECT_DIR$/Formularios/imprimirnac.php" />
         <option value="$PROJECT_DIR$/clases/certificado.php" />
-        <option value="$PROJECT_DIR$/Formularios/regconfirm.php" />
-        <option value="$PROJECT_DIR$/clases/persona.php" />
+        <option value="$PROJECT_DIR$/Formularios/imprimircomun.php" />
         <option value="$PROJECT_DIR$/Formularios/comunconfirm.php" />
+        <option value="$PROJECT_DIR$/Formularios/nacimconfirm.php" />
+        <option value="$PROJECT_DIR$/Formularios/NacimientoReg.php" />
+        <option value="$PROJECT_DIR$/Formularios/regconfirm.php" />
+        <option value="$PROJECT_DIR$/Formularios/sacerdoteconfirm.php" />
+        <option value="$PROJECT_DIR$/Formularios/sacerdotereg.php" />
+        <option value="$PROJECT_DIR$/Formularios/PersonaReg.php" />
+        <option value="$PROJECT_DIR$/Formularios/ComunionReg.php" />
+        <option value="$PROJECT_DIR$/clases/persona.php" />
       </list>
     </option>
   </component>
@@ -269,7 +168,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -285,34 +183,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ParishMaster" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ParishMaster" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ParishMaster" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Principal" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ParishMaster" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ParishMaster" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="general" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -362,8 +232,27 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParishMaster" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParishMaster" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Certificados" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Nacimiento" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -379,20 +268,20 @@
       <recent name="D:\xampp\htdocs\ParishMaster" />
     </key>
   </component>
-  <component name="RunManager" selected="PHP Script.index.php">
+  <component name="RunManager" selected="PHP Script.imprimir.php">
     <configuration default="false" name="NacimientoReg.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ParishMaster/Formularios/NacimientoReg.php">
       <method />
     </configuration>
     <configuration default="false" name="PersonaReg.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ParishMaster/Formularios/PersonaReg.php">
       <method />
     </configuration>
-    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ParishMaster/Formularios/login/index.html">
-      <method />
-    </configuration>
     <configuration default="false" name="ComunionReg.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ParishMaster/Formularios/ComunionReg.php">
       <method />
     </configuration>
     <configuration default="false" name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Formularios/login/index.php">
+      <method />
+    </configuration>
+    <configuration default="false" name="imprimir.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Formularios/imprimir.php">
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -444,17 +333,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.NacimientoReg.php" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.PersonaReg.php" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.ComunionReg.php" />
-      <item index="4" class="java.lang.String" itemvalue="PHP Script.index.php" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.ComunionReg.php" />
+      <item index="3" class="java.lang.String" itemvalue="PHP Script.index.php" />
+      <item index="4" class="java.lang.String" itemvalue="PHP Script.imprimir.php" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="PHP Script.index.php" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.ComunionReg.php" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.NacimientoReg.php" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.PersonaReg.php" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+        <item index="0" class="java.lang.String" itemvalue="PHP Script.imprimir.php" />
+        <item index="1" class="java.lang.String" itemvalue="PHP Script.index.php" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.ComunionReg.php" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.NacimientoReg.php" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.PersonaReg.php" />
       </list>
     </recent_temporary>
   </component>
@@ -475,37 +364,62 @@
       <workItem from="1472676261279" duration="5333000" />
       <workItem from="1472942327091" duration="3507000" />
       <workItem from="1473003197848" duration="30353000" />
-      <workItem from="1473086419502" duration="11525000" />
+      <workItem from="1473086419502" duration="12052000" />
+      <workItem from="1473189381213" duration="11546000" />
+      <workItem from="1473276058027" duration="8917000" />
+      <workItem from="1473476864011" duration="3846000" />
+      <workItem from="1473523867782" duration="34671000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53305000" />
+    <option name="totallyTimeSpent" value="112812000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09322917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1765625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16197917" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39957717" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39957717" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1765625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16197917" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39957717" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -525,52 +439,45 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Formularios/NacimientoReg.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1989">
-          <caret line="117" column="44" selection-start-line="117" selection-start-column="44" selection-end-line="117" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/clases/certificado.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="935">
           <caret line="55" column="36" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
           <folding>
-            <marker date="1473106109570" expanded="true" signature="1039:1121" ph="INSERT INTO registro_civil... " />
-            <marker date="1473106109570" expanded="true" signature="1039:1138" ph="INSERT INTO registro_civil... " />
-            <marker date="1473106109570" expanded="true" signature="1039:1154" ph="INSERT INTO registro_civil... " />
-            <marker date="1473106109570" expanded="true" signature="1039:1155" ph="INSERT INTO registro_civil... " />
-            <marker date="1473106109570" expanded="true" signature="1039:1170" ph="INSERT INTO registro_civil... " />
-            <marker date="1473106109570" expanded="true" signature="1039:1190" ph="INSERT INTO registro_civil... " />
-            <marker date="1473106109570" expanded="true" signature="1408:1512" ph="INSERT INTO certificado... " />
-            <marker date="1473106109570" expanded="true" signature="1408:1513" ph="INSERT INTO certificado... " />
-            <marker date="1473106109570" expanded="true" signature="1408:1531" ph="INSERT INTO certificado... " />
-            <marker date="1473106109570" expanded="true" signature="1408:1616" ph="INSERT INTO certificado... " />
-            <marker date="1473106109570" expanded="true" signature="1408:1618" ph="INSERT INTO certificado... " />
-            <marker date="1473106109570" expanded="true" signature="1763:1829" ph="INSERT INTO certificado_padrino... " />
-            <marker date="1473106109570" expanded="true" signature="1763:1830" ph="INSERT INTO certificado_padrino... " />
-            <marker date="1473106109570" expanded="true" signature="1763:1844" ph="INSERT INTO certificado_padrino... " />
-            <marker date="1473106109570" expanded="true" signature="1763:1859" ph="INSERT INTO certificado_padrino... " />
-            <marker date="1473106109570" expanded="true" signature="1970:2042" ph="INSERT INTO hijo... " />
-            <marker date="1473106109570" expanded="true" signature="1970:2055" ph="INSERT INTO hijo... " />
-            <marker date="1473106109570" expanded="true" signature="1970:2056" ph="INSERT INTO hijo... " />
-            <marker date="1473106109570" expanded="true" signature="1970:2072" ph="INSERT INTO hijo... " />
-            <marker date="1473106109570" expanded="true" signature="1970:2088" ph="INSERT INTO hijo... " />
-            <marker date="1473106109570" expanded="true" signature="1970:2103" ph="INSERT INTO hijo... " />
-            <marker date="1473106109570" expanded="true" signature="1970:2117" ph="INSERT INTO hijo... " />
-            <marker date="1473106109570" expanded="true" signature="2227:2298" ph="INSERT INTO certificado_beneficiario... " />
-            <marker date="1473106109570" expanded="true" signature="2227:2311" ph="INSERT INTO certificado_beneficiario... " />
-            <marker date="1473106109570" expanded="true" signature="2227:2326" ph="INSERT INTO certificado_beneficiario... " />
-            <marker date="1473106109570" expanded="true" signature="2543:2685" ph="INSERT INTO certificado... " />
-            <marker date="1473106109570" expanded="true" signature="2543:2687" ph="INSERT INTO certificado... " />
-            <marker date="1473106109570" expanded="true" signature="2543:2704" ph="INSERT INTO certificado... " />
-            <marker date="1473106109570" expanded="true" signature="2543:2725" ph="INSERT INTO certificado... " />
-            <marker date="1473106109570" expanded="true" signature="2543:2749" ph="INSERT INTO certificado... " />
-            <marker date="1473106109570" expanded="true" signature="2895:2991" ph="INSERT INTO certificado_padrino... " />
-            <marker date="1473106109570" expanded="true" signature="3101:3200" ph="INSERT INTO certificado_beneficiario... " />
-            <marker date="1473106109570" expanded="true" signature="3358:3449" ph="INSERT INTO certificado_beneficiario... " />
+            <marker date="1473544785364" expanded="true" signature="1039:1121" ph="INSERT INTO registro_civil... " />
+            <marker date="1473544785364" expanded="true" signature="1039:1138" ph="INSERT INTO registro_civil... " />
+            <marker date="1473544785364" expanded="true" signature="1039:1154" ph="INSERT INTO registro_civil... " />
+            <marker date="1473544785364" expanded="true" signature="1039:1155" ph="INSERT INTO registro_civil... " />
+            <marker date="1473544785364" expanded="true" signature="1039:1170" ph="INSERT INTO registro_civil... " />
+            <marker date="1473544785364" expanded="true" signature="1039:1190" ph="INSERT INTO registro_civil... " />
+            <marker date="1473544785364" expanded="true" signature="1402:1506" ph="INSERT INTO certificado... " />
+            <marker date="1473544785364" expanded="true" signature="1402:1507" ph="INSERT INTO certificado... " />
+            <marker date="1473544785364" expanded="true" signature="1402:1525" ph="INSERT INTO certificado... " />
+            <marker date="1473544785364" expanded="true" signature="1402:1610" ph="INSERT INTO certificado... " />
+            <marker date="1473544785364" expanded="true" signature="1402:1612" ph="INSERT INTO certificado... " />
+            <marker date="1473544785364" expanded="true" signature="1757:1823" ph="INSERT INTO certificado_padrino... " />
+            <marker date="1473544785364" expanded="true" signature="1757:1824" ph="INSERT INTO certificado_padrino... " />
+            <marker date="1473544785364" expanded="true" signature="1757:1838" ph="INSERT INTO certificado_padrino... " />
+            <marker date="1473544785364" expanded="true" signature="1757:1853" ph="INSERT INTO certificado_padrino... " />
+            <marker date="1473544785364" expanded="true" signature="1963:2022" ph="INSERT INTO persona_padre... " />
+            <marker date="1473544785364" expanded="true" signature="1963:2031" ph="INSERT INTO persona_padre... " />
+            <marker date="1473544785364" expanded="true" signature="1963:2048" ph="INSERT INTO persona_padre... " />
+            <marker date="1473544785364" expanded="true" signature="2158:2243" ph="INSERT INTO persona_padre... " />
+            <marker date="1473544785364" expanded="true" signature="2353:2424" ph="INSERT INTO certificado_beneficiario... " />
+            <marker date="1473544785364" expanded="true" signature="2353:2437" ph="INSERT INTO certificado_beneficiario... " />
+            <marker date="1473544785364" expanded="true" signature="2353:2446" ph="INSERT INTO certificado_beneficiario... " />
+            <marker date="1473544785364" expanded="true" signature="2645:2787" ph="INSERT INTO certificado... " />
+            <marker date="1473544785364" expanded="true" signature="2645:2789" ph="INSERT INTO certificado... " />
+            <marker date="1473544785364" expanded="true" signature="2645:2806" ph="INSERT INTO certificado... " />
+            <marker date="1473544785364" expanded="true" signature="2645:2827" ph="INSERT INTO certificado... " />
+            <marker date="1473544785364" expanded="true" signature="2645:2851" ph="INSERT INTO certificado... " />
+            <marker date="1473544785364" expanded="true" signature="2998:3064" ph="INSERT INTO certificado_padrino... " />
+            <marker date="1473544785364" expanded="true" signature="2998:3092" ph="INSERT INTO certificado_padrino... " />
+            <marker date="1473544785364" expanded="true" signature="3203:3302" ph="INSERT INTO certificado_beneficiario... " />
+            <marker date="1473544785364" expanded="true" signature="3461:3880" ph="SELECT certi... certificado" />
+            <marker date="1473544785364" expanded="true" signature="3461:5311" ph="SELECT certi... certificado" />
+            <marker date="1473544785364" expanded="true" signature="3461:5355" ph="SELECT certi... certificado" />
+            <marker date="1473544785364" expanded="true" signature="5539:6982" ph="SELECT certi... certificado" />
           </folding>
         </state>
       </provider>
@@ -587,9 +494,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="42" selection-end-column="7" />
-          <folding>
-            <marker date="1473107454214" expanded="true" signature="342:361" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -598,7 +502,13 @@
         <state relative-caret-position="340">
           <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
           <folding>
-            <marker date="1473029184275" expanded="true" signature="593:849" ph="select sacer... sacerdote" />
+            <marker date="1473543885179" expanded="true" signature="746:1009" ph="select sacer... sacerdote" />
+            <marker date="1473543885179" expanded="true" signature="1177:1205" ph="select * fro... tipo_sacerdote" />
+            <marker date="1473543885179" expanded="true" signature="1368:1440" ph="INSERT INTO sacerdote... " />
+            <marker date="1473543885179" expanded="true" signature="1368:1461" ph="INSERT INTO sacerdote... " />
+            <marker date="1473543885179" expanded="true" signature="1368:1479" ph="INSERT INTO sacerdote... " />
+            <marker date="1473543885179" expanded="true" signature="1368:1497" ph="INSERT INTO sacerdote... " />
+            <marker date="1473543885179" expanded="true" signature="1668:1917" ph="SELECT tipo_... tipo_sacerdote" />
           </folding>
         </state>
       </provider>
@@ -608,16 +518,33 @@
         <state relative-caret-position="833">
           <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="51" selection-end-column="20" />
           <folding>
-            <marker date="1473107495128" expanded="true" signature="1034:1113" ph="INSERT INTO persona... " />
-            <marker date="1473107495128" expanded="true" signature="1034:1127" ph="INSERT INTO persona... " />
-            <marker date="1473107495128" expanded="true" signature="1034:1147" ph="INSERT INTO persona... " />
-            <marker date="1473107495128" expanded="true" signature="1034:1169" ph="INSERT INTO persona... " />
-            <marker date="1473107495128" expanded="true" signature="1034:1191" ph="INSERT INTO persona... " />
-            <marker date="1473107495128" expanded="true" signature="1034:1209" ph="INSERT INTO persona... " />
-            <marker date="1473107495128" expanded="true" signature="1034:1246" ph="INSERT INTO persona... " />
-            <marker date="1473107495128" expanded="true" signature="1421:1556" ph="select cuent... Cuenta" />
-            <marker date="1473107495128" expanded="true" signature="1421:1567" ph="select cuent... Cuenta" />
-            <marker date="1473107495128" expanded="true" signature="1740:1802" ph="SELECT * fro... sacerdote" />
+            <marker date="1473575581094" expanded="true" signature="1029:1195" ph="INSERT INTO persona... " />
+            <marker date="1473575581094" expanded="true" signature="1035:1099" ph="INSERT INTO persona... " />
+            <marker date="1473575581094" expanded="true" signature="1035:1113" ph="INSERT INTO persona... " />
+            <marker date="1473575581094" expanded="true" signature="1035:1133" ph="INSERT INTO persona... " />
+            <marker date="1473575581094" expanded="true" signature="1035:1155" ph="INSERT INTO persona... " />
+            <marker date="1473575581094" expanded="true" signature="1035:1177" ph="INSERT INTO persona... " />
+            <marker date="1473575581094" expanded="true" signature="1035:1194" ph="INSERT INTO persona... " />
+            <marker date="1473575581094" expanded="true" signature="1035:1195" ph="INSERT INTO persona... " />
+            <marker date="1473575581094" expanded="true" signature="1410:1514" ph="INSERT INTO cuenta... " />
+            <marker date="1473575581094" expanded="true" signature="1687:1923" ph="select cuent... Cuenta" />
+            <marker date="1473575581094" expanded="true" signature="1687:1924" ph="select perso... persona" />
+            <marker date="1473575581094" expanded="true" signature="1687:1927" ph="select cuent... Cuenta" />
+            <marker date="1473575581094" expanded="true" signature="1687:1935" ph="select perso... persona" />
+            <marker date="1473575581094" expanded="true" signature="1687:1936" ph="select perso... persona" />
+            <marker date="1473575581094" expanded="true" signature="2107:2260" ph="select perso... persona" />
+            <marker date="1473575581094" expanded="true" signature="2486:2602" ph="SELECT * fro... sacerdote" />
+            <marker date="1473575581094" expanded="true" signature="2798:2853" ph="SELECT perso... persona" />
+            <marker date="1473575581094" expanded="true" signature="2798:2854" ph="SELECT perso... persona" />
+            <marker date="1473575581094" expanded="true" signature="2798:2862" ph="SELECT perso... persona" />
+            <marker date="1473575581094" expanded="true" signature="2798:2863" ph="SELECT perso... persona" />
+            <marker date="1473575581094" expanded="true" signature="3091:3131" ph="SELECT * fro... cuenta" />
+            <marker date="1473575581094" expanded="true" signature="3091:3132" ph="SELECT * fro... cuenta" />
+            <marker date="1473575581094" expanded="true" signature="3091:3143" ph="SELECT * fro... cuenta" />
+            <marker date="1473575581094" expanded="true" signature="3091:3144" ph="SELECT * fro... cuenta" />
+            <marker date="1473575581094" expanded="true" signature="3371:3444" ph="select * fro... persona" />
+            <marker date="1473575581094" expanded="true" signature="3371:3618" ph="select * fro... persona" />
+            <marker date="1473575581094" expanded="true" signature="3371:3656" ph="select * fro... persona" />
           </folding>
         </state>
       </provider>
@@ -627,8 +554,8 @@
         <state relative-caret-position="952">
           <caret line="56" column="48" selection-start-line="56" selection-start-column="48" selection-end-line="56" selection-end-column="48" />
           <folding>
-            <marker date="1473105023925" expanded="true" signature="2804:2825" ph="..." />
-            <marker date="1473105023925" expanded="true" signature="2804:2861" ph="..." />
+            <marker date="1473284180695" expanded="true" signature="2943:2964" ph="..." />
+            <marker date="1473284180695" expanded="true" signature="2943:3000" ph="..." />
           </folding>
         </state>
       </provider>
@@ -637,7 +564,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -645,7 +571,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -653,7 +578,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -662,7 +586,13 @@
         <state relative-caret-position="629">
           <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
           <folding>
-            <marker date="1473029184275" expanded="true" signature="593:849" ph="select sacer... sacerdote" />
+            <marker date="1473543885179" expanded="true" signature="746:1009" ph="select sacer... sacerdote" />
+            <marker date="1473543885179" expanded="true" signature="1177:1205" ph="select * fro... tipo_sacerdote" />
+            <marker date="1473543885179" expanded="true" signature="1368:1440" ph="INSERT INTO sacerdote... " />
+            <marker date="1473543885179" expanded="true" signature="1368:1461" ph="INSERT INTO sacerdote... " />
+            <marker date="1473543885179" expanded="true" signature="1368:1479" ph="INSERT INTO sacerdote... " />
+            <marker date="1473543885179" expanded="true" signature="1368:1497" ph="INSERT INTO sacerdote... " />
+            <marker date="1473543885179" expanded="true" signature="1668:1917" ph="SELECT tipo_... tipo_sacerdote" />
           </folding>
         </state>
       </provider>
@@ -671,9 +601,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
           <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="53" selection-end-column="5" />
-          <folding>
-            <marker date="1472680024252" expanded="true" signature="830:871" ph="SELECT idPar... parroquia" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -696,7 +623,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -718,9 +644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
           <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="53" selection-end-column="5" />
-          <folding>
-            <marker date="1472680024252" expanded="true" signature="830:871" ph="SELECT idPar... parroquia" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -735,7 +658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="61" column="20" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -758,7 +680,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="113" column="33" selection-start-line="113" selection-start-column="33" selection-end-line="113" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -782,10 +703,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="31" />
-          <folding>
-            <marker date="1473017723543" expanded="true" signature="476:483" ph="select sacer... sacerdote" />
-            <marker date="1473017723543" expanded="true" signature="476:495" ph="select * fro... lugar" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -793,17 +710,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
           <caret line="3954" column="6" selection-start-line="3954" selection-start-column="3" selection-end-line="3954" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clases/sacerdote.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-          <folding>
-            <marker date="1473029184275" expanded="true" signature="593:849" ph="select sacer... sacerdote" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -811,167 +717,350 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Principal/principal.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="77" column="51" selection-start-line="77" selection-start-column="51" selection-end-line="77" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Formularios/NacimientoReg.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="66" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Principal/principal.html" />
     <entry file="file://$PROJECT_DIR$/general/checksession.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Formularios/login/index.php">
+    <entry file="file://$PROJECT_DIR$/Formularios/appointment.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="49" column="60" selection-start-line="49" selection-start-column="60" selection-end-line="49" selection-end-column="60" />
-          <folding>
-            <marker date="1473105023925" expanded="true" signature="2804:2825" ph="..." />
-            <marker date="1473105023925" expanded="true" signature="2804:2861" ph="..." />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Formularios/nacimconfirm.php">
+    <entry file="file://$PROJECT_DIR$/Certificados/Nacimiento/nac.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="35" column="77" selection-start-line="35" selection-start-column="77" selection-end-line="35" selection-end-column="77" />
-          <folding />
+        <state relative-caret-position="508">
+          <caret line="1144" column="0" selection-start-line="1144" selection-start-column="0" selection-end-line="1145" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Formularios/regconfirm.php">
+    <entry file="file://$PROJECT_DIR$/Certificados/Nacimiento/bla.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding>
-            <marker date="1473107454214" expanded="true" signature="342:361" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Formularios/PersonaReg.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="58" column="33" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clases/persona.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="48" column="233" selection-start-line="48" selection-start-column="233" selection-end-line="48" selection-end-column="233" />
-          <folding>
-            <marker date="1473107495128" expanded="true" signature="1034:1113" ph="INSERT INTO persona... " />
-            <marker date="1473107495128" expanded="true" signature="1034:1127" ph="INSERT INTO persona... " />
-            <marker date="1473107495128" expanded="true" signature="1034:1147" ph="INSERT INTO persona... " />
-            <marker date="1473107495128" expanded="true" signature="1034:1169" ph="INSERT INTO persona... " />
-            <marker date="1473107495128" expanded="true" signature="1034:1191" ph="INSERT INTO persona... " />
-            <marker date="1473107495128" expanded="true" signature="1034:1209" ph="INSERT INTO persona... " />
-            <marker date="1473107495128" expanded="true" signature="1034:1246" ph="INSERT INTO persona... " />
-            <marker date="1473107495128" expanded="true" signature="1421:1556" ph="select cuent... Cuenta" />
-            <marker date="1473107495128" expanded="true" signature="1421:1567" ph="select cuent... Cuenta" />
-            <marker date="1473107495128" expanded="true" signature="1740:1802" ph="SELECT * fro... sacerdote" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Formularios/imprimir.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="150">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Formularios/imprimirnac.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="28" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="95" selection-end-column="2" />
+          <folding>
+            <marker date="1473543885176" expanded="true" signature="884:3867" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="890:1453" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1459:1897" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1459:3860" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1485:1897" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1515:1897" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1541:1897" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1575:1847" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1575:1897" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1918:3072" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1918:3087" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1918:3274" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1918:3285" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1958:2123" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1958:2185" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1958:2186" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1958:2223" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1958:2310" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1958:2311" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1958:2335" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1958:2409" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1958:2410" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1958:2486" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1958:2553" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1958:2554" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1958:2607" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1958:2608" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1958:2633" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1958:2698" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1958:2699" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1958:2733" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1958:2859" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1958:2860" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1958:2892" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1958:2923" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1958:2974" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1958:2986" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1958:2987" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1958:2988" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1958:2989" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1958:3019" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1958:3021" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="1958:3055" ph="..." />
+            <marker date="1473543885176" expanded="false" signature="2045:2051" ph=" " />
+            <marker date="1473543885176" expanded="false" signature="2150:2156" ph=" " />
+            <marker date="1473543885176" expanded="true" signature="3113:3261" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="3147:3199" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="3147:3200" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="3147:3246" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="3311:3847" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="3341:3836" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="3367:3823" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="3400:3808" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="3464:3544" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="3561:3566" ph="..." />
+            <marker date="1473543885176" expanded="true" signature="3561:3669" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clases/certificado.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="117" column="0" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+          <folding>
+            <marker date="1473544785364" expanded="true" signature="1039:1121" ph="INSERT INTO registro_civil... " />
+            <marker date="1473544785364" expanded="true" signature="1039:1138" ph="INSERT INTO registro_civil... " />
+            <marker date="1473544785364" expanded="true" signature="1039:1154" ph="INSERT INTO registro_civil... " />
+            <marker date="1473544785364" expanded="true" signature="1039:1155" ph="INSERT INTO registro_civil... " />
+            <marker date="1473544785364" expanded="true" signature="1039:1170" ph="INSERT INTO registro_civil... " />
+            <marker date="1473544785364" expanded="true" signature="1039:1190" ph="INSERT INTO registro_civil... " />
+            <marker date="1473544785364" expanded="true" signature="1402:1506" ph="INSERT INTO certificado... " />
+            <marker date="1473544785364" expanded="true" signature="1402:1507" ph="INSERT INTO certificado... " />
+            <marker date="1473544785364" expanded="true" signature="1402:1525" ph="INSERT INTO certificado... " />
+            <marker date="1473544785364" expanded="true" signature="1402:1610" ph="INSERT INTO certificado... " />
+            <marker date="1473544785364" expanded="true" signature="1402:1612" ph="INSERT INTO certificado... " />
+            <marker date="1473544785364" expanded="true" signature="1757:1823" ph="INSERT INTO certificado_padrino... " />
+            <marker date="1473544785364" expanded="true" signature="1757:1824" ph="INSERT INTO certificado_padrino... " />
+            <marker date="1473544785364" expanded="true" signature="1757:1838" ph="INSERT INTO certificado_padrino... " />
+            <marker date="1473544785364" expanded="true" signature="1757:1853" ph="INSERT INTO certificado_padrino... " />
+            <marker date="1473544785364" expanded="true" signature="1963:2022" ph="INSERT INTO persona_padre... " />
+            <marker date="1473544785364" expanded="true" signature="1963:2031" ph="INSERT INTO persona_padre... " />
+            <marker date="1473544785364" expanded="true" signature="1963:2048" ph="INSERT INTO persona_padre... " />
+            <marker date="1473544785364" expanded="true" signature="2158:2243" ph="INSERT INTO persona_padre... " />
+            <marker date="1473544785364" expanded="true" signature="2353:2424" ph="INSERT INTO certificado_beneficiario... " />
+            <marker date="1473544785364" expanded="true" signature="2353:2437" ph="INSERT INTO certificado_beneficiario... " />
+            <marker date="1473544785364" expanded="true" signature="2353:2446" ph="INSERT INTO certificado_beneficiario... " />
+            <marker date="1473544785364" expanded="true" signature="2645:2787" ph="INSERT INTO certificado... " />
+            <marker date="1473544785364" expanded="true" signature="2645:2789" ph="INSERT INTO certificado... " />
+            <marker date="1473544785364" expanded="true" signature="2645:2806" ph="INSERT INTO certificado... " />
+            <marker date="1473544785364" expanded="true" signature="2645:2827" ph="INSERT INTO certificado... " />
+            <marker date="1473544785364" expanded="true" signature="2645:2851" ph="INSERT INTO certificado... " />
+            <marker date="1473544785364" expanded="true" signature="2998:3064" ph="INSERT INTO certificado_padrino... " />
+            <marker date="1473544785364" expanded="true" signature="2998:3092" ph="INSERT INTO certificado_padrino... " />
+            <marker date="1473544785364" expanded="true" signature="3203:3302" ph="INSERT INTO certificado_beneficiario... " />
+            <marker date="1473544785364" expanded="true" signature="3461:3880" ph="SELECT certi... certificado" />
+            <marker date="1473544785364" expanded="true" signature="3461:5311" ph="SELECT certi... certificado" />
+            <marker date="1473544785364" expanded="true" signature="3461:5355" ph="SELECT certi... certificado" />
+            <marker date="1473544785364" expanded="true" signature="5539:6982" ph="SELECT certi... certificado" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clases/sacerdote.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="671">
+          <caret line="67" column="45" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
+          <folding>
+            <marker date="1473543885179" expanded="true" signature="746:1009" ph="select sacer... sacerdote" />
+            <marker date="1473543885179" expanded="true" signature="1177:1205" ph="select * fro... tipo_sacerdote" />
+            <marker date="1473543885179" expanded="true" signature="1368:1440" ph="INSERT INTO sacerdote... " />
+            <marker date="1473543885179" expanded="true" signature="1368:1461" ph="INSERT INTO sacerdote... " />
+            <marker date="1473543885179" expanded="true" signature="1368:1479" ph="INSERT INTO sacerdote... " />
+            <marker date="1473543885179" expanded="true" signature="1368:1497" ph="INSERT INTO sacerdote... " />
+            <marker date="1473543885179" expanded="true" signature="1668:1917" ph="SELECT tipo_... tipo_sacerdote" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Certificados/Nacimiento/nac.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1232">
+          <caret line="74" column="14" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Principal/principal.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="57" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
+        <state relative-caret-position="17">
+          <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/clases/certificado.php">
+    <entry file="file://$PROJECT_DIR$/Formularios/login/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="773">
-          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+        <state relative-caret-position="17">
+          <caret line="52" column="61" selection-start-line="52" selection-start-column="61" selection-end-line="52" selection-end-column="61" />
           <folding>
-            <marker date="1473106109570" expanded="true" signature="1039:1121" ph="INSERT INTO registro_civil... " />
-            <marker date="1473106109570" expanded="true" signature="1039:1138" ph="INSERT INTO registro_civil... " />
-            <marker date="1473106109570" expanded="true" signature="1039:1154" ph="INSERT INTO registro_civil... " />
-            <marker date="1473106109570" expanded="true" signature="1039:1155" ph="INSERT INTO registro_civil... " />
-            <marker date="1473106109570" expanded="true" signature="1039:1170" ph="INSERT INTO registro_civil... " />
-            <marker date="1473106109570" expanded="true" signature="1039:1190" ph="INSERT INTO registro_civil... " />
-            <marker date="1473106109570" expanded="true" signature="1408:1512" ph="INSERT INTO certificado... " />
-            <marker date="1473106109570" expanded="true" signature="1408:1513" ph="INSERT INTO certificado... " />
-            <marker date="1473106109570" expanded="true" signature="1408:1531" ph="INSERT INTO certificado... " />
-            <marker date="1473106109570" expanded="true" signature="1408:1616" ph="INSERT INTO certificado... " />
-            <marker date="1473106109570" expanded="true" signature="1408:1618" ph="INSERT INTO certificado... " />
-            <marker date="1473106109570" expanded="true" signature="1763:1829" ph="INSERT INTO certificado_padrino... " />
-            <marker date="1473106109570" expanded="true" signature="1763:1830" ph="INSERT INTO certificado_padrino... " />
-            <marker date="1473106109570" expanded="true" signature="1763:1844" ph="INSERT INTO certificado_padrino... " />
-            <marker date="1473106109570" expanded="true" signature="1763:1859" ph="INSERT INTO certificado_padrino... " />
-            <marker date="1473106109570" expanded="true" signature="1970:2042" ph="INSERT INTO hijo... " />
-            <marker date="1473106109570" expanded="true" signature="1970:2055" ph="INSERT INTO hijo... " />
-            <marker date="1473106109570" expanded="true" signature="1970:2056" ph="INSERT INTO hijo... " />
-            <marker date="1473106109570" expanded="true" signature="1970:2072" ph="INSERT INTO hijo... " />
-            <marker date="1473106109570" expanded="true" signature="1970:2088" ph="INSERT INTO hijo... " />
-            <marker date="1473106109570" expanded="true" signature="1970:2103" ph="INSERT INTO hijo... " />
-            <marker date="1473106109570" expanded="true" signature="1970:2117" ph="INSERT INTO hijo... " />
-            <marker date="1473106109570" expanded="true" signature="2227:2298" ph="INSERT INTO certificado_beneficiario... " />
-            <marker date="1473106109570" expanded="true" signature="2227:2311" ph="INSERT INTO certificado_beneficiario... " />
-            <marker date="1473106109570" expanded="true" signature="2227:2326" ph="INSERT INTO certificado_beneficiario... " />
-            <marker date="1473106109570" expanded="true" signature="2543:2685" ph="INSERT INTO certificado... " />
-            <marker date="1473106109570" expanded="true" signature="2543:2687" ph="INSERT INTO certificado... " />
-            <marker date="1473106109570" expanded="true" signature="2543:2704" ph="INSERT INTO certificado... " />
-            <marker date="1473106109570" expanded="true" signature="2543:2725" ph="INSERT INTO certificado... " />
-            <marker date="1473106109570" expanded="true" signature="2543:2749" ph="INSERT INTO certificado... " />
-            <marker date="1473106109570" expanded="true" signature="2895:2991" ph="INSERT INTO certificado_padrino... " />
-            <marker date="1473106109570" expanded="true" signature="3101:3200" ph="INSERT INTO certificado_beneficiario... " />
-            <marker date="1473106109570" expanded="true" signature="3358:3449" ph="INSERT INTO certificado_beneficiario... " />
+            <marker date="1473284180695" expanded="true" signature="2943:2964" ph="..." />
+            <marker date="1473284180695" expanded="true" signature="2943:3000" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Formularios/comunconfirm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Formularios/nacimconfirm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Formularios/NacimientoReg.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="65" column="45" selection-start-line="65" selection-start-column="45" selection-end-line="65" selection-end-column="45" />
+          <folding>
+            <marker date="1473567974071" expanded="true" signature="2436:2492" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Formularios/imprimircomun.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <marker date="1473552518470" expanded="true" signature="887:3470" ph="..." />
+            <marker date="1473552518470" expanded="true" signature="893:1457" ph="..." />
+            <marker date="1473552518470" expanded="true" signature="1463:3463" ph="..." />
+            <marker date="1473552518470" expanded="true" signature="1489:2888" ph="..." />
+            <marker date="1473552518470" expanded="true" signature="1519:2877" ph="..." />
+            <marker date="1473552518470" expanded="true" signature="1545:2690" ph="..." />
+            <marker date="1473552518470" expanded="true" signature="1579:2675" ph="..." />
+            <marker date="1473552518470" expanded="true" signature="1971:2658" ph="..." />
+            <marker date="1473552518470" expanded="false" signature="2058:2064" ph=" " />
+            <marker date="1473552518470" expanded="true" signature="2299:2305" ph=" " />
+            <marker date="1473552518470" expanded="true" signature="2716:2864" ph="..." />
+            <marker date="1473552518470" expanded="true" signature="2750:2849" ph="..." />
+            <marker date="1473552518470" expanded="true" signature="2914:3450" ph="..." />
+            <marker date="1473552518470" expanded="true" signature="2944:3439" ph="..." />
+            <marker date="1473552518470" expanded="true" signature="2970:3426" ph="..." />
+            <marker date="1473552518470" expanded="true" signature="3003:3411" ph="..." />
+            <marker date="1473552518470" expanded="true" signature="3067:3147" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Formularios/regconfirm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Formularios/sacerdoteconfirm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Formularios/PersonaReg.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="107" column="61" selection-start-line="107" selection-start-column="61" selection-end-line="107" selection-end-column="61" />
+          <folding>
+            <marker date="1473573560349" expanded="true" signature="2452:2506" ph="..." />
+            <marker date="1473573560349" expanded="true" signature="2543:2904" ph="..." />
+            <marker date="1473573560349" expanded="true" signature="2573:2631" ph="..." />
+            <marker date="1473573560349" expanded="true" signature="2586:2620" ph="..." />
+            <marker date="1473573560349" expanded="true" signature="2680:2904" ph="..." />
+            <marker date="1473573560349" expanded="true" signature="2791:2904" ph="..." />
+            <marker date="1473573560349" expanded="true" signature="3388:3584" ph="..." />
+            <marker date="1473573560349" expanded="true" signature="3739:3946" ph="..." />
+            <marker date="1473573560349" expanded="true" signature="4105:4378" ph="..." />
+            <marker date="1473573560349" expanded="true" signature="4411:4828" ph="..." />
+            <marker date="1473573560349" expanded="true" signature="4523:4813" ph="..." />
+            <marker date="1473573560349" expanded="true" signature="4965:5026" ph="..." />
+            <marker date="1473573560349" expanded="true" signature="4965:5406" ph="..." />
+            <marker date="1473573560349" expanded="true" signature="5620:5784" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Formularios/sacerdotereg.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="99" column="72" selection-start-line="99" selection-start-column="72" selection-end-line="99" selection-end-column="72" />
+          <folding>
+            <marker date="1473573352456" expanded="true" signature="2777:2859" ph="..." />
+            <marker date="1473573352456" expanded="true" signature="3751:3947" ph="..." />
+            <marker date="1473573352456" expanded="true" signature="4102:4308" ph="..." />
+            <marker date="1473573352456" expanded="true" signature="4467:4739" ph="..." />
+            <marker date="1473573352456" expanded="true" signature="4831:5221" ph="..." />
+            <marker date="1473573352456" expanded="true" signature="4953:5221" ph="..." />
+            <marker date="1473573352456" expanded="true" signature="5584:5974" ph="..." />
+            <marker date="1473573352456" expanded="true" signature="5710:5974" ph="..." />
+            <marker date="1473573352456" expanded="true" signature="6444:6505" ph="..." />
+            <marker date="1473573352456" expanded="true" signature="7099:7262" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clases/persona.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="113" column="79" selection-start-line="113" selection-start-column="79" selection-end-line="113" selection-end-column="79" />
+          <folding>
+            <marker date="1473575581094" expanded="true" signature="1029:1195" ph="INSERT INTO persona... " />
+            <marker date="1473575581094" expanded="true" signature="1035:1099" ph="INSERT INTO persona... " />
+            <marker date="1473575581094" expanded="true" signature="1035:1113" ph="INSERT INTO persona... " />
+            <marker date="1473575581094" expanded="true" signature="1035:1133" ph="INSERT INTO persona... " />
+            <marker date="1473575581094" expanded="true" signature="1035:1155" ph="INSERT INTO persona... " />
+            <marker date="1473575581094" expanded="true" signature="1035:1177" ph="INSERT INTO persona... " />
+            <marker date="1473575581094" expanded="true" signature="1035:1194" ph="INSERT INTO persona... " />
+            <marker date="1473575581094" expanded="true" signature="1035:1195" ph="INSERT INTO persona... " />
+            <marker date="1473575581094" expanded="true" signature="1410:1514" ph="INSERT INTO cuenta... " />
+            <marker date="1473575581094" expanded="true" signature="1687:1923" ph="select cuent... Cuenta" />
+            <marker date="1473575581094" expanded="true" signature="1687:1924" ph="select perso... persona" />
+            <marker date="1473575581094" expanded="true" signature="1687:1927" ph="select cuent... Cuenta" />
+            <marker date="1473575581094" expanded="true" signature="1687:1935" ph="select perso... persona" />
+            <marker date="1473575581094" expanded="true" signature="1687:1936" ph="select perso... persona" />
+            <marker date="1473575581094" expanded="true" signature="2107:2260" ph="select perso... persona" />
+            <marker date="1473575581094" expanded="true" signature="2486:2602" ph="SELECT * fro... sacerdote" />
+            <marker date="1473575581094" expanded="true" signature="2798:2853" ph="SELECT perso... persona" />
+            <marker date="1473575581094" expanded="true" signature="2798:2854" ph="SELECT perso... persona" />
+            <marker date="1473575581094" expanded="true" signature="2798:2862" ph="SELECT perso... persona" />
+            <marker date="1473575581094" expanded="true" signature="2798:2863" ph="SELECT perso... persona" />
+            <marker date="1473575581094" expanded="true" signature="3091:3131" ph="SELECT * fro... cuenta" />
+            <marker date="1473575581094" expanded="true" signature="3091:3132" ph="SELECT * fro... cuenta" />
+            <marker date="1473575581094" expanded="true" signature="3091:3143" ph="SELECT * fro... cuenta" />
+            <marker date="1473575581094" expanded="true" signature="3091:3144" ph="SELECT * fro... cuenta" />
+            <marker date="1473575581094" expanded="true" signature="3371:3444" ph="select * fro... persona" />
+            <marker date="1473575581094" expanded="true" signature="3371:3618" ph="select * fro... persona" />
+            <marker date="1473575581094" expanded="true" signature="3371:3656" ph="select * fro... persona" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Formularios/ComunionReg.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-591">
-          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Formularios/comunconfirm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+        <state relative-caret-position="952">
+          <caret line="91" column="20" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
           <folding>
-            <element signature="e#6#89#0#PHP" expanded="true" />
-            <marker date="1473107641145" expanded="true" signature="740:1003" ph="..." />
-            <marker date="1473107641145" expanded="true" signature="747:766" ph="..." />
-            <marker date="1473107641145" expanded="true" signature="747:1003" ph="..." />
-            <marker date="1473107641145" expanded="true" signature="801:915" ph="..." />
-            <marker date="1473107641145" expanded="true" signature="1088:1100" ph="..." />
+            <marker date="1473575562333" expanded="true" signature="2394:2450" ph="..." />
+            <marker date="1473575562333" expanded="true" signature="3599:3728" ph="..." />
           </folding>
         </state>
       </provider>
