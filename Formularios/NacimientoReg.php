@@ -25,27 +25,27 @@
 		<form action="nacimconfirm.php" method="post">
 			<div class="form-group">
 				<label for="ci">CI:</label>
-				<input type="text" class="form-control" id="ci" name="ci">
+				<input required pattern ='^\d+$' title='Ingrese solo el numero de CI, sin letras' maxlength="10" type="text" class="form-control" id="ci" name="ci">
 			</div>
 			<div class="form-group">
 				<label for="nombre">Nombre:</label>
-				<input type="text" class="form-control" id="nombre" name="nombre" >
+				<input type="text" required pattern='^([ \u00c0-\u01ffa-zA-Z\-])+$' title='Ingrese sólo letras'  class='form-control' class="form-control" id="nombre" name="nombre" >
 			</div>
 			<div class="form-group">
 				<label for="apellido">Apellido:</label>
-				<input type="text" class="form-control" id="apellido" name="apellido">
+				<input type="text" required pattern='^([ \u00c0-\u01ffa-zA-Z\-])+$' title='Ingrese sólo letras'  class='form-control' class="form-control" id="apellido" name="apellido">
 			</div>
 			<div class="form-group">
 				<label for="fechanac">Fecha Nacimiento:</label>
-				<input type="date" class="form-control" id="fechanac" name="fechanac">
+				<input type="date" required class="form-control" id="fechanac" name="fechanac">
 			</div>
 			<div class="form-group">
 				<label for="fechabau">Fecha Bautizo:</label>
-				<input type="date" class="form-control" id="fechabau" name="fechabau">
+				<input type="date" required class="form-control" id="fechabau" name="fechabau">
 			</div>
 			<div class="form-group">
 				<label for="parroquia">Parroquia:</label>
-				<select class="form-control" name="parroquia">
+				<select class="form-control" name="parroquia" required title="Por favor seleccione una parroquia">
 					<option value="">Escoja una parroquia</option>
 					<?php
 					$parr= new parroquia(1,"aa");
@@ -58,7 +58,7 @@
 			</div>
 			<div class="form-group">
 				<label for="sacerdote">Sacerdote:</label>
-				<select class="form-control" name="sacerdote">
+				<select class="form-control" name="sacerdote" required>
 					<option value="">Escoja un sacerdote</option>
 					<?php
 					$sac= new sacerdote(1,'nombre',1);
@@ -71,7 +71,7 @@
 			</div>
 			<div class="form-group">
 				<label for="certificante">Certificante:</label>
-				<select class="form-control" name="certificante">
+				<select class="form-control" name="certificante" required>
 					<option value="">Escoja un certificante:</option>
 					<?php
 					$sac= new sacerdote();
@@ -84,7 +84,7 @@
 			</div>
 			<div class="form-group">
 				<label for="lugar">Lugar de Nacimiento:</label>
-				<select class="form-control" name="lugar">
+				<select class="form-control" name="lugar" required>
 					<option value="">Seleccione un Departamento</option>
 					<?php
 					$lug= new Lugar('l');
@@ -98,29 +98,29 @@
 			<hr>
 			<div class="form-group">
 				<label for="cipadre">CI Padre:</label>
-				<input type="text" class="form-control" id="cipadre" name="cipadre">
+				<input type="text"  required pattern ='^\d+$' title='Ingrese solo el numero de CI, sin letras' maxlength="10" class="form-control" id="cipadre" name="cipadre">
 			</div>
 			<div class="form-group">
 				<label for="cimadre">CI Madre:</label>
-				<input type="text" class="form-control" id="cimadre" name="cimadre">
+				<input type="text"  required pattern ='^\d+$' title='Ingrese solo el numero de CI, sin letras' maxlength="10" class="form-control" id="cimadre" name="cimadre">
 			</div>
 			<div class="form-group">
 				<label for="cipadrino">CI Padrino/Madrina:</label>
-				<input type="text" class="form-control" id="cipadrino" name="cipadrino">
+				<input type="text"  required pattern ='^\d+$' title='Ingrese solo el numero de CI, sin letras' maxlength="10" class="form-control" id="cipadrino" name="cipadrino">
 			</div>
 			<hr>
 			<div class="form-group">
 				<label for="oficialia">Oficialia:</label>
-				<input type="text" class="form-control" id="oficialia" name="oficialia">
+				<input type="text"  required pattern ='^\d+$' title='Ingrese solo numeros' maxlength="10" class="form-control" id="oficialia" name="oficialia">
 			</div>
 
 			<div class="form-group">
 				<label for="libro">Libro:</label>
-				<input type="text" class="form-control" id="libro" name="libro">
+				<input type="text" required maxlength="10" class="form-control" id="libro" name="libro">
 			</div>
 			<div class="form-group">
 				<label for="partida">Partida:</label>
-				<input type="text" class="form-control" id="partida" name="partida">
+				<input type="text"  required pattern ='^\d+$' title='Ingrese solo numeros' maxlength="10" class="form-control" id="partida" name="partida">
 			</div>
 
 			<button type="submit" class="btn btn-default">Registrar</button>
