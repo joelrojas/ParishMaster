@@ -30,27 +30,27 @@
 
 			<div class="form-group">
 				<label for="ci">CI:</label>
-				<input value="" type="text" class="form-control" id="ci" name="ci">
+				<input value="" type="text" required pattern ='^\d+$' title='Ingrese solo el numero de CI, sin letras' maxlength="10" class="form-control" id="ci" name="ci">
 			</div>
 			<div class="form-group">
 				<label for="nombre">Nombre:</label>
-				<input value="" type="text" class="form-control" id="nombre" name="nombre">
+				<input value="" required pattern='^([ \u00c0-\u01ffa-zA-Z\-])+$' title='Ingrese sólo letras'  type="text" class="form-control" id="nombre" name="nombre">
 			</div>
 			<div class="form-group">
 				<label for="apellido">Apellido:</label>
-				<input value="" type="text" class="form-control" id="apellido" name="apellido">
+				<input value="" required pattern='^([ \u00c0-\u01ffa-zA-Z\-])+$' title='Ingrese sólo letras'  type="text" class="form-control" id="apellido" name="apellido">
 			</div>
 			<div class="form-group">
 				<label for="fechanac">Fecha Nacimiento:</label>
-				<input value="" type="date" class="form-control" id="fechanac" name="fechanac">
+				<input value="" required type="date" class="form-control" id="fechanac" name="fechanac">
 			</div>
 			<div class="form-group">
 				<label for="fechacom">Fecha Comunion:</label>
-				<input type="date" class="form-control" id="fechacom" name="fechacom">
+				<input type="date" required class="form-control" id="fechacom" name="fechacom">
 			</div>
 			<div class="form-group">
 				<label for="parroquia">Parroquia:</label>
-				<select class="form-control" name="parroquia">
+				<select class="form-control" name="parroquia" required>
 					<option value="">Escoja una parroquia</option>
 					<?php
 					$parr= new parroquia(1,"aa");
@@ -63,7 +63,7 @@
 			</div>
 			<div class="form-group">
 				<label for="sacerdote">Sacerdote:</label>
-				<select class="form-control" name="sacerdote">
+				<select class="form-control" name="sacerdote" required>
 					<option value="">Escoja un sacerdote</option>
 					<?php
 					$sac= new sacerdote(1,'nombre',1);
@@ -77,7 +77,7 @@
 
 			<div class="form-group">
 				<label for="certificante">Certificante:</label>
-				<select class="form-control" name="certificante">
+				<select class="form-control" name="certificante" required>
 					<option value="">Escoja un certificante:</option>
 					<?php
 					$sac= new sacerdote();
@@ -90,7 +90,7 @@
 			</div>
 			<div class="form-group">
 				<label for="lugar">Lugar de Comunion:</label>
-				<select class="form-control" name="lugar">
+				<select class="form-control" name="lugar" required>
 					<option value="">Seleccione un Departamento</option>
 					<?php
 					$lug= new Lugar();
@@ -104,7 +104,7 @@
 			<hr>
 			<div class="form-group">
 				<label for="cipadrino">CI Padrino/Madrina:</label>
-				<input type="text" class="form-control" id="cipadrino" name="cipadrino">
+				<input type="text"  required pattern ='^\d+$' title='Ingrese solo el numero de CI, sin letras' maxlength="10" class="form-control" id="cipadrino" name="cipadrino">
 			</div>
 			<button type="submit" class="btn btn-default">Registrar</button>
 		</form>
