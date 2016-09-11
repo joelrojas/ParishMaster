@@ -25,7 +25,7 @@ require_once '../clases/Lugar.php';
 
     $nombre=""; $apellido=""; $fechanac=""; $pid ="";
 
-    $msj="<div class='alert alert-danger'><strong>Error!</strong> Este CI es incorrecto.</div>";
+    $msj="<div class='alert alert-success'><strong>Exito!</strong> Este CI es nuevo, se registrara una nueva cuenta.</div>";
     $msjval="<div class='alert alert-success'><strong>Exito!</strong> Este CI ya esta en la base de datos, se registrara la cuenta a partir de los datos existentes.</div>";
 
     $msjmailcorr="<div class='alert alert-success'><strong>Exito!</strong> Este email no ha sido escogido por otro usuario.</div>";
@@ -52,12 +52,13 @@ require_once '../clases/Lugar.php';
 
 
     if(!empty($_POST['fechanac']) && !empty($_POST['genero']) && !empty($_POST['password'])){
-        $per = new persona($_POST["ci"],$nombre,$apellido,$fechanac,$_POST['genero'],$_POST['email'],$_POST['password']);
         if($cicorr && $emailcorr){
+            $per = new persona($_POST["ci"],$nombre,$apellido,$fechanac,$_POST['genero'],$_POST['email'],$_POST['password']);
             $per->regcuenta($pid);
 
         }
-        else if (!$cicorr && $emailcorr){
+        if (!$cicorr && $emailcorr){
+            $per = new persona($_POST["ci"],$_POST['nombre'],$_POST['apellido'],$_POST['fechanac'],$_POST['genero'],$_POST['email'],$_POST['password']);
             $idpersona=$per->registrar();
             $per->regcuenta($idpersona);
         }
@@ -90,21 +91,22 @@ require_once '../clases/Lugar.php';
         ?>
         <div class="form-group">
             <label for="nombre">Nombre:</label>
-            <input type="text" value="<?php if($cicorr) echo $nombre; ?>" required pattern='^([ \u00c0-\u01ffa-zA-Z\-])+$' title='Ingrese sólo letras' class="form-control" id="nombre" name="nombre">
+            <input type="text" value="<?php if($cicorr) echo $nombre; else if(isset($_POST['nombre'])) echo $_POST['nombre']; ?>" required pattern='^([ \u00c0-\u01ffa-zA-Z\-])+$' title='Ingrese sólo letras' class="form-control" id="nombre" name="nombre">
         </div>
         <div class="form-group">
             <label for="apellido">Apellido:</label>
-            <input type="text" value="<?php if($cicorr) echo $apellido; ?>" required pattern='^([ \u00c0-\u01ffa-zA-Z\-])+$' title='Ingrese sólo letras' class="form-control" id="apellido" name="apellido">
+            <input type="text" value="<?php if($cicorr) echo $apellido; else if(isset($_POST['apellido'])) echo $_POST['apellido'];  ?>" required pattern='^([ \u00c0-\u01ffa-zA-Z\-])+$' title='Ingrese sólo letras' class="form-control" id="apellido" name="apellido">
         </div>
         <div class="form-group">
             <label for="fechanac">Fecha Nacimiento:</label>
-            <input type="date" value="<?php if($cicorr) echo $fechanac; ?>" required class="form-control" id="fechanac" name="fechanac">
+            <input type="date" value="<?php if($cicorr) echo $fechanac; else if(isset($_POST['fechanac'])) echo $_POST['fechanac'];  ?>" required class="form-control" id="fechanac" name="fechanac">
         </div>
         <div class="form-group">
             <label for="genro">Genero:</label>
             <select class="form-control" name="genero" required >
-                <option value="1">Masculino</option>
-                <option value="2">Femenino</option>
+                <option <?php if(!empty($_POST['genero']) &&  $_POST['genero']==1) echo "selected"; ?>  value="1" >Masculino</option>
+                <option <?php if(!empty($_POST['genero']) &&  $_POST['genero']==2) echo "selected"; ?>  value="2">Femenino</option>
+
             </select>
         </div>
 

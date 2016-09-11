@@ -1,32 +1,4 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Pamela
- * Date: 9/4/2016
- * Time: 12:58 PM
- */
-require_once '../clases/persona.php';
-require_once '../clases/sacerdote.php';
 
-$per = new persona($_POST["ci"],$_POST['nombre'],$_POST['apellido'],$_POST['fechanac'],1,$_POST['email'],$_POST['password']);
-$res=$per->buscarper($_POST["ci"]);
-if(mysql_num_rows($res)==1){
-    $fila=mysql_fetch_array($res);
-    $per->regcuenta($fila['idPersona']);
-    $sac= new sacerdote($fila['idPersona'], $_POST['tiposac'], $_POST['parroquia']);
-    $sac->reg();
-}
-else{
-    $idpersona=$per->registrar();
-    $per->regcuenta($idpersona);
-    $sac= new sacerdote($idpersona, $_POST['tiposac'], $_POST['parroquia']);
-    $sac->reg();
-}
-
-
-
-
-?>
 <!doctype html>
 <html lang="en">
 <head>
