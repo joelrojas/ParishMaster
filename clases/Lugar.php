@@ -5,7 +5,7 @@
  * User: Pamela
  * Date: 9/3/2016
  * Time: 6:39 PM
- */
+ */ 
 class Lugar
 {
     private $lugar;
@@ -25,7 +25,11 @@ class Lugar
     public function GetAll(){
         $q="select * from lugar";
         $res=$this->dbh->exequery($q);
-        //if(!$res) die('Invalid query'.mysql_error());
+        if ($this->dbh->mysqli->error)
+        {
+            printf("Errormessage: %s\n", $this->dbh->mysqli->error);
+        }
+
         return $res;
     }
 }

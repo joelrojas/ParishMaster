@@ -49,7 +49,11 @@ class parroquia
     public function GetAll(){
         $q="SELECT idParroquia, Nombre FROM parroquia";
         $res=$this->dbh->exequery($q);
-        //if(!$res) die('Invalid query'.mysql_error());
+        if ($this->dbh->mysqli->error)
+        {
+            printf("Errormessage: %s\n", $this->dbh->mysqli->error);
+        }
+
         return $res;
     }
 

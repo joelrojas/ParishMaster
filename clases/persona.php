@@ -50,7 +50,10 @@ class persona
     public function registrar(){
         $q="INSERT INTO persona(CI, Nombre, Apellido, fechanac, idGenero) VALUES (".$this->ci.",'".$this->nombre."','".$this->apellido."','".$this->fechanac."',".$this->genero.")";
         $res=$this->dbh->exequery($q);
-        if(!$res) die('Invalid query'.mysql_error());
+        if ($this->dbh->mysqli->error)
+        {
+            printf("Errormessage: %s\n", $this->dbh->mysqli->error);
+        }
         $idpers=mysql_insert_id();
         return $idpers;
     }
@@ -58,7 +61,10 @@ class persona
     public function regcuenta($idpers){
         $q1="INSERT INTO cuenta(email, password, idPersona) VALUES ('".$this->email."','".$this->pass."',".$idpers.")";
         $res=$this->dbh->exequery($q1);
-        if(!$res) die('Invalid query'.mysql_error());
+        if ($this->dbh->mysqli->error)
+        {
+            printf("Errormessage: %s\n", $this->dbh->mysqli->error);
+        }
         return $res;
     }
 
@@ -68,7 +74,10 @@ class persona
             where cuenta.idPersona=persona.idPersona
             and cuenta.email='".$email."'";
         $res=$this->dbh->exequery($q);
-        if(!$res) die('Invalid query'.mysql_error());
+        if ($this->dbh->mysqli->error)
+        {
+            printf("Errormessage: %s\n", $this->dbh->mysqli->error);
+        }
         return $res;
     }
 
@@ -77,7 +86,10 @@ class persona
             from persona
             where persona.ci='".$ci."'";
         $res=$this->dbh->exequery($q);
-        if(!$res) die('Invalid query'.mysql_error());
+        if ($this->dbh->mysqli->error)
+        {
+            printf("Errormessage: %s\n", $this->dbh->mysqli->error);
+        }
         if(mysql_num_rows($res)==0) return "ERROR";
         return $res;
     }
@@ -87,14 +99,20 @@ class persona
             where sacerdote.idPersona=persona.idPersona
             and persona.ci=".$ci;
         $res=$this->dbh->exequery($q);
-        if(!$res) die('Invalid query'.mysql_error());
+        if ($this->dbh->mysqli->error)
+        {
+            printf("Errormessage: %s\n", $this->dbh->mysqli->error);
+        }
         return (mysql_num_rows($res)>=1);
     }
 
     public function idfromci($ci){
         $q="SELECT persona.idPersona from persona where persona.CI='".$ci."'";
         $res=$this->dbh->exequery($q);
-        if(!$res) die('Invalid query'.mysql_error());
+        if ($this->dbh->mysqli->error)
+        {
+            printf("Errormessage: %s\n", $this->dbh->mysqli->error);
+        }
         $fila=mysql_fetch_array($res);
         return $fila['idPersona'];
     }
@@ -113,7 +131,10 @@ class persona
             and certificado.idCertificado=certificado_beneficiario.idCertificado
             and persona.idPersona=".$idp." and certificado.idSacramento=".$ids;
         $res=$this->dbh->exequery($q);
-        if(!$res) die('Invalid query'.mysql_error());
+        if ($this->dbh->mysqli->error)
+        {
+            printf("Errormessage: %s\n", $this->dbh->mysqli->error);
+        }
         $rows=mysql_num_rows($res);
         return $rows>=1;
     }

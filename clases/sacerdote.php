@@ -42,21 +42,30 @@ class sacerdote
             where sacerdote.idPersona=persona.idPersona
             and sacerdote.idtipo_sacerdote=tipo_sacerdote.idtipo_sacerdote";
         $res=$this->dbh->exequery($q);
-        //if(!$res) die('Invalid query'.mysql_error());
+        if ($this->dbh->mysqli->error)
+        {
+            printf("Errormessage: %s\n", $this->dbh->mysqli->error);
+        }
         return $res;
     }
 
     public function getTipos(){
         $q="select * from tipo_sacerdote";
         $res=$this->dbh->exequery($q);
-        if(!$res) die('Invalid query'.mysql_error());
+        if ($this->dbh->mysqli->error)
+        {
+            printf("Errormessage: %s\n", $this->dbh->mysqli->error);
+        }
         return $res;
     }
 
     public function reg(){
         $q="INSERT INTO sacerdote(idPersona, idtipo_sacerdote, idParroquia) VALUES (".$this->idpersona.",".$this->idtipo.",".$this->idparr.")";
         $res=$this->dbh->exequery($q);
-        if(!$res) die('Invalid query'.mysql_error());
+        if ($this->dbh->mysqli->error)
+        {
+            printf("Errormessage: %s\n", $this->dbh->mysqli->error);
+        }
         return $res;
     }
 
@@ -67,7 +76,10 @@ class sacerdote
             and tipo_sacerdote.idtipo_sacerdote=sacerdote.idtipo_sacerdote
             and sacerdote.idSacerdote=".$ids;
         $res=$this->dbh->exequery($q);
-        if(!$res) die('Invalida query'.mysql_error());
+        if ($this->dbh->mysqli->error)
+        {
+            printf("Errormessage: %s\n", $this->dbh->mysqli->error);
+        }
         $fila=mysql_fetch_array($res);
         return $fila['tipo'];
     }
