@@ -11,6 +11,7 @@ session_start();
 require_once "../mpdf2/mpdf.php";
 require_once "../clases/certificado.php";
 require_once "../clases/sacerdote.php";
+require_once "../clases/imprimirQR.php";
 
 $dias = array("Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sábado");
 $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
@@ -27,7 +28,7 @@ $tiposac=$res2->gettipo($fila['idSacerdote']);
 $tipocert=$res2->gettipo($fila['idCertificante']);
 $dte=$dias[date('w')]." ".date('d')." de ".$meses[date('n')-1]. " del ".date('Y') ;
 
-
+$qr= new QR();
 
 $html= "<html><head>
     <title>Comunion</title>
@@ -70,9 +71,8 @@ $html= "<html><head>
           <div class='col-md-7'>
             <p class='text-center cert' contenteditable='true'>
              --------------------------------------------------------------</p>
-            <p class='text-center cert '> ".$tiposac." ".$fila['nombrecertificante']." ".$fila['apellidocertificante']."</p>
-            <img src='C:\Users\Pamela\Downloads\Wikipedia_mobile_en.svg.png' class='img-responsive asd'>
-            <hr>
+            <p class='text-center cert '> ".$tiposac." ".$fila['nombrecertificante']." ".$fila['apellidocertificante']."</p> ".$qr->crea($fila['idCertificado'])." <hr>
+            
           </div>
         </div>
       </div>

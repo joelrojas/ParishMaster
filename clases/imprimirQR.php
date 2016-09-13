@@ -12,13 +12,19 @@
 
     		if(!is_null($name)) $this->name=$name;
     		QRcode::png($this->url.$id,"../temps/".$this->name,QR_ECLEVEL_H,5,1);
-    		$this->imprimir();
+    		//$this->imprimir();
+            return $this->GetHTML();
     		//if(!$guardar) $this->eliminar();
     	}
     	public function imprimir()
     	{
     		echo '<img src="../temps/'.$this->name.'"/>';
     	}
+
+    	public function GetHTML(){
+            return '<img class="img-responsive asd" src="../temps/'.$this->name.'"/>';
+        }
+
     	public function eliminar()
     	{
     		
