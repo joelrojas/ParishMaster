@@ -22,6 +22,7 @@
 
         $cicorr=false;
         $emailcorr=false;
+        $essac=false;
 
         $nombre=""; $apellido=""; $fechanac=""; $pid ="";
 
@@ -31,10 +32,15 @@
         $msjmailcorr="<div class='alert alert-success'><strong>Exito!</strong> Este email no ha sido escogido por otro usuario.</div>";
         $msjexiemail="<div class='alert alert-danger'><strong>Error!</strong> Este email ya ha sido escogido por otro usuario.</div>";
 
+        $msjsac="<div class='alert alert-danger'><strong>Error!</strong> Este ci ya corresponde a un sacerdote.</div>";
+
         if( !empty($_POST['ci']) ){
             $pp= new persona('','','','','','','','');
             $res=$pp->buscarper($_POST['ci']);
-            if($res!='ERROR') {
+            if($pp->isSacerdote($_POST['ci'])){
+                $essac=true;
+            }
+            else if($res!='ERROR') {
                 $fila=$res->fetch_array(MYSQLI_ASSOC);
                 $cicorr = true;
                 $nombre=$fila['Nombre'];
@@ -52,13 +58,13 @@
 
 
         if(!empty($_POST['fechanac'])  && !empty($_POST['password'])){
-            if($cicorr && $emailcorr){
+            if($cicorr && $emailcorr && !$essac){
                 $per = new persona($_POST["ci"],$nombre,$apellido,$fechanac,1,$_POST['email'],$_POST['password']);
                 $per->regcuenta($pid);
                 $sac= new sacerdote($pid, $_POST['tiposac'], $_POST['parroquia']);
                 $sac->reg();
             }
-            if (!$cicorr && $emailcorr){
+            if (!$cicorr && $emailcorr && !$essac){
                 echo "asd";
                 $per = new persona($_POST["ci"],$_POST['nombre'],$_POST['apellido'],$_POST['fechanac'],1,$_POST['email'],$_POST['password']);
                 $idpersona=$per->registrar();
@@ -92,6 +98,7 @@
         if(isset($_POST['ci']) || !empty($_POST['ci'])){
             if(!$cicorr) echo $msj;
             else echo $msjval;
+            if($essac) echo $msjsac;
         }
         ?>
 

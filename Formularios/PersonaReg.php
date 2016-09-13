@@ -22,6 +22,7 @@ require_once '../clases/Lugar.php';
 
     $cicorr=false;
     $emailcorr=false;
+    $tienecuenta=false;
 
     $nombre=""; $apellido=""; $fechanac=""; $pid ="";
 
@@ -31,9 +32,14 @@ require_once '../clases/Lugar.php';
     $msjmailcorr="<div class='alert alert-success'><strong>Exito!</strong> Este email no ha sido escogido por otro usuario.</div>";
     $msjexiemail="<div class='alert alert-danger'><strong>Error!</strong> Este email ya ha sido escogido por otro usuario.</div>";
 
+    $msjcuenta="<div class='alert alert-danger'><strong>Error!</strong> Este CI ya dispone de una cuenta.</div>";
+
     if( !empty($_POST['ci']) ){
         $pp= new persona('','','','','','','','');
         $res=$pp->buscarper($_POST['ci']);
+        if($pp->TieneCuenta($_POST['ci'])){
+            $tienecuenta=true;
+        }
         if($res!='ERROR') {
             $fila=$res->fetch_array(MYSQLI_ASSOC);
             $cicorr = true;
@@ -52,12 +58,12 @@ require_once '../clases/Lugar.php';
 
 
     if(!empty($_POST['fechanac']) && !empty($_POST['genero']) && !empty($_POST['password'])){
-        if($cicorr && $emailcorr){
+        if($cicorr && $emailcorr && !tienecuenta){
             $per = new persona($_POST["ci"],$nombre,$apellido,$fechanac,$_POST['genero'],$_POST['email'],$_POST['password']);
             $per->regcuenta($pid);
 
         }
-        if (!$cicorr && $emailcorr){
+        if (!$cicorr && $emailcorr && !tienecuenta){
             $per = new persona($_POST["ci"],$_POST['nombre'],$_POST['apellido'],$_POST['fechanac'],$_POST['genero'],$_POST['email'],$_POST['password']);
             $idpersona=$per->registrar();
             $per->regcuenta($idpersona);
@@ -87,6 +93,7 @@ require_once '../clases/Lugar.php';
         if(isset($_POST['ci']) || !empty($_POST['ci'])){
             if(!$cicorr) echo $msj;
             else echo $msjval;
+            if($tienecuenta) echo $msjcuenta;
         }
         ?>
         <div class="form-group">

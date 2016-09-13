@@ -141,6 +141,19 @@ class persona
         return $rows>=1;
     }
 
+    public function TieneCuenta($ci){
+        $q="select * from persona, cuenta
+            where cuenta.idPersona=persona.idPersona
+            and persona.CI=".$ci;
+        $res=$this->dbh->exequery($q);
+        if ($this->dbh->mysqli->error)
+        {
+            printf("Errormessage: %s\n", $this->dbh->mysqli->error);
+        }
+        $rows=mysqli_num_rows($res);
+        return $rows>=1;    
+    }
+
 
     public function getCi()
     {
