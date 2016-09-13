@@ -21,7 +21,7 @@ $css= file_get_contents('../Certificados/Nacimiento/nac.css');
 
 $c= new certificado('',"","","","");
 $res=$c->get_bau_info($_SESSION['idPersona']);
-$fila=mysql_fetch_array($res);
+$fila=$res->fetch_array(MYSQLI_ASSOC);
 $res2= new sacerdote("", '', "");
 $tiposac=$res2->gettipo($fila['idSacerdote']);
 $tipocert=$res2->gettipo($fila['idCertificante']);

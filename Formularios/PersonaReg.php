@@ -35,7 +35,7 @@ require_once '../clases/Lugar.php';
         $pp= new persona('','','','','','','','');
         $res=$pp->buscarper($_POST['ci']);
         if($res!='ERROR') {
-            $fila=mysql_fetch_array($res);
+            $fila=$res->fetch_array(MYSQLI_ASSOC);
             $cicorr = true;
             $nombre=$fila['Nombre'];
             $apellido=$fila['Apellido'];

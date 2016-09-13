@@ -35,7 +35,7 @@
             $pp= new persona('','','','','','','','');
             $res=$pp->buscarper($_POST['ci']);
             if($res!='ERROR') {
-                $fila=mysql_fetch_array($res);
+                $fila=$res->fetch_array(MYSQLI_ASSOC);
                 $cicorr = true;
                 $nombre=$fila['Nombre'];
                 $apellido=$fila['Apellido'];
@@ -119,7 +119,7 @@
                 <?php
                 $parr= new parroquia(1,"aa");
                 $parrs=$parr->GetAll();
-                while($fila=mysql_fetch_array($parrs)){
+                while($fila=$parrs->fetch_array(MYSQLI_ASSOC)){
                     echo "<option value='".$fila['idParroquia']."'";
                     if(isset($_POST['parroquia']))
                         if($_POST['parroquia'] == $fila['idParroquia'])
@@ -137,7 +137,7 @@
                 <?php
                 $sac = new sacerdote("", "", "");
                 $res= $sac->getTipos();
-                while($fila=mysql_fetch_array($res)){
+                while($fila=$res->fetch_array(MYSQLI_ASSOC)){
                     echo "<option value='".$fila['idtipo_sacerdote']."'";
                     if(isset($_POST['tiposac']))
                         if($_POST['tiposac'] == $fila['idtipo_sacerdote'])

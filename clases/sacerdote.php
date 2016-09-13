@@ -75,12 +75,13 @@ class sacerdote
             where persona.idPersona=sacerdote.idPersona
             and tipo_sacerdote.idtipo_sacerdote=sacerdote.idtipo_sacerdote
             and sacerdote.idSacerdote=".$ids;
+        echo $q;
         $res=$this->dbh->exequery($q);
         if ($this->dbh->mysqli->error)
         {
             printf("Errormessage: %s\n", $this->dbh->mysqli->error);
         }
-        $fila=mysql_fetch_array($res);
+        $fila=$res->fetch_array(MYSQLI_ASSOC);
         return $fila['tipo'];
     }
 

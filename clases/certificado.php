@@ -130,32 +130,31 @@ class certificado
     public function reg_bautizo($nombre,$apellido,$fechanac,$idpadrino,$idpadre,$idmadre,$idp){
 
         $q="INSERT INTO certificado(fecha, idParroquia, idSacerdote, idSacramento, idCertificante, idLugar) VALUES ('".$this->fecha."',".$this->parroquia.",".$this->sacerdote.",1,".$this->certificante.",".$this->lugar.")";
-        $res=$this->dbh->exequery($q);
+        $certnum=$this->dbh->insert($q);
         if ($this->dbh->mysqli->error)
         {
             printf("Errormessage: %s\n", $this->dbh->mysqli->error);
         }
-        $certnum =mysql_insert_id();
         $q1= "INSERT INTO certificado_padrino(idCertificado, idPersona) VALUES ('".$certnum."',".$idpadrino.")";
-        $res=$this->dbh->exequery($q1);
+        $res1=$this->dbh->exequery($q1);
         if ($this->dbh->mysqli->error)
         {
             printf("Errormessage: %s\n", $this->dbh->mysqli->error);
         }
         $q4="INSERT INTO persona_padre(idPersona, idPadre,tipo) VALUES (".$idp.",".$idpadre.",'p')";
-        $res=$this->dbh->exequery($q4);
+        $res2=$this->dbh->exequery($q4);
         if ($this->dbh->mysqli->error)
         {
             printf("Errormessage: %s\n", $this->dbh->mysqli->error);
         }
         $q5="INSERT INTO persona_padre(idPersona, idPadre,tipo) VALUES (".$idp.",".$idmadre.",'m')";
-        $res=$this->dbh->exequery($q5);
+        $res3=$this->dbh->exequery($q5);
         if ($this->dbh->mysqli->error)
         {
             printf("Errormessage: %s\n", $this->dbh->mysqli->error);
         }
         $q3="INSERT INTO certificado_beneficiario(idCertificado, idPersona) VALUES (".$certnum.",".$idp.")";
-        $res=$this->dbh->exequery($q3);
+        $res4=$this->dbh->exequery($q3);
         if ($this->dbh->mysqli->error)
         {
             printf("Errormessage: %s\n", $this->dbh->mysqli->error);
@@ -166,8 +165,7 @@ class certificado
 
     public function reg_comunion($idpadrino,$idcreador){
         $q="INSERT INTO certificado(fecha, idParroquia, idSacramento, idLugar,idSacerdote,idCertificante) VALUES ('".$this->fecha."',".$this->parroquia.",2,".$this->lugar.",".$this->sacerdote.",".$this->certificante.")";
-        $res=$this->dbh->exequery($q);
-        $certnum=mysql_insert_id();
+        $certnum=$this->dbh->insert($q);
         if ($this->dbh->mysqli->error)
         {
             printf("Errormessage: %s\n", $this->dbh->mysqli->error);
@@ -279,7 +277,10 @@ class certificado
         and certificado.idSacramento=1
         and fiel.idPersona=".$idp." GROUP BY(certificado.idCertificado)";
         $res=$this->dbh->exequery($q);
-        if(!$res) die('Invalida query'.mysql_error());
+        if ($this->dbh->mysqli->error)
+        {
+            printf("Errormessage: %s\n", $this->dbh->mysqli->error);
+        }
         return $res;
     }
 
@@ -303,7 +304,10 @@ class certificado
         and certificado.idCertificado=certificado_padrino.idCertificado
         and fiel.idPersona=".$idp." GROUP BY(certificado.idCertificado)";
         $res=$this->dbh->exequery($q);
-        if(!$res) die('Invalida query'.mysql_error());
+        if ($this->dbh->mysqli->error)
+        {
+            printf("Errormessage: %s\n", $this->dbh->mysqli->error);
+        }
         return $res;
     }
 

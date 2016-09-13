@@ -40,8 +40,8 @@
             $p= new persona(1,1,1,1,1,1,1);
             $res=$p->buscar($_POST['email']);
             $text="";
-            if(mysql_num_rows($res)==1){
-                $fila=mysql_fetch_array($res);
+            if(mysqli_num_rows($res)==1){
+                $fila=$res->fetch_array(MYSQLI_ASSOC);
                 if($fila['password']==$_POST['password']){
                     $_SESSION['password']=$_POST['password'];
                     $_SESSION['ci']=$fila['ci'];

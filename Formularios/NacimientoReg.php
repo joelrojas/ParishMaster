@@ -48,8 +48,7 @@
 
 	if($mcivalido && $pcivalido && $cipadvalido && !empty($_POST['fechanac']) && !empty($_POST['fechabau']) &&!empty($_POST['parroquia']) && !empty($_POST['certificante']) && !empty($_POST['lugar']) && !empty($_POST['sacerdote'])){
 		$per= new persona($_POST['ci'], $_POST['nombre'], $_POST['apellido'], $_POST['fechanac'], 1, "", "");
-		$per->registrar();
-		$pid=mysql_insert_id();
+		$pid=$per->registrar();
 
 		$personax= new persona("", "", "", "", "", "", "");
 
@@ -103,7 +102,7 @@
 					<?php
 					$parr= new parroquia(1,"aa");
 					$parrs=$parr->GetAll();
-					while($fila=mysql_fetch_array($parrs)){
+					while($fila=$parrs->fetch_array(MYSQLI_ASSOC)){
 						echo "<option value='".$fila['idParroquia']."'";
 						if(isset($_POST['parroquia']))
 							if($_POST['parroquia'] == $fila['idParroquia'])
@@ -122,7 +121,7 @@
 					<?php
 					$sac= new sacerdote(1,'nombre',1);
 					$sacs=$sac->GetAll();
-					while($fila=mysql_fetch_array($sacs)){
+					while($fila=$sacs->fetch_array(MYSQLI_ASSOC)){
 						echo "<option value='".$fila['idSacerdote']."'";
 						if(isset($_POST['sacerdote']))
 							if($_POST['sacerdote'] == $fila['idSacerdote'])
@@ -142,7 +141,7 @@
 					<?php
 					$sac= new sacerdote();
 					$sacs=$sac->GetAll();
-					while($fila=mysql_fetch_array($sacs)){
+					while($fila=$sacs->fetch_array(MYSQLI_ASSOC)){
 						echo "<option value='".$fila['idSacerdote']."'";
 						if(isset($_POST['certificante']))
 							if($_POST['certificante'] == $fila['idSacerdote'])
@@ -160,7 +159,7 @@
 					<?php
 					$lug= new Lugar();
 					$lugs=$lug->GetAll();
-					while($fila2=mysql_fetch_array($lugs)){
+					while($fila2=$lugs->fetch_array(MYSQLI_ASSOC)){
 						echo "<option value='".$fila2['idLugar']."'";
 						if(isset($_POST['lugar']))
 							if($_POST['lugar'] == $fila2['idLugar'])

@@ -36,7 +36,7 @@
 			$pp= new persona('','','','','','','','');
 			$res=$pp->buscarper($_POST['ci']);
 			if($res!='ERROR') {
-				$fila=mysql_fetch_array($res);
+				$fila=$res->fetch_array(MYSQLI_ASSOC);
 				$civalido = true;
 				$nombre=$fila['Nombre'];
 				$apellido=$fila['Apellido'];
@@ -90,7 +90,7 @@
 					if(!$civalido) echo $msj;
 					else if($civalido)  echo $msjval;
 					if(!$escat) echo $msjnonac;
-					else if($escat) echo $escat;
+					else if($escat) echo $msjcat;
 				}
 			?>
 
@@ -117,7 +117,7 @@
 					<?php
 					$parr= new parroquia(1,"aa");
 					$parrs=$parr->GetAll();
-					while($fila=mysql_fetch_array($parrs)){
+					while($fila=$parrs->fetch_array(MYSQLI_ASSOC)){
 						echo "<option value='".$fila['idParroquia']."'";
 						if(isset($_POST['parroquia']))
 							if($_POST['parroquia'] == $fila['idParroquia'])
@@ -134,7 +134,7 @@
 					<?php
 					$sac= new sacerdote(1,'nombre',1);
 					$sacs=$sac->GetAll();
-					while($fila=mysql_fetch_array($sacs)){
+					while($fila=$sacs->fetch_array(MYSQLI_ASSOC)){
 						echo "<option value='".$fila['idSacerdote']."'";
 						if(isset($_POST['sacerdote']))
 							if($_POST['sacerdote'] == $fila['idSacerdote'])
@@ -153,7 +153,7 @@
 					<?php
 					$sac= new sacerdote();
 					$sacs=$sac->GetAll();
-					while($fila=mysql_fetch_array($sacs)){
+					while($fila=$sacs->fetch_array(MYSQLI_ASSOC)){
 						echo "<option value='".$fila['idSacerdote']."'";
 						if(isset($_POST['certificante']))
 							if($_POST['certificante'] == $fila['idSacerdote'])
@@ -170,7 +170,7 @@
 					<?php
 					$lug= new Lugar();
 					$lugs=$lug->GetAll();
-					while($fila2=mysql_fetch_array($lugs)){
+					while($fila2=$lugs->fetch_array(MYSQLI_ASSOC)){
 						echo "<option value='".$fila2['idLugar']."'";
 						if(isset($_POST['lugar']))
 							if($_POST['lugar'] == $fila2['idLugar'])

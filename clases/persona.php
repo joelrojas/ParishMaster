@@ -49,12 +49,11 @@ class persona
 
     public function registrar(){
         $q="INSERT INTO persona(CI, Nombre, Apellido, fechanac, idGenero) VALUES (".$this->ci.",'".$this->nombre."','".$this->apellido."','".$this->fechanac."',".$this->genero.")";
-        $res=$this->dbh->exequery($q);
+        $idpers=$this->dbh->insert($q);
         if ($this->dbh->mysqli->error)
         {
             printf("Errormessage: %s\n", $this->dbh->mysqli->error);
         }
-        $idpers=mysql_insert_id();
         return $idpers;
     }
 
@@ -90,7 +89,7 @@ class persona
         {
             printf("Errormessage: %s\n", $this->dbh->mysqli->error);
         }
-        if(mysql_num_rows($res)==0) return "ERROR";
+        if(mysqli_num_rows($res)==0) return "ERROR";
         return $res;
     }
 
@@ -103,7 +102,7 @@ class persona
         {
             printf("Errormessage: %s\n", $this->dbh->mysqli->error);
         }
-        return (mysql_num_rows($res)>=1);
+        return (mysqli_num_rows($res)>=1);
     }
 
     public function idfromci($ci){
@@ -113,15 +112,18 @@ class persona
         {
             printf("Errormessage: %s\n", $this->dbh->mysqli->error);
         }
-        $fila=mysql_fetch_array($res);
+        $fila=$res->fetch_array(MYSQLI_ASSOC);
         return $fila['idPersona'];
     }
 
     public function buscarmail($email){
         $q="SELECT * from cuenta where cuenta.email='".$email."'";
         $res=$this->dbh->exequery($q);
-        if(!$res) die('Invalidasd query'.mysql_error());
-        $rows=mysql_num_rows($res);
+        if ($this->dbh->mysqli->error)
+        {
+            printf("Errormessage: %s\n", $this->dbh->mysqli->error);
+        }
+        $rows=mysqli_num_rows($res);
         return $rows>=1;
     }
 
@@ -135,7 +137,7 @@ class persona
         {
             printf("Errormessage: %s\n", $this->dbh->mysqli->error);
         }
-        $rows=mysql_num_rows($res);
+        $rows=mysqli_num_rows($res);
         return $rows>=1;
     }
 
