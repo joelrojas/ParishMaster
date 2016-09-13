@@ -42,7 +42,7 @@ class sacerdote
             where sacerdote.idPersona=persona.idPersona
             and sacerdote.idtipo_sacerdote=tipo_sacerdote.idtipo_sacerdote";
         $res=$this->dbh->exequery($q);
-        if(!$res) die('Invalid query'.mysql_error());
+        //if(!$res) die('Invalid query'.mysql_error());
         return $res;
     }
 
