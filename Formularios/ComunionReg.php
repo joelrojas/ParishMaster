@@ -43,7 +43,7 @@
 				$fechanac=$fila['fechanac'];
 				$pid=$fila['idPersona'];
 
-				$cat=$pp->tienesacramento($pid,2);
+				$cat=$pp->tienesacramento($pid,1);
 				if($cat) $escat=true;
 			}
 		}
