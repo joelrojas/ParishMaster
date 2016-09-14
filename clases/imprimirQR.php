@@ -5,7 +5,7 @@
     class QR
     {
     	private $name="temp01.png";
-    	private $url="http://localhost/ParishMaster/Formularios/busqueda.php?id=";
+    	private $url="http://localhost/ParishMaster/Formularios/comprobaciondeexistencia.php?id=";
 
     	public function crea($id,$guardar=false,$name=null)
     	{
@@ -32,8 +32,8 @@
     	}
     	
     }
-    $qr=new QR();
-    $qr->crea("1");
+   // $qr=new QR();
+    //$qr->crea("1");
     //sleep(10);
    //$qr->crea("2");
 

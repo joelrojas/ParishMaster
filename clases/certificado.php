@@ -102,6 +102,35 @@ class certificado
             $res = array('idCertificado' =>"ERROR");
         $this->fill($res);
     }
+    public static function withcertID($id)                                        //llamada publica para otras clases
+    {
+        $instance = new self("","","","","");
+        $instance->loadBycertID($id);
+        return $instance;
+    }
+    protected function loadBycertID($id)                                          //Buscar los atributos del ID
+    {
+        $q="SELECT cer.idCertificado, cer.fecha, pa.Nombre as parroquia, concat(concat(ps.Nombre,' '),ps.Apellido) as parroco, sac.Nombre as sacramento, l.lugar, concat(concat(fiel.Nombre,' '),fiel.Apellido) as fiel, fiel.CI 
+        FROM certificado cer, parroquia pa, sacerdote sa, sacramento sac, persona ps, persona fiel, certificado_beneficiario cb, lugar l 
+        WHERE cer.idParroquia=pa.idParroquia
+        and cer.idSacerdote=sa.idSacerdote
+        and cer.idSacramento=sac.idSacramento
+        and cer.idLugar=l.idLugar
+        and ps.idPersona=sa.idPersona
+        and cb.idCertificado=cer.idCertificado
+        and cb.idPersona=fiel.idPersona
+        and cer.idCertificado=".$id;        
+        $res=$this->dbh->exequery($q);
+        if ($this->dbh->mysqli->error)
+        {
+            printf("Errormessage: %s\n", $this->dbh->mysqli->error);
+        }
+
+        $res=$this->dbh->fetchrow($res);
+        if(is_null($res))
+            $res = array('idCertificado' =>"ERROR");
+        $this->fill($res);
+    }
 
     protected function fill(array $row)                                       //llenar el objeto con los valores de la BDD
     {
@@ -310,7 +339,8 @@ class certificado
         }
         return $res;
     }
-        public function get_matrimonio_info($idp)
+    
+    public function get_matrimonio_info($idp)
     {
         $q="SELECT cer.idCertificado, esposo.idPersona, esposo.Nombre, esposo.Apellido, parroquia.Nombre as parroquiabautizo, papa.Nombre as nombrepapa, papa.Apellido as apellidopapa, mama.Nombre as nombremama, mama.Apellido as apellidomama
             FROM certificado cer, persona esposo, certificado_beneficiario cbm, certificado bautizo, certificado_beneficiario cbb, parroquia, persona papa, persona mama, persona_padre pa, persona_padre ma
@@ -325,8 +355,9 @@ class certificado
             and pa.idPersona=esposo.idPersona
             and ma.idPersona=esposo.idPersona
             and pa.idPadre=papa.idPersona
+            and pa.tipo='p'
             and ma.idPadre=mama.idPersona
-            and ma.idPadre<>pa.idPadre
+            and ma.tipo='m'
             GROUP BY esposo.idPersona";
         $res=$this->dbh->exequery($q);
         //if(!$res) die('Invalida query'.mysql_error());
@@ -339,7 +370,7 @@ class certificado
         $idcert=$ar['idCertificado'];
         $idesposo=$ar['idPersona'];
         array_push($todo,$ar);
-        $q="SELECT certificado.fecha, cu.Nombre as curanombre, cu.Apellido as curaapellido, ce.Nombre as certnombre, ce.Apellido as certapellido, parroquia.Nombre as parroquiamatrimonio, tcu.tipo as tipocura, tce.tipo as tipocert, registro_civil.oficialia, registro_civil.nro_libro, registro_civil.partida
+        $q="SELECT certificado.fecha, cu.Nombre as curanombre, cura.idSacerdote, cert.idSacerdote as idCertificante, cu.Apellido as curaapellido, ce.Nombre as certnombre, ce.Apellido as certapellido, parroquia.Nombre as parroquiamatrimonio, tcu.tipo as tipocura, tce.tipo as tipocert, registro_civil.oficialia, registro_civil.nro_libro, registro_civil.partida
             FROM certificado, parroquia, sacerdote cura, sacerdote cert, persona cu, persona ce, tipo_sacerdote tcu, tipo_sacerdote tce, registro_civil
             WHERE certificado.idParroquia=parroquia.idParroquia
             and cura.idSacerdote=certificado.idSacerdote
@@ -351,11 +382,44 @@ class certificado
             and registro_civil.idCertificado=certificado.idCertificado
             and certificado.idCertificado=".$idcert;
         $res=$this->dbh->exequery($q);
+       // echo $idcert;
         $ar=$this->dbh->fetchrow($res);
         array_push($todo,$ar);
         return $todo;
     }
 
+    public function get_confir_info($idp){
+
+
+        $q="SELECT certificado.idCertificado, certificado.fecha, parroquia.Nombre as parroquia, cura.Nombre as nombrecura, cura.Apellido as apellidocura, lugar.lugar, cert.Nombre as nombrecertificante,cert.Apellido as apellidocertificante,  fiel.Nombre as nombrefiel, fiel.Apellido as apellidofiel, padrino.Nombre as nombrepadrino, padrino.Apellido as apellidopadrino, ts.tipo as tipocura, tc.tipo as tipocert
+        from certificado, parroquia, persona cura, lugar, persona cert, persona fiel, certificado_beneficiario, persona padrino, sacerdote sac, sacerdote certificante, certificado_padrino, tipo_sacerdote ts, tipo_sacerdote tc
+        where certificado.idParroquia=parroquia.idParroquia
+        and sac.idPersona=cura.idPersona
+        and sac.idSacerdote=certificado.idSacerdote
+        and certificante.idSacerdote=certificado.idCertificante
+        and lugar.idLugar=certificado.idLugar
+        and cert.idPersona=certificante.idPersona
+        and fiel.idPersona=certificado_beneficiario.idPersona
+        and certificado.idCertificado=certificado_beneficiario.idCertificado
+        and certificado.idSacramento=3
+        and padrino.idPersona=certificado_padrino.idPersona
+        and certificado.idCertificado=certificado_padrino.idCertificado
+        and sac.idtipo_sacerdote=ts.idtipo_sacerdote
+        and certificante.idtipo_sacerdote=tc.idtipo_sacerdote
+        and fiel.idPersona=".$idp." GROUP BY(certificado.idCertificado)";
+        $res=$this->dbh->exequery($q);
+        if ($this->dbh->mysqli->error)
+        {
+            printf("Errormessage: %s\n", $this->dbh->mysqli->error);
+        }
+        $res=$this->dbh->fetchrow($res);
+        return $res;
+    }
+
 
 
 }
+//$as=new certificado("","",'','','');
+//print_r($as->get_matrimonio_info(16));
+//echo "<br>";
+?>

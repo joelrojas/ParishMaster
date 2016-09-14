@@ -164,7 +164,7 @@
  			if(!empty($_GET['parroquia'])&&!empty($_GET['lugar'])&&!empty($_GET['presbitero'])&&!empty($_GET['fecha'])&&!empty($_GET['fiel'])&&!empty($_GET['enviar'])) 
  			{
  				$cert=new certificado($_GET['parroquia'], $_GET['presbitero'], $_GET['presbitero'], $_GET['lugar'], $_GET['fecha']);
- 				$cert->reg_confirmacion($_GET['padrino1'],$_GET['padrino2'],$_GET['fiel']);
+ 				$cert->reg_confirmacion(fiel::withID($_GET['padrino1'])->id,fiel::withID($_GET['padrino2'])->id,fiel::withID($_GET['fiel'])->id);
  				echo ("<SCRIPT LANGUAGE='JavaScript'>
  					window.alert('Se guardaron sus cambios')
  					window.location.href='Confirmacion.php';</SCRIPT>");

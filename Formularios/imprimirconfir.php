@@ -21,7 +21,7 @@ $css= file_get_contents('../Certificados/Nacimiento/nac.css');
 
 $c= new certificado('',"","","","");
 //$_SESSION['idPersona']=16;
-$fila=$c->get_matrimonio_info($_SESSION['idPersona']);
+$fila=$c->get_confir_info($_SESSION['idPersona']);
 //$res2= new sacerdote("", '', "");
 //$tiposac=$res2->gettipo($fila[2]['idSacerdote']);
 //$tipocert=$res2->gettipo($fila[2]['idCertificante']);
@@ -44,24 +44,19 @@ $html= "<html><head>
           <div class='col-md-12'>
             </b><h4 class='text-left' contenteditable='true'><b>CERTIFICADO DE MATRIMONIO</b></h4> <br>
             <h4 contenteditable='true' class='text-center'><b>ARQUIDIOCESIS DE NUESTRA SEÑORA DE LA PAZ - BOLIVIA</b></h4> <br>
-            <h4 class='text-center'><b> ".strtoupper($fila[2]['parroquiamatrimonio'])."</b></h4>
+            <h4 class='text-center'><b> ".strtoupper($fila['parroquia'])."</b></h4>
             <br><br>
-            <p class='text-justify cert'>El ".$fila[2]['tipocert']." ".$fila[2]['certnombre']." ".$fila['certapellido']." "." &nbsp;de la ".$fila[2]['parroquiamatrimonio']." CERTIFICA que:
+            <p class='text-justify cert'>El ".$fila['tipocert']." ".$fila['nombrecertificante']." ".$fila['apellidocertificante']." "." &nbsp;de la ".$fila['parroquia']." CERTIFICA que:
               <br>
-              <br>En esta iglesia parroquial el ".$fila[2]['fecha']." contrajeron matromonio,
+              <br>En esta iglesia parroquial el ".$fila['fecha']." el ".$fila['tipocura']." ".$fila['nombrecura']." ".$fila['apellidocura'].", celebro la misa de confirmacion de,
               <br>
-              ".strtoupper($fila[0]['Nombre'])." ".strtoupper($fila[0]['Apellido'])." bautizado en la parroquia de ".$fila[0]['parroquiabautizo'].", hijo de ".$fila[0]['nombrepapa']." ".$fila[0]['apellidopapa']."
-              y de ".$fila[0]['nombremama']." ".$fila[0]['apellidomama']."
-               con 
-               ".strtoupper($fila[1]['Nombre'])." ".strtoupper($fila[1]['Apellido'])." bautizado en la parroquia de ".$fila[1]['parroquiabautizo'].", hijo de ".$fila[1]['nombrepapa']." ".$fila[1]['apellidopapa']."
-              y de ".$fila[1]['nombremama']." ".$fila[1]['apellidomama']."
+              ".strtoupper($fila['nombrefiel'])." ".strtoupper($fila['apellidofiel'])." 
+               fue Padrino 
+               ".strtoupper($fila['nombrepadrino'])." ".strtoupper($fila['apellidopadrino'])." 
               <br>
               
-              <br>Oficialia del registro civil: ".$fila[2]['oficialia']."
-               partida: ".$fila[2]['partida']."
-               numero: ".$fila[2]['nro_libro']."
-               <br>
-              <br>Certifico: ".$fila[2]['tipocert']." ".$fila[2]['certnombre']." ".$fila[2]['certapellido']."</p>
+              <br>
+              <br>Certifico: ".$fila['tipocert']." ".$fila['nombrecertificante']." ".$fila['apellidocertificante']."</p>
           </div>
         </div>
         <div class='row'>
@@ -79,8 +74,8 @@ $html= "<html><head>
           <div class='col-md-7'>
             <p class='text-center cert' contenteditable='true'>
              --------------------------------------------------------------</p>
-            <p class='text-center cert '> ".$fila[2]['tipocert']." ".$fila[2]['certnombre']." ".$fila{2}['certapellido']."</p>
-            ".$qr->crea($fila[0]['idCertificado'])."
+            <p class='text-center cert '> ".$fila['tipocert']." ".$fila['nombrecertificante']." ".$fila['apellidocertificante']."</p>
+            ".$qr->crea($fila['idCertificado'])."
             <hr>
           </div>
         </div>
