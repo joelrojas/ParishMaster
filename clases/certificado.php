@@ -87,9 +87,9 @@ class certificado
         and cer.idSacerdote=sa.idSacerdote
         and cer.idSacramento=sac.idSacramento
         and cer.idLugar=l.idLugar
-        and ps.CI=sa.idPersona
+        and ps.idPersona=sa.idPersona
         and cb.idCertificado=cer.idCertificado
-        and cb.idPersona=fiel.CI
+        and cb.idPersona=fiel.idPersona
         and fiel.CI=".$id;        
         $res=$this->dbh->exequery($q);
         if ($this->dbh->mysqli->error)
