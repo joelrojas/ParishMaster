@@ -187,7 +187,7 @@
  			if(!empty($_GET['parroquia'])&&!empty($_GET['lugar'])&&!empty($_GET['presbitero'])&&!empty($_GET['fecha'])&&!empty($_GET['oficialia'])&&!empty($_GET['numero'])&&!empty($_GET['enviar'])) 
  			{
  				$cert=new certificado($_GET['parroquia'], $_GET['presbitero'], $_GET['presbitero'], $_GET['lugar'], $_GET['fecha']);
- 				$cert->reg_matrimonio($_GET['padrino1'],$_GET['padrino2'],$_GET['padrino3'],$_GET['padrino4'],$_GET['esposa'],$_GET['esposo'],$_GET['oficialia'],$_GET['numero'],$_GET['partido']);
+ 				$cert->reg_matrimonio(fiel::withID($_GET['padrino1'])->id,fiel::withID($_GET['padrino2'])->id,fiel::withID($_GET['padrino3'])->id,fiel::withID($_GET['padrino4'])->id,fiel::withID($_GET['esposa'])->id,fiel::withID($_GET['esposo'])->id,$_GET['oficialia'],$_GET['numero'],$_GET['partido']);
  				echo ("<SCRIPT LANGUAGE='JavaScript'>
  					window.alert('Se guardaron sus cambios')
  					window.location.href='Matrimonio.php';</SCRIPT>");

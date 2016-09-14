@@ -310,6 +310,51 @@ class certificado
         }
         return $res;
     }
+        public function get_matrimonio_info($idp)
+    {
+        $q="SELECT cer.idCertificado, esposo.idPersona, esposo.Nombre, esposo.Apellido, parroquia.Nombre as parroquiabautizo, papa.Nombre as nombrepapa, papa.Apellido as apellidopapa, mama.Nombre as nombremama, mama.Apellido as apellidomama
+            FROM certificado cer, persona esposo, certificado_beneficiario cbm, certificado bautizo, certificado_beneficiario cbb, parroquia, persona papa, persona mama, persona_padre pa, persona_padre ma
+            WHERE cer.idSacramento=4
+            and cbm.idCertificado=cer.idCertificado
+            and cbm.idPersona=esposo.idPersona
+            and cer.idCertificado = any(select cb.idCertificado from certificado_beneficiario cb WHERE cb.idPersona=".$idp.")
+            and bautizo.idSacramento=1
+            and bautizo.idCertificado=cbb.idCertificado
+            and cbb.idPersona=esposo.idPersona
+            and parroquia.idParroquia=bautizo.idParroquia
+            and pa.idPersona=esposo.idPersona
+            and ma.idPersona=esposo.idPersona
+            and pa.idPadre=papa.idPersona
+            and ma.idPadre=mama.idPersona
+            and ma.idPadre<>pa.idPadre
+            GROUP BY esposo.idPersona";
+        $res=$this->dbh->exequery($q);
+        //if(!$res) die('Invalida query'.mysql_error());
+        $todo=array();
+        $ar=$this->dbh->fetchrow($res);
+        $idcert=$ar['idCertificado'];
+        $idesposo=$ar['idPersona'];
+        array_push($todo,$ar);
+        $ar=$this->dbh->fetchrow($res);
+        $idcert=$ar['idCertificado'];
+        $idesposo=$ar['idPersona'];
+        array_push($todo,$ar);
+        $q="SELECT certificado.fecha, cu.Nombre as curanombre, cu.Apellido as curaapellido, ce.Nombre as certnombre, ce.Apellido as certapellido, parroquia.Nombre as parroquiamatrimonio, tcu.tipo as tipocura, tce.tipo as tipocert, registro_civil.oficialia, registro_civil.nro_libro, registro_civil.partida
+            FROM certificado, parroquia, sacerdote cura, sacerdote cert, persona cu, persona ce, tipo_sacerdote tcu, tipo_sacerdote tce, registro_civil
+            WHERE certificado.idParroquia=parroquia.idParroquia
+            and cura.idSacerdote=certificado.idSacerdote
+            and cert.idSacerdote=certificado.idCertificante
+            and ce.idPersona=cert.idPersona
+            and cu.idPersona=cura.idPersona
+            and cura.idtipo_sacerdote=tcu.idtipo_sacerdote
+            and cert.idtipo_sacerdote=tce.idtipo_sacerdote
+            and registro_civil.idCertificado=certificado.idCertificado
+            and certificado.idCertificado=".$idcert;
+        $res=$this->dbh->exequery($q);
+        $ar=$this->dbh->fetchrow($res);
+        array_push($todo,$ar);
+        return $todo;
+    }
 
 
 
