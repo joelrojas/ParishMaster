@@ -154,6 +154,32 @@ class persona
         return $rows>=1;    
     }
 
+    public function GetEmailsSac($sacnum){
+        $q="SELECT cuenta.email from cuenta, persona, certificado, certificado_beneficiario
+            where cuenta.idPersona=persona.idPersona
+            and certificado.idCertificado=certificado_beneficiario.idCertificado
+            and persona.idPersona=certificado_beneficiario.idPersona
+            and certificado.idSacramento=".$sacnum;
+        $res=$this->dbh->exequery($q);
+        if ($this->dbh->mysqli->error)
+        {
+            printf("Errormessage: %s\n", $this->dbh->mysqli->error);
+        }
+        return $res;
+    }
+
+    public function GetEmailsSacerdotes(){
+        $q="SELECT cuenta.email from cuenta, persona, sacerdote
+            where cuenta.idPersona=persona.idPersona
+            and persona.idPersona=sacerdote.idPersona";
+        $res=$this->dbh->exequery($q);
+        if ($this->dbh->mysqli->error)
+        {
+            printf("Errormessage: %s\n", $this->dbh->mysqli->error);
+        }
+        return $res;
+    }
+
 
     public function getCi()
     {
