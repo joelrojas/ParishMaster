@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffdeb5a1-66c2-4ddc-a9bd-446da6e531a0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temps/temp01.png" afterPath="$PROJECT_DIR$/temps/temp01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Formularios/imprimircomun.php" afterPath="$PROJECT_DIR$/Formularios/imprimircomun.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Formularios/imprimirnac.php" afterPath="$PROJECT_DIR$/Formularios/imprimirnac.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clases/imprimirQR.php" afterPath="$PROJECT_DIR$/clases/imprimirQR.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpqrcode-2010100721_1.1.4.zip" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ParishMaster.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,7 +35,7 @@
       <file leaf-file-name="imprimirnac.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Formularios/imprimirnac.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
+            <state relative-caret-position="1275">
               <caret line="80" column="157" selection-start-line="80" selection-start-column="157" selection-end-line="80" selection-end-column="157" />
               <folding>
                 <marker date="1473794604688" expanded="true" signature="949:3734" ph="..." />
@@ -65,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="imprimircomun.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="imprimircomun.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Formularios/imprimircomun.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state relative-caret-position="357">
+              <caret line="26" column="46" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
               <folding>
                 <marker date="1473794583087" expanded="true" signature="950:3467" ph="..." />
                 <marker date="1473794583087" expanded="true" signature="956:1520" ph="..." />
@@ -95,7 +93,24 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="73" selection-start-line="4" selection-start-column="73" selection-end-line="4" selection-end-column="73" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -133,6 +148,7 @@
         <option value="$PROJECT_DIR$/clases/imprimirQR.php" />
         <option value="$PROJECT_DIR$/Formularios/imprimircomun.php" />
         <option value="$PROJECT_DIR$/Formularios/imprimirnac.php" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -177,8 +193,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -272,6 +288,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -379,12 +396,13 @@
       <workItem from="1473276058027" duration="8917000" />
       <workItem from="1473476864011" duration="3846000" />
       <workItem from="1473523867782" duration="34671000" />
-      <workItem from="1473793642433" duration="1082000" />
+      <workItem from="1473793642433" duration="1681000" />
+      <workItem from="1474054549783" duration="147000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113894000" />
+    <option name="totallyTimeSpent" value="114640000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -450,13 +468,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Formularios/nacimconfirm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Formularios/regconfirm.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -476,16 +487,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="833">
           <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="51" selection-end-column="20" />
-          <folding>
-            <marker date="1473792859553" expanded="true" signature="1029:1195" ph="INSERT INTO persona... " />
-            <marker date="1473792859553" expanded="true" signature="1035:1099" ph="INSERT INTO persona... " />
-            <marker date="1473792859553" expanded="true" signature="1035:1113" ph="INSERT INTO persona... " />
-            <marker date="1473792859553" expanded="true" signature="1035:1133" ph="INSERT INTO persona... " />
-            <marker date="1473792859553" expanded="true" signature="1035:1155" ph="INSERT INTO persona... " />
-            <marker date="1473792859553" expanded="true" signature="1035:1177" ph="INSERT INTO persona... " />
-            <marker date="1473792859553" expanded="true" signature="1035:1194" ph="INSERT INTO persona... " />
-            <marker date="1473792859553" expanded="true" signature="1035:1195" ph="INSERT INTO persona... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -493,7 +494,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="952">
           <caret line="56" column="48" selection-start-line="56" selection-start-column="48" selection-end-line="56" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -537,7 +537,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -624,7 +623,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -705,7 +703,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="52" column="61" selection-start-line="52" selection-start-column="61" selection-end-line="52" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -727,7 +724,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
           <caret line="65" column="45" selection-start-line="65" selection-start-column="45" selection-end-line="65" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -749,7 +745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="419">
           <caret line="107" column="61" selection-start-line="107" selection-start-column="61" selection-end-line="107" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -757,7 +752,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="99" column="72" selection-start-line="99" selection-start-column="72" selection-end-line="99" selection-end-column="72" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -765,9 +759,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="91" column="20" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
-          <folding>
-            <marker date="1473791720446" expanded="true" signature="2402:2458" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -775,16 +766,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="149" column="9" selection-start-line="149" selection-start-column="9" selection-end-line="149" selection-end-column="9" />
-          <folding>
-            <marker date="1473792859553" expanded="true" signature="1029:1195" ph="INSERT INTO persona... " />
-            <marker date="1473792859553" expanded="true" signature="1035:1099" ph="INSERT INTO persona... " />
-            <marker date="1473792859553" expanded="true" signature="1035:1113" ph="INSERT INTO persona... " />
-            <marker date="1473792859553" expanded="true" signature="1035:1133" ph="INSERT INTO persona... " />
-            <marker date="1473792859553" expanded="true" signature="1035:1155" ph="INSERT INTO persona... " />
-            <marker date="1473792859553" expanded="true" signature="1035:1177" ph="INSERT INTO persona... " />
-            <marker date="1473792859553" expanded="true" signature="1035:1194" ph="INSERT INTO persona... " />
-            <marker date="1473792859553" expanded="true" signature="1035:1195" ph="INSERT INTO persona... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -815,7 +796,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Formularios/imprimirnac.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
+        <state relative-caret-position="1275">
           <caret line="80" column="157" selection-start-line="80" selection-start-column="157" selection-end-line="80" selection-end-column="157" />
           <folding>
             <marker date="1473794604688" expanded="true" signature="949:3734" ph="..." />
@@ -844,8 +825,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Formularios/imprimircomun.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state relative-caret-position="357">
+          <caret line="26" column="46" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
           <folding>
             <marker date="1473794583087" expanded="true" signature="950:3467" ph="..." />
             <marker date="1473794583087" expanded="true" signature="956:1520" ph="..." />
@@ -867,6 +848,14 @@
             <marker date="1473794583087" expanded="true" signature="3066:3408" ph="..." />
             <marker date="1473794583087" expanded="true" signature="3130:3210" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="73" selection-start-line="4" selection-start-column="73" selection-end-line="4" selection-end-column="73" />
+          <folding />
         </state>
       </provider>
     </entry>
