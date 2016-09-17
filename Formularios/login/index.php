@@ -45,6 +45,7 @@
                 if($fila['password']==$_POST['password']){
                     $_SESSION['password']=$_POST['password'];
                     $_SESSION['ci']=$fila['ci'];
+                    $_SESSION['idPersona']=$fila['idPersona'];
                     $_SESSION['nombre']=$fila['Nombre'];
                     $_SESSION['apellido']=$fila['Apellido'];
                     $_SESSION['fechanac']=$fila['fechanac'];

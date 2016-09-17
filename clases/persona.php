@@ -180,6 +180,21 @@ class persona
         return $res;
     }
 
+    public function GetInfoSac($idp){
+        $q="SELECT tipo_sacerdote.tipo, parroquia.Nombre
+        from sacerdote,tipo_sacerdote,parroquia,persona
+        where sacerdote.idPersona=persona.idPersona
+        and tipo_sacerdote.idtipo_sacerdote=sacerdote.idtipo_sacerdote
+        and parroquia.idParroquia=sacerdote.idParroquia
+        and persona.idPersona=".$idp;
+        $res=$this->dbh->exequery($q);
+        if ($this->dbh->mysqli->error)
+        {
+            printf("Errormessage: %s\n", $this->dbh->mysqli->error);
+        }
+        return $res;
+    }
+
 
     public function getCi()
     {

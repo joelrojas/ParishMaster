@@ -27,6 +27,9 @@
             <li class="">
               <a href="../Formularios/mandadoremails.php">Enviar Mails</a>
             </li>
+              <li class="">
+                  <a href="../Formularios/sacerdotereg.php">Registrar Sacerdote</a>
+              </li>
             <li class="dropdown">
               <ul class="dropdown-menu" role="menu">
                 <li>
