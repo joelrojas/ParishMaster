@@ -98,7 +98,8 @@
             $cc=$_POST['cc'];
             $para=$para.",".$cc;
         }
-        
+
+
         mail($para, $asunto, $mensaje, $headers);
         $mailexitoso=true;
     }
