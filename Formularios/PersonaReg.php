@@ -68,8 +68,8 @@ require_once '../clases/Lugar.php';
             $idpersona=$per->registrar();
             $per->regcuenta($idpersona);
         }
-        //echo ("<SCRIPT LANGUAGE='JavaScript'>
- 					//window.location.href='regconfirm.php';</SCRIPT>");
+        echo ("<SCRIPT LANGUAGE='JavaScript'>
+ 					window.location.href='regconfirm.php';</SCRIPT>");
     }
 
 ?>
