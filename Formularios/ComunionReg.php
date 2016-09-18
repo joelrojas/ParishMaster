@@ -73,7 +73,7 @@
 
 
 	?>
-	<div class="container">
+	<div class="container"  style="max-width: 700px">
 		<div class="page-header">
 		  <h1>Registro de Sacramento <small>Primera Comunion</small></h1>
 		</div>

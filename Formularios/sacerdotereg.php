@@ -80,7 +80,7 @@
 
 
 ?>
-<div class="container">
+<div class="container"  style="max-width: 700px">
     <div class="page-header">
         <h1>Registro de Sacerdotes
         </h1>

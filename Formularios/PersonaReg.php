@@ -73,7 +73,7 @@ require_once '../clases/Lugar.php';
     }
 
 ?>
-<div class="container">
+<div class="container"  style="max-width: 700px">
     <div class="page-header">
         <h1>Registro de Usuarios
         </h1>
