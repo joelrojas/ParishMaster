@@ -16,7 +16,8 @@
 		require_once "../general/headersac.php";
 
 		require_once '../clases/certificado.php';
-		$_SESSION['idPersona']=16;
+		require_once '../clases/sacramentos.php';
+		$_SESSION['idPersona']=5;
 		$idPersona=$_SESSION['idPersona'];
 	?>
 		
@@ -34,24 +35,25 @@
     						<tr>
         						<th>Nombre Fiel</th>
         						<th>Sacramento</th>
-        						<th>Presbitero</th>
         						<th>Parroquia</th>
-        						<th>Lugar</th>
+        						<th>Horario</th>
         						<th>Fecha</th>
     						</tr>
     					</thead>
     					<tbody>
     						<?php
-    							if(isset($_GET['id']))
-    							{
-    								$cer=certificado::withID($_GET['id']);
-    								echo "<td>".$cer->getfiel()."</td>";
-    								echo "<td>".$cer->getsacramento()."</td>";
-    								echo "<td>".$cer->getsacerdote()."</td>";
-    								echo "<td>".$cer->getparroquia()."</td>";
-    								echo "<td>".$cer->getlugar()."</td>";
-    								echo "<td>".$cer->getfecha()."</td>";
-    							}
+    								$sac=new sacramento();
+                                    $misas=$sac->get_celebraciones($idPersona);
+                                    while($fila=DatabaseHandler::fetchrow($misas))
+                                    {
+                                    	echo "<tr>";
+                                        echo "<td>".$fila['nombrefiel']." ".$fila['apellidofiel']."</td>";
+                                        echo "<td>".$fila['sacramento']."</td>";
+                                        echo "<td>".$fila['parroquia']."</td>";
+                                        echo "<td>".$fila['horario']."</td>";
+                                        echo "<td>".$fila['fecha']."</td>";
+                                        echo "</tr>";
+                                    }
     						?>
     					</tbody>
     				</table>
