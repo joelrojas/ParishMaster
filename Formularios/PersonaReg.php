@@ -58,18 +58,18 @@ require_once '../clases/Lugar.php';
 
 
     if(!empty($_POST['fechanac']) && !empty($_POST['genero']) && !empty($_POST['password'])){
-        if($cicorr && $emailcorr && !tienecuenta){
+        if($cicorr && $emailcorr && !$tienecuenta){
             $per = new persona($_POST["ci"],$nombre,$apellido,$fechanac,$_POST['genero'],$_POST['email'],$_POST['password']);
             $per->regcuenta($pid);
 
         }
-        if (!$cicorr && $emailcorr && !tienecuenta){
+        if (!$cicorr && $emailcorr && !$tienecuenta){
             $per = new persona($_POST["ci"],$_POST['nombre'],$_POST['apellido'],$_POST['fechanac'],$_POST['genero'],$_POST['email'],$_POST['password']);
             $idpersona=$per->registrar();
             $per->regcuenta($idpersona);
         }
-        echo ("<SCRIPT LANGUAGE='JavaScript'>
- 					window.location.href='regconfirm.php';</SCRIPT>");
+        //echo ("<SCRIPT LANGUAGE='JavaScript'>
+ 					//window.location.href='regconfirm.php';</SCRIPT>");
     }
 
 ?>
