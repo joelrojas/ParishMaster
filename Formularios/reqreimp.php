@@ -58,7 +58,7 @@ require_once "../clases/certificado.php";
         if(isset($_POST['yo'])){
             $fila=$ce->getcert($_SESSION['ci'],$_POST['sacramento']);
             $cer=$fila->fetch_array(MYSQLI_ASSOC);
-            if(!empty($cer['CI'])){
+            if(!empty($cer['idPersona'])){
                 echo ' <div class="panel panel-success">
                                         <div class="panel-heading">Certificados Encontrados</div>
                                         <div class="panel-body">
@@ -127,7 +127,8 @@ require_once "../clases/certificado.php";
                                                 <tbody>';
                 while ($cer = $fila->fetch_array(MYSQLI_ASSOC)) {
                     echo "<tr>";
-                    echo "<td>" . $cer['CI'] . "</td>";
+                    if(!empty($cer['CI']))echo "<td>".$cer['CI']."</td>";
+                    else echo "<td> - </td>";
                     echo "<td>" . $cer['hijo'] . "</td>";
                     echo "<td>" . $cer['sacramento'] . "</td>";
                     echo "<td>" . $cer['lugar'] . "</td>";
