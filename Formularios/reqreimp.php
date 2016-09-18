@@ -106,7 +106,7 @@ require_once "../clases/certificado.php";
         }
         else if(isset($_POST['hijos'])) {
             $fila = $ce->getcerthijos($_SESSION['ci'], $_POST['sacramento']);
-            if ($fila!=null) {
+            if (mysqli_num_rows($fila)>=1) {
                 echo ' <div class="panel panel-success">
                                         <div class="panel-heading">Certificados Encontrados</div>
                                         <div class="panel-body">
