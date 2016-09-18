@@ -1,5 +1,7 @@
 <?php
 
+    require_once "../general/headersac.php";
+
     require_once "../clases/persona.php";
 
     session_start();

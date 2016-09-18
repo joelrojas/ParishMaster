@@ -1,5 +1,15 @@
 <?php
-require_once "../general/headersac.php";
+/**
+ * Created by PhpStorm.
+ * User: Pamela
+ * Date: 9/17/2016
+ * Time: 10:32 PM
+ */
+
+    require_once "../clases/request.php";
+    $req= new request();
+    $req->createreimpreq($_POST['idPersona'],$_POST['idSacramento'],$_POST['idParroquia']);
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -16,9 +26,9 @@ require_once "../general/headersac.php";
 <body>
 <div class="container">
     <div class="jumbotron">
-        <h1>El certificado fue creado exitosamente!</h1>
-        <p><a class='btn btn-primary btn-lg' href='imprimircomun.php' role='button'>Imprimir</a></p>
-        <p><a class='btn btn-primary btn-lg' href='../Principal/principal.php' role='button'>Volver al Menu</a></p>
+        <h1>Se ha enviado su colicitud!</h1>
+        <p>Se le notificara por email cuando la hayamos atendido.</p>
+        <p><a class='btn btn-primary btn-lg' href='' role='button'>Volver al Menu</a></p>
     </div>
 </div>
 
@@ -31,3 +41,4 @@ require_once "../general/headersac.php";
 <script src="../bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
+

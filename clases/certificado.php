@@ -90,7 +90,7 @@ class certificado
         and ps.idPersona=sa.idPersona
         and cb.idCertificado=cer.idCertificado
         and cb.idPersona=fiel.idPersona
-        and fiel.CI=".$id;        
+        and fiel.CI=".$id;
         $res=$this->dbh->exequery($q);
         if ($this->dbh->mysqli->error)
         {
@@ -416,7 +416,55 @@ class certificado
         return $res;
     }
 
+    public function get_sacramentos(){
+        $q="SELECT * from sacramento";
+        $res=$this->dbh->exequery($q);
+        if ($this->dbh->mysqli->error)
+        {
+            printf("Errormessage: %s\n", $this->dbh->mysqli->error);
+        }
+        return $res;
+    }
 
+    public function getcert($ci,$sac){
+        $q="SELECT cer.idCertificado, cer.fecha, pa.Nombre as parroquia, concat(concat(ps.Nombre,' '),ps.Apellido) as parroco, sac.Nombre as sacramento, l.lugar, concat(concat(fiel.Nombre,' '),fiel.Apellido) as fiel, fiel.CI , fiel.idPersona,sac.idSacramento,pa.idParroquia
+        FROM certificado cer, parroquia pa, sacerdote sa, sacramento sac, persona ps, persona fiel, certificado_beneficiario cb, lugar l 
+        WHERE cer.idParroquia=pa.idParroquia
+        and cer.idSacerdote=sa.idSacerdote
+        and cer.idSacramento=sac.idSacramento
+        and cer.idLugar=l.idLugar
+        and ps.idPersona=sa.idPersona
+        and cb.idCertificado=cer.idCertificado
+        and cb.idPersona=fiel.idPersona
+        and cer.idSacramento=".$sac." and fiel.CI=".$ci;
+        $res=$this->dbh->exequery($q);
+        if ($this->dbh->mysqli->error)
+        {
+            printf("Errormessage: %s\n", $this->dbh->mysqli->error);
+        }
+        return $res;
+    }
+
+    public function getcerthijos($ci,$sac){
+        $q="SELECT cer.idCertificado, cer.fecha, pa.Nombre as parroquia, concat(concat(ps.Nombre,' '),ps.Apellido) as parroco, sac.Nombre as sacramento, l.lugar, concat(concat(hijo.Nombre,' '),hijo.Apellido) as hijo, hijo.CI, hijo.idPersona,sac.idSacramento,pa.idParroquia
+        FROM certificado cer, parroquia pa, sacerdote sa, sacramento sac, persona ps, persona fiel, certificado_beneficiario cb, lugar l, persona_padre, persona hijo
+        WHERE cer.idParroquia=pa.idParroquia
+        and cer.idSacerdote=sa.idSacerdote
+        and cer.idSacramento=sac.idSacramento
+        and cer.idLugar=l.idLugar
+        and ps.idPersona=sa.idPersona
+        and cb.idCertificado=cer.idCertificado
+        and persona_padre.idPadre=fiel.idPersona
+        and cb.idPersona=hijo.idPersona
+        and persona_padre.idPersona= hijo.idPersona
+        and fiel.ci=".$ci. " and cer.idSacramento=".$sac;
+        $res=$this->dbh->exequery($q);
+        if ($this->dbh->mysqli->error)
+        {
+            printf("Errormessage: %s\n", $this->dbh->mysqli->error);
+        }
+        return $res;
+    }
 
 }
 //$as=new certificado("","",'','','');

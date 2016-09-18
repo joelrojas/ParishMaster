@@ -22,10 +22,13 @@
         <div class="collapse navbar-collapse" id="navbar-ex-collapse">
           <ul class="nav navbar-nav navbar-right">
             <li class="">
-              <a href="#">Inicio</a>
+              <a href="principal.php">Inicio</a>
             </li>
             <li class="">
               <a href="../Formularios/mandadoremails.php">Enviar Mails</a>
+            </li>
+            <li class="">
+              <a href="../Formularios/busqueda.php">Buscar Certificado</a>
             </li>
               <li class="">
                   <a href="../Formularios/sacerdotereg.php">Registrar Sacerdote</a>
@@ -33,16 +36,16 @@
             <li class="dropdown">
               <ul class="dropdown-menu" role="menu">
                 <li>
-                  <a href="../Formularios/NacimientoReg.php">Nacimiento</a>
+                  <a href="../Formularios/NacimientoReg.php">Bautizo</a>
                 </li>
                 <li>
                   <a href="../Formularios/ComunionReg.php">Comunion</a>
                 </li>
                 <li>
-                  <a href="#">Confirmacion</a>
+                  <a href="../Formularios/Confirmacion.php">Confirmacion</a>
                 </li>
                                 <li>
-                  <a href="#">Matrimonio</a>
+                  <a href="../Formularios/Matrimonio.php">Matrimonio</a>
                 </li>
                 
                 
@@ -50,7 +53,7 @@
                 
                 
               </ul>
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <i class="fa fa-caret-down"></i></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Registrar Sacramento <i class="fa fa-caret-down"></i></a>
             </li>
           </ul>
         </div>
@@ -74,7 +77,7 @@
             <p class="text-left">El primer sacramento que nos inicia en nuestra vida como catolicos.</p>
           </div>
           <div class="col-md-2">
-            <a href=""> <img src="img/c.png" class="center-block img-circle img-responsive"></a>
+            <a href="../Formularios/Confirmacion.php"> <img src="img/c.png" class="center-block img-circle img-responsive"></a>
           </div>
           <div class="col-md-4">
             <h3 class="text-left">Confirmacion</h3>
@@ -90,7 +93,7 @@
             <p class="text-left">La primera vez que recibimos el cuerpo de Dios.</p>
           </div>
           <div class="col-md-2">
-            <a href=""> <img src="img/m.png" class="center-block img-circle img-responsive"></a>
+            <a href="../Formularios/Matrimonio.php"> <img src="img/m.png" class="center-block img-circle img-responsive"></a>
           </div>
           <div class="col-md-4 text-center">
             <h3 class="text-left">Matrimonio</h3>

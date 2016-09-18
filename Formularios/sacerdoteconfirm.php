@@ -1,4 +1,6 @@
-
+<?php
+require_once "../general/headersac.php";
+?>
 <!doctype html>
 <html lang="en">
 <head>

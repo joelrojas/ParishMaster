@@ -51,7 +51,7 @@
                     $_SESSION['fechanac']=$fila['fechanac'];
                     $_SESSION['email']=$fila['email'];
 
-                    $pag="../../Formularios/appointment.php";
+                    $pag="../../Principal/principalfiel.php";
 
                     if($p->isSacerdote($fila['ci'])) {$_SESSION['sacerdote']=1; $pag='../../Principal/principal.php';}
                     else $_SESSION['sacerdote']=0;
