@@ -16,7 +16,7 @@ require_once "../general/headersac.php";
 <body>
 <div class="container">
     <div class="jumbotron">
-        <h1>El certificado fue creado exitosamente!</h1>
+        <h1>Se ha agregado el registro a la base de datos!</h1>
         <p><a class='btn btn-primary btn-lg' href='imprimircomun.php' role='button'>Imprimir</a></p>
         <p><a class='btn btn-primary btn-lg' href='../Principal/principal.php' role='button'>Volver al Menu</a></p>
     </div>
