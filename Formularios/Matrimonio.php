@@ -13,6 +13,7 @@
 </head>
 <body>
 	<?php
+		ini_set("display_errors", TRUE);
 		require_once "../general/headersac.php";
 
 		require_once '../clases/parroquia.php';
