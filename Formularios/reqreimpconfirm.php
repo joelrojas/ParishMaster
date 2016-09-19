@@ -26,9 +26,9 @@
 <body>
 <div class="container">
     <div class="jumbotron">
-        <h1>Se ha enviado su colicitud!</h1>
+        <h1>Se ha enviado su solicitud!</h1>
         <p>Se le notificara por email cuando la hayamos atendido.</p>
-        <p><a class='btn btn-primary btn-lg' href='' role='button'>Volver al Menu</a></p>
+        <p><a class='btn btn-primary btn-lg' href='../Principal/principalfiel.php' role='button'>Volver al Menu</a></p>
     </div>
 </div>
 
