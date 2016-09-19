@@ -19,7 +19,7 @@
 		require_once '../clases/parroquia.php';
 		require_once '../clases/sacerdote.php';
 		require_once '../clases/fiel.php';
-		require_once '../clases/lugar.php';
+		require_once '../clases/Lugar.php';
 		require_once '../clases/certificado.php';
 		function set_id($persona)
 		{
