@@ -74,7 +74,7 @@
 
 	<div class="container" style="max-width: 700px">
 		<div class="page-header">
-		  <h1>Registro de Sacramento <small>Bautizo</small></h1>
+		  <h1>Registro Canonico <small>Bautizo</small></h1>
 		</div>
 		<form action="NacimientoReg.php" method="post">
 			<div class="form-group">

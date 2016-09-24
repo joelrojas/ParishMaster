@@ -9,7 +9,7 @@
 	<!-- Bootstrap css -->
 	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
 
-	<title>Document</title>
+	<title>Registro COmunion</title>
 </head>
 <body>
 	<?php
@@ -75,7 +75,7 @@
 	?>
 	<div class="container"  style="max-width: 700px">
 		<div class="page-header">
-		  <h1>Registro de Sacramento <small>Primera Comunion</small></h1>
+		  <h1>Registro Canonico <small>Primera Comunion</small></h1>
 		</div>
 		<form action="ComunionReg.php" method="post">
 
