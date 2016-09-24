@@ -19,7 +19,6 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
 
 $mpdf= new mPDF('c','Letter');
 $css= file_get_contents('../Certificados/Nacimiento/nac.css');
-
 $c= new certificado('',"","","","");
 $res=$c->get_bau_info($_SESSION['idPersona']);
 $fila=$res->fetch_array(MYSQLI_ASSOC);

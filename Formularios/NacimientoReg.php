@@ -49,7 +49,8 @@
 	}
 
 	if($mcivalido && $pcivalido && $cipadvalido && !empty($_POST['fechanac']) && !empty($_POST['fechabau']) &&!empty($_POST['parroquia']) && !empty($_POST['certificante']) && !empty($_POST['lugar']) && !empty($_POST['sacerdote'])){
-		$per= new persona($_POST['ci'], $_POST['nombre'], $_POST['apellido'], $_POST['fechanac'], 1, "", "");
+		if(empty($_POST['ci'])) $per= new persona(0, $_POST['nombre'], $_POST['apellido'], $_POST['fechanac'], 1, "", "");
+		else $per= new persona($_POST['ci'], $_POST['nombre'], $_POST['apellido'], $_POST['fechanac'], 1, "", "");
 		$pid=$per->registrar();
 
 		$personax= new persona("", "", "", "", "", "", "");
@@ -80,7 +81,7 @@
 		<form action="NacimientoReg.php" method="post">
 			<div class="form-group">
 				<label for="ci">CI:</label>
-				<input value="<?php if(isset($_POST['ci'])) echo $_POST['ci']; ?>" required pattern ='^\d+$' title='Ingrese solo el numero de CI, sin letras' maxlength="10" type="text" class="form-control" id="ci" name="ci">
+				<input value="<?php if(isset($_POST['ci'])) echo $_POST['ci']; ?>" pattern ='^\d+$' title='Ingrese solo el numero de CI, sin letras' maxlength="10" type="text" class="form-control" id="ci" name="ci">
 			</div>
 			<div class="form-group">
 				<label for="nombre">Nombre:</label>
