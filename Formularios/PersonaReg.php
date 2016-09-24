@@ -122,11 +122,11 @@ require_once '../clases/Lugar.php';
         </div>
         <div class="form-group">
             <label for="celular">Celular:</label>
-            <input type="text" required maxlength="10" value="" required pattern ='^\d+$' title='Ingrese solo el numero de CI, sin letras' class="form-control" id="celular" name="celular">
+            <input type="text" required maxlength="10" value="<?php if(isset($_POST['celular'])) echo $_POST['celular']; ?>" required pattern ='^\d+$' title='Ingrese solo el numero de CI, sin letras' class="form-control" id="celular" name="celular">
         </div>
         <div class="form-group">
             <label for="facebook">Link a perfil en Facebook:</label>
-            <input type="text" required maxlength="45" value="" required class="form-control" id="facebook" name="facebook">
+            <input type="text" required maxlength="45" value="<?php if(isset($_POST['facebook'])) echo $_POST['facebook']; ?>" required class="form-control" id="facebook" name="facebook">
         </div>
         <hr>
 
