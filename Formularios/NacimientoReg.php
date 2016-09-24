@@ -59,6 +59,7 @@
 		$idpadrino=$personax->idfromci($_POST['cipadrino']);
 
 		$cer = new certificado($_POST['parroquia'],$_POST['sacerdote'],$_POST['certificante'],$_POST['lugar'],$_POST['fechabau']);
+		$cer->setlibroinfo($_POST['libro'],$_POST['pagina'],$_POST['numero']);
 		$cerid=$cer->reg_bautizo($_POST['nombre'],$_POST['apellido'],$_POST['fechanac'],$idpadrino,$idpadre,$idmadre,$pid);
 		$cer->addregciv($_POST['oficialia'], $_POST['libro'], $_POST['partida'], $cerid);
 
@@ -171,6 +172,20 @@
 					?>
 				</select>
 			</div>
+
+			<div class="form-group">
+				<label for="libro">Libro:</label>
+				<input type="text" value="<?php if(isset($_POST['libro'])) echo $_POST['libro']; ?>" maxlength="20" required class="form-control" id="libro" name="libro">
+			</div>
+			<div class="form-group">
+				<label for="pagina">Pagina:</label>
+				<input type="text" value="<?php if(isset($_POST['pagina'])) echo $_POST['pagina']; ?>" maxlength="20" equired class="form-control" id="pagina" name="pagina">
+			</div>
+			<div class="form-group">
+				<label for="numero">Numero:</label>
+				<input type="text" value="<?php if(isset($_POST['numero'])) echo $_POST['numero']; ?>" maxlength="20" required class="form-control" id="numero" name="numero">
+			</div>
+
 			<hr>
 
 			<label for="cipadre">CI Padre:</label>

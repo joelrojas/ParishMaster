@@ -53,7 +53,7 @@
                 
                 
               </ul>
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Registrar Sacramento <i class="fa fa-caret-down"></i></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Registro Canonico <i class="fa fa-caret-down"></i></a>
             </li>
           </ul>
         </div>
