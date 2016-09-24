@@ -293,7 +293,7 @@ class certificado
 
     public function get_bau_info($idp){
 
-        $q="SELECT certificado.idCertificado, certificado.idSacerdote, certificado.idCertificante, certificado.fecha as fechabautizo, parroquia.Nombre as parroquiabautizo, cura.Nombre as nombrecura, cura.Apellido as apellidocura,
+        $q="SELECT certificado.idCertificado, certificado.libro as libro1, certificado.pagina, certificado.numero, certificado.idSacerdote, certificado.idCertificante, certificado.fecha as fechabautizo, parroquia.Nombre as parroquiabautizo, cura.Nombre as nombrecura, cura.Apellido as apellidocura,
         lugar.lugar as lugarnacimiento, cert.Nombre as nombrecertificante,cert.Apellido as apellidocertificante,  fiel.Nombre as nombrefiel, fiel.Apellido as apellidofiel, fiel.fechanac as fechanacimiento,
         padre.Nombre as nombrepadre, padre.Apellido as apellidopadre, madre.Nombre as nombremadre, madre.Apellido as apellidomadre,
         padrino.Nombre as nombrepadrino, padrino.Apellido as apellidopadrino, registro_civil.oficialia, registro_civil.nro_libro as libro, registro_civil.partida
@@ -326,7 +326,7 @@ class certificado
     public function get_comunion_info($idp){
 
 
-        $q="SELECT certificado.idCertificado, certificado.idSacerdote, certificado.idCertificante, certificado.fecha as fechacomunion, parroquia.Nombre as parroquiacomunion, cura.Nombre as nombrecura, cura.Apellido as apellidocura,
+        $q="SELECT certificado.idCertificado, certificado.libro as libro1, certificado.pagina, certificado.numero, certificado.idSacerdote, certificado.idCertificante, certificado.fecha as fechacomunion, parroquia.Nombre as parroquiacomunion, cura.Nombre as nombrecura, cura.Apellido as apellidocura,
         lugar.lugar as lugarcomunion, cert.Nombre as nombrecertificante,cert.Apellido as apellidocertificante,  fiel.Nombre as nombrefiel, fiel.Apellido as apellidofiel, fiel.fechanac as fechanacimiento,
         padrino.Nombre as nombrepadrino, padrino.Apellido as apellidopadrino
         from certificado, parroquia, persona cura, lugar, persona cert, persona fiel, certificado_beneficiario, persona padrino, sacerdote sac, sacerdote certificante, certificado_padrino
