@@ -46,6 +46,7 @@ require_once '../clases/Lugar.php';
             $nombre=$fila['Nombre'];
             $apellido=$fila['Apellido'];
             $fechanac=$fila['fechanac'];
+
             $pid=$fila['idPersona'];
         }
     }
@@ -60,11 +61,14 @@ require_once '../clases/Lugar.php';
     if(!empty($_POST['fechanac']) && !empty($_POST['genero']) && !empty($_POST['password'])){
         if($cicorr && $emailcorr && !$tienecuenta){
             $per = new persona($_POST["ci"],$nombre,$apellido,$fechanac,$_POST['genero'],$_POST['email'],$_POST['password']);
+            $per->addsocial($_POST["celular"],$_POST["facebook"]);
+            $per->updatesoc($pid);
             $per->regcuenta($pid);
 
         }
         if (!$cicorr && $emailcorr && !$tienecuenta){
             $per = new persona($_POST["ci"],$_POST['nombre'],$_POST['apellido'],$_POST['fechanac'],$_POST['genero'],$_POST['email'],$_POST['password']);
+            $per->addsocial($_POST["celular"],$_POST["facebook"]);
             $idpersona=$per->registrar();
             $per->regcuenta($idpersona);
         }
@@ -116,7 +120,14 @@ require_once '../clases/Lugar.php';
 
             </select>
         </div>
-
+        <div class="form-group">
+            <label for="celular">Celular:</label>
+            <input type="text" required maxlength="10" value="" required pattern ='^\d+$' title='Ingrese solo el numero de CI, sin letras' class="form-control" id="celular" name="celular">
+        </div>
+        <div class="form-group">
+            <label for="facebook">Link a perfil en Facebook:</label>
+            <input type="text" required maxlength="45" value="" required class="form-control" id="facebook" name="facebook">
+        </div>
         <hr>
 
         <h2> Informacion de la cuenta: </h2>
