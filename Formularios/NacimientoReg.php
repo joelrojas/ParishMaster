@@ -49,7 +49,8 @@
 	}
 
 	if($mcivalido && $pcivalido && $cipadvalido && !empty($_POST['fechanac']) && !empty($_POST['fechabau']) &&!empty($_POST['parroquia']) && !empty($_POST['certificante']) && !empty($_POST['lugar']) && !empty($_POST['sacerdote'])){
-		$per= new persona($_POST['ci'], $_POST['nombre'], $_POST['apellido'], $_POST['fechanac'], 1, "", "");
+		if(empty($_POST['ci'])) $per= new persona(0, $_POST['nombre'], $_POST['apellido'], $_POST['fechanac'], 1, "", "");
+		else $per= new persona($_POST['ci'], $_POST['nombre'], $_POST['apellido'], $_POST['fechanac'], 1, "", "");
 		$pid=$per->registrar();
 
 		$personax= new persona("", "", "", "", "", "", "");
@@ -59,6 +60,7 @@
 		$idpadrino=$personax->idfromci($_POST['cipadrino']);
 
 		$cer = new certificado($_POST['parroquia'],$_POST['sacerdote'],$_POST['certificante'],$_POST['lugar'],$_POST['fechabau']);
+		$cer->setlibroinfo($_POST['libro'],$_POST['pagina'],$_POST['numero']);
 		$cerid=$cer->reg_bautizo($_POST['nombre'],$_POST['apellido'],$_POST['fechanac'],$idpadrino,$idpadre,$idmadre,$pid);
 		$cer->addregciv($_POST['oficialia'], $_POST['libro'], $_POST['partida'], $cerid);
 
@@ -74,12 +76,12 @@
 
 	<div class="container" style="max-width: 700px">
 		<div class="page-header">
-		  <h1>Registro de Sacramento <small>Bautizo</small></h1>
+		  <h1>Registro Canonico <small>Bautizo</small></h1>
 		</div>
 		<form action="NacimientoReg.php" method="post">
 			<div class="form-group">
 				<label for="ci">CI:</label>
-				<input value="<?php if(isset($_POST['ci'])) echo $_POST['ci']; ?>" required pattern ='^\d+$' title='Ingrese solo el numero de CI, sin letras' maxlength="10" type="text" class="form-control" id="ci" name="ci">
+				<input value="<?php if(isset($_POST['ci'])) echo $_POST['ci']; ?>" pattern ='^\d+$' title='Ingrese solo el numero de CI, sin letras' maxlength="10" type="text" class="form-control" id="ci" name="ci">
 			</div>
 			<div class="form-group">
 				<label for="nombre">Nombre:</label>
@@ -171,6 +173,20 @@
 					?>
 				</select>
 			</div>
+
+			<div class="form-group">
+				<label for="libro">Libro:</label>
+				<input type="text" value="<?php if(isset($_POST['libro'])) echo $_POST['libro']; ?>" maxlength="20" required class="form-control" id="libro" name="libro">
+			</div>
+			<div class="form-group">
+				<label for="pagina">Pagina:</label>
+				<input type="text" value="<?php if(isset($_POST['pagina'])) echo $_POST['pagina']; ?>" maxlength="20" equired class="form-control" id="pagina" name="pagina">
+			</div>
+			<div class="form-group">
+				<label for="numero">Numero:</label>
+				<input type="text" value="<?php if(isset($_POST['numero'])) echo $_POST['numero']; ?>" maxlength="20" required class="form-control" id="numero" name="numero">
+			</div>
+
 			<hr>
 
 			<label for="cipadre">CI Padre:</label>

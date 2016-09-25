@@ -18,6 +18,9 @@ class certificado
     private $fecha;
     private $sacramento;
     private $fiel;
+    private $libro;
+    private $pagina;
+    private $numero;
 
     private $dbh;
     private $conexion;
@@ -45,6 +48,13 @@ class certificado
         $this->conexion=$this->dbh->connecttodb();
 
     }
+
+    public function setlibroinfo($l,$p,$n){
+        $this->libro=$l;
+        $this->pagina=$p;
+        $this->numero=$n;
+    }
+
     public function getid()
     {
         return $this->id;
@@ -158,7 +168,7 @@ class certificado
 
     public function reg_bautizo($nombre,$apellido,$fechanac,$idpadrino,$idpadre,$idmadre,$idp){
 
-        $q="INSERT INTO certificado(fecha, idParroquia, idSacerdote, idSacramento, idCertificante, idLugar) VALUES ('".$this->fecha."',".$this->parroquia.",".$this->sacerdote.",1,".$this->certificante.",".$this->lugar.")";
+        $q="INSERT INTO certificado(fecha, idParroquia, idSacerdote, idSacramento, idCertificante, idLugar, libro, pagina, numero) VALUES ('".$this->fecha."',".$this->parroquia.",".$this->sacerdote.",1,".$this->certificante.",".$this->lugar.",'".$this->libro."','".$this->pagina."','".$this->numero."')";
         $certnum=$this->dbh->insert($q);
         if ($this->dbh->mysqli->error)
         {
@@ -193,7 +203,7 @@ class certificado
     }
 
     public function reg_comunion($idpadrino,$idcreador){
-        $q="INSERT INTO certificado(fecha, idParroquia, idSacramento, idLugar,idSacerdote,idCertificante) VALUES ('".$this->fecha."',".$this->parroquia.",2,".$this->lugar.",".$this->sacerdote.",".$this->certificante.")";
+        $q="INSERT INTO certificado(fecha, idParroquia, idSacramento, idLugar,idSacerdote,idCertificante, libro, pagina, numero) VALUES ('".$this->fecha."',".$this->parroquia.",2,".$this->lugar.",".$this->sacerdote.",".$this->certificante.",'".$this->libro."','".$this->pagina."','".$this->numero."')";
         $certnum=$this->dbh->insert($q);
         if ($this->dbh->mysqli->error)
         {
@@ -283,7 +293,7 @@ class certificado
 
     public function get_bau_info($idp){
 
-        $q="SELECT certificado.idCertificado, certificado.idSacerdote, certificado.idCertificante, certificado.fecha as fechabautizo, parroquia.Nombre as parroquiabautizo, cura.Nombre as nombrecura, cura.Apellido as apellidocura,
+        $q="SELECT certificado.idCertificado, certificado.libro as libro1, certificado.pagina, certificado.numero, certificado.idSacerdote, certificado.idCertificante, certificado.fecha as fechabautizo, parroquia.Nombre as parroquiabautizo, cura.Nombre as nombrecura, cura.Apellido as apellidocura,
         lugar.lugar as lugarnacimiento, cert.Nombre as nombrecertificante,cert.Apellido as apellidocertificante,  fiel.Nombre as nombrefiel, fiel.Apellido as apellidofiel, fiel.fechanac as fechanacimiento,
         padre.Nombre as nombrepadre, padre.Apellido as apellidopadre, madre.Nombre as nombremadre, madre.Apellido as apellidomadre,
         padrino.Nombre as nombrepadrino, padrino.Apellido as apellidopadrino, registro_civil.oficialia, registro_civil.nro_libro as libro, registro_civil.partida
@@ -316,7 +326,7 @@ class certificado
     public function get_comunion_info($idp){
 
 
-        $q="SELECT certificado.idCertificado, certificado.idSacerdote, certificado.idCertificante, certificado.fecha as fechacomunion, parroquia.Nombre as parroquiacomunion, cura.Nombre as nombrecura, cura.Apellido as apellidocura,
+        $q="SELECT certificado.idCertificado, certificado.libro as libro1, certificado.pagina, certificado.numero, certificado.idSacerdote, certificado.idCertificante, certificado.fecha as fechacomunion, parroquia.Nombre as parroquiacomunion, cura.Nombre as nombrecura, cura.Apellido as apellidocura,
         lugar.lugar as lugarcomunion, cert.Nombre as nombrecertificante,cert.Apellido as apellidocertificante,  fiel.Nombre as nombrefiel, fiel.Apellido as apellidofiel, fiel.fechanac as fechanacimiento,
         padrino.Nombre as nombrepadrino, padrino.Apellido as apellidopadrino
         from certificado, parroquia, persona cura, lugar, persona cert, persona fiel, certificado_beneficiario, persona padrino, sacerdote sac, sacerdote certificante, certificado_padrino

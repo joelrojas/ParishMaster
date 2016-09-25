@@ -19,7 +19,6 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
 
 $mpdf= new mPDF('c','Letter');
 $css= file_get_contents('../Certificados/Nacimiento/nac.css');
-
 $c= new certificado('',"","","","");
 $res=$c->get_bau_info($_SESSION['idPersona']);
 $fila=$res->fetch_array(MYSQLI_ASSOC);
@@ -59,6 +58,7 @@ $html= "<html><head>
               el ".$fila['fechanacimiento'].".
               <br>Hijo/a legitima de ".$fila['nombrepadre'].' '.$fila['apellidopadre']." y ".$fila['nombremadre'].' '.$fila['apellidomadre'].".
               <br>Fue padrino/madrina ".$fila['nombrepadrino'].' '.$fila['apellidopadrino']." a quien es adverti el parentesco espiritual contraido
+              <br>Libro Nro ".$fila['libro1']." Pagina Nro ".$fila['pagina']." Registro Nro ".$fila['numero']."
               <br>Oficialia del Registro Civil Nro ".$fila['oficialia']." Libro Nro ".$fila['libro']." Partida Nro ".$fila['partida']."
               <br>Certifico: ".$tiposac." ".$fila['nombrecertificante']." ".$fila['apellidocertificante']."</p>
           </div>

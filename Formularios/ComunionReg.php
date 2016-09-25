@@ -9,7 +9,7 @@
 	<!-- Bootstrap css -->
 	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
 
-	<title>Document</title>
+	<title>Registro COmunion</title>
 </head>
 <body>
 	<?php
@@ -62,6 +62,7 @@
 			$padrinoid=$per->idfromci($_POST['cipadrino']);
 
 			$cert = new certificado($_POST['parroquia'],$_POST['sacerdote'],$_POST['certificante'],$_POST['lugar'],$_POST['fechacom']);
+			$cert->setlibroinfo($_POST['libro'],$_POST['pagina'],$_POST['numero']);
 			$cert->reg_comunion($padrinoid , $pid);
 
 			$_SESSION['idPersona']=$pid;
@@ -75,7 +76,7 @@
 	?>
 	<div class="container"  style="max-width: 700px">
 		<div class="page-header">
-		  <h1>Registro de Sacramento <small>Primera Comunion</small></h1>
+		  <h1>Registro Canonico <small>Primera Comunion</small></h1>
 		</div>
 		<form action="ComunionReg.php" method="post">
 
@@ -182,6 +183,20 @@
 					?>
 				</select>
 			</div>
+
+			<div class="form-group">
+				<label for="libro">Libro:</label>
+				<input type="text" value="<?php if(isset($_POST['libro'])) echo $_POST['libro']; ?>" maxlength="20" required class="form-control" id="libro" name="libro">
+			</div>
+			<div class="form-group">
+				<label for="pagina">Pagina:</label>
+				<input type="text" value="<?php if(isset($_POST['pagina'])) echo $_POST['pagina']; ?>" maxlength="20" equired class="form-control" id="pagina" name="pagina">
+			</div>
+			<div class="form-group">
+				<label for="numero">Numero:</label>
+				<input type="text" value="<?php if(isset($_POST['numero'])) echo $_POST['numero']; ?>" maxlength="20" required class="form-control" id="numero" name="numero">
+			</div>
+
 			<hr>
 			<label for="cipadrino">CI Padrino/Madrina:</label>
 			<div class="input-group">

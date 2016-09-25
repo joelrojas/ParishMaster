@@ -14,6 +14,8 @@ class persona
     private $fechanac;
     private $genero;
     private $email;
+    private $cel;
+    private $fb;
 
     private $usuario;
     private $pass;
@@ -47,9 +49,26 @@ class persona
         $this->conexion=$this->dbh->connecttodb();
     }
 
+    public function addsocial($cel,$fb){
+        $this->cel=$cel;
+        $this->fb=$fb;
+    }
+
+    public function updatesoc($id){
+        $q="UPDATE persona set celular='".$this->cel."' , facebook='".$this->fb."' 
+            where persona.idPersona=".$id;
+        $res=$this->dbh->exequery($q);
+        if ($this->dbh->mysqli->error)
+        {
+            printf("Errormessage: %s\n", $this->dbh->mysqli->error);
+        }
+        return $res;
+    }
+
     public function registrar(){
-        $q="INSERT INTO persona(CI, Nombre, Apellido, fechanac, idGenero) VALUES (".$this->ci.",'".$this->nombre."','".$this->apellido."','".$this->fechanac."',".$this->genero.")";
+        $q="INSERT INTO persona(CI, Nombre, Apellido, fechanac, idGenero, celular, facebook) VALUES (".$this->ci.",'".$this->nombre."','".$this->apellido."','".$this->fechanac."',".$this->genero.",'".$this->cel."','".$this->fb."')";
         $idpers=$this->dbh->insert($q);
+        echo $q;
         if ($this->dbh->mysqli->error)
         {
             printf("Errormessage: %s\n", $this->dbh->mysqli->error);
@@ -81,7 +100,7 @@ class persona
     }
 
     public function buscarper($ci){
-        $q="select persona.idPersona, persona.ci, persona.Nombre, persona.Apellido , persona.fechanac
+        $q="select persona.idPersona, persona.ci, persona.Nombre, persona.Apellido , persona.fechanac, persona.celular, persona.facebook
             from persona
             where persona.ci='".$ci."'";
         $res=$this->dbh->exequery($q);

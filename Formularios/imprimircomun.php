@@ -53,6 +53,7 @@ $html= "<html><head>
               <br>
               <br>Recibio su primera comunion el ".$fila['fechacomunion']." &nbsp;en la santa misa celebrada por ".$tiposac." ".$fila['nombrecura']." ".$fila['apellidocura']." 
               <br>Fue padrino/madrina ".$fila['nombrepadrino'].' '.$fila['apellidopadrino']." a quien es adverti el parentesco espiritual contraido
+              <br>Libro Nro ".$fila['libro1']." Pagina Nro ".$fila['pagina']." Registro Nro ".$fila['numero']."
               <br>Certifico: ".$tiposac." ".$fila['nombrecertificante']." ".$fila['apellidocertificante']."</p>
           </div>
         </div>
