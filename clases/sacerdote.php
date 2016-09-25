@@ -85,4 +85,19 @@ class sacerdote
         return $fila['tipo'];
     }
 
+    public function get_sac_parr($idpar){
+        $q="select sacerdote.idSacerdote, tipo_sacerdote.tipo, persona.Nombre, persona.Apellido
+            from sacerdote, tipo_sacerdote, persona
+            where sacerdote.idPersona=persona.idPersona
+            and sacerdote.idtipo_sacerdote=tipo_sacerdote.idtipo_sacerdote
+            AND sacerdote.idParroquia=".$idpar;
+        $res=$this->dbh->exequery($q);
+        if ($this->dbh->mysqli->error)
+        {
+            printf("Errormessage: %s\n", $this->dbh->mysqli->error);
+        }
+        return $res;
+    }
+
+
 }

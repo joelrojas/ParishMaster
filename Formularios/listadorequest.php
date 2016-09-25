@@ -13,8 +13,6 @@
 </head>
 <body>
 	<?php
-		require_once "../general/headersac.php";
-
 		require_once '../clases/request.php';
 		$_SESSION['idPersona']=5;
 		$idPersona=$_SESSION['idPersona'];

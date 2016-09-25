@@ -57,7 +57,23 @@ class parroquia
         return $res;
     }
 
+    public function get_parr_matrimonio($eo,$ea)
+    {
+        $q="SELECT parroquia.idParroquia, parroquia.Nombre 
+            FROM parroquia, certificado, certificado_beneficiario, persona
+            WHERE certificado.idParroquia=parroquia.idParroquia
+            AND certificado.idCertificado=certificado_beneficiario.idCertificado
+            AND certificado.idSacramento=1
+            AND certificado_beneficiario.idPersona=persona.idPersona
+            AND (persona.CI=".$eo." OR persona.CI=".$ea.")";
+        $res=$this->dbh->exequery($q);
+        if ($this->dbh->mysqli->error)
+        {
+            printf("Errormessage: %s\n", $this->dbh->mysqli->error);
+        }
 
+        return $res;
+    }
 
 
 }
