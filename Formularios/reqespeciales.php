@@ -17,8 +17,18 @@
 
 		require_once '../clases/request.php';
 		$req=new request();
+		$mail="contacto@parishmaster.gwiddle.co.uk";
+		$para="i.pfp94@gmail.com";
+		$p = new persona("", "", "", "", "", "", "");
+		$sacpuesto=$p->GetInfoSac($_SESSION['idPersona']);
+        $pues=$sacpuesto->fetch_array(MYSQLI_ASSOC);
+
+		$headers = 'From:'. $pues['tipo']." ".$_SESSION['nombre']." ".$_SESSION['apellido'].' <'.$mail.'>'. "\r\n" .
+            'Reply-To:'. $pues['tipo']." ".$_SESSION['nombre']." ".$_SESSION['apellido'].' <'.$mail.'>' . "\r\n" .
+            'X-Mailer: PHP/' . phpversion();
 		if(isset($_GET['mensaje']))
 		{
+			mail($para, "Requisito atendido", $_GET['mensaje']), $headers);
 			$req->set_respuesta($_GET['idreq'],$_GET['mensaje']);
 			echo ("<SCRIPT LANGUAGE='JavaScript'>
  					window.alert('Se envio la respuesta')
@@ -27,7 +37,7 @@
 		else 
 		{
 			session_start();
-			
+			mail($para, "Requisito atendido", "Estimado Fiel, su requisito ya fue atendido por el ". $pues['tipo']." ".$_SESSION['nombre']." ".$_SESSION['apellido']."puede pasar por la parroquia a recoger su certificado"), $headers);
 	        $reqs=$req->get_req($_GET['idreq']);
 	        $_SESSION['idPersona']=$reqs['idPersona'];
 			$idPersona=$_SESSION['idPersona'];

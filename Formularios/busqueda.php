@@ -30,12 +30,12 @@
      			<div class = "panel-body">
      				<div class="form-group">
      					<form>
-							<label>Inrese el ID del fiel:</label>
-							<input type="number" class="form-control" id="id" name="id" min="0" <?php if(isset($_GET['id']))echo "value='".$_GET['id']."'";?>>
+							<label>Inrese el nombre del fiel:</label>
+							<input type="text" class="form-control" id="id" name="id" min="0" <?php if(isset($_GET['id']))echo "value='".$_GET['id']."'";?>>
 							<?php
 							if(isset($_GET['id']))
     						{
-    							$cer=certificado::withID($_GET['id']);
+    							$cer=certificado::withname($_GET['id']);
     							if($cer->getid()=="ERROR") echo "<div class='alert alert-danger'><strong>Error!</strong> No se encontro resultados con este ID.</div>";
     						}
     						?>
@@ -67,7 +67,7 @@
     						<?php
     							if(isset($_GET['id']))
     							{
-    								$cer=certificado::withID($_GET['id']);
+    								$cer=certificado::withname($_GET['id']);
     								echo "<td>".$cer->getfiel()."</td>";
     								echo "<td>".$cer->getsacramento()."</td>";
     								echo "<td>".$cer->getsacerdote()."</td>";

@@ -89,6 +89,41 @@ class certificado
         $instance->loadByID($id);
         return $instance;
     }
+    
+    public static function withname($name)                                        //llamada publica para otras clases
+    {
+        $instance = new self("","","","","");
+        $instance->loadByname($name);
+        return $instance;
+    }
+    
+protected function loadByname($id)                                          //Buscar los atributos del ID
+    {
+        $q="DROP INDEX IF EXISTS Nombre ON persona;
+            ALTER TABLE persona ADD FULLTEXT(nombre, apellido);";
+        $this->dbh->exequery($q);
+
+        $q="SELECT cer.idCertificado, cer.fecha, pa.Nombre as parroquia, concat(concat(ps.Nombre,' '),ps.Apellido) as parroco, sac.Nombre as sacramento, l.lugar, concat(concat(fiel.Nombre,' '),fiel.Apellido) as fiel, fiel.CI 
+        FROM certificado cer, parroquia pa, sacerdote sa, sacramento sac, persona ps, persona fiel, certificado_beneficiario cb, lugar l 
+        WHERE cer.idParroquia=pa.idParroquia
+        and cer.idSacerdote=sa.idSacerdote
+        and cer.idSacramento=sac.idSacramento
+        and cer.idLugar=l.idLugar
+        and ps.idPersona=sa.idPersona
+        and cb.idCertificado=cer.idCertificado
+        and cb.idPersona=fiel.idPersona
+        and MATCH (fiel.Nombre,fiel.Apellido) AGAINST ('".$id."' IN BOOLEAN MODE)";
+        $res=$this->dbh->exequery($q);
+        if ($this->dbh->mysqli->error)
+        {
+            printf("Errormessage: %s\n", $this->dbh->mysqli->error);
+        }
+
+        $res=$this->dbh->fetchrow($res);
+        if(is_null($res))
+            $res = array('idCertificado' =>"ERROR");
+        $this->fill($res);
+    }
     protected function loadByID($id)                                          //Buscar los atributos del ID
     {
         $q="SELECT cer.idCertificado, cer.fecha, pa.Nombre as parroquia, concat(concat(ps.Nombre,' '),ps.Apellido) as parroco, sac.Nombre as sacramento, l.lugar, concat(concat(fiel.Nombre,' '),fiel.Apellido) as fiel, fiel.CI 
@@ -225,7 +260,7 @@ class certificado
 
 
     public function reg_matrimonio($cipadrino1,$cipadrino2,$cipadrino3,$cipadrino4,$ciesposo,$ciesposa,$oficialia,$nro_libro,$partida){
-        $q="INSERT INTO certificado(fecha, idParroquia, idSacramento, idLugar, idSacerdote, idCertificante, libro, pagina, numero) VALUES ('".$this->fecha."',".$this->parroquia.",4,".$this->lugar.",".$this->sacerdote.",".$this->certificante.",'".$this->libro."','".$this->pagina."','".$this->numero.")";
+        $q="INSERT INTO certificado(fecha, idParroquia, idSacramento, idLugar, idSacerdote, idCertificante, libro, pagina, numero) VALUES ('".$this->fecha."',".$this->parroquia.",4,".$this->lugar.",".$this->sacerdote.",".$this->certificante.",'".$this->libro."','".$this->pagina."','".$this->numero."')";
         $certnum=$this->dbh->insert($q);
         //        if ($this->dbh->mysqli->error)
         {
@@ -263,11 +298,12 @@ class certificado
         {
             printf("Errormessage: %s\n", $this->dbh->mysqli->error);
         }
-        $q="INSERT INTO registro_civil(oficialia, nro_libro, partida, idCertificado) VALUES ('".$oficialia."','".$nro_libro."','".$partida."','".$certnum."')";
-        $res=$this->dbh->exequery($q);
+        $q1="INSERT INTO registro_civil(oficialia, nro_libro, partida, idCertificado) VALUES ('".$oficialia."','".$nro_libro."','".$partida."','".$certnum."')";
+        $res=$this->dbh->exequery($q1);
+        return $q;
     }
     public function reg_confirmacion($cipadrino1,$cipadrino2,$cipersona){
-        $q="INSERT INTO certificado(fecha, idParroquia, idSacramento, idLugar, idSacerdote, idCertificante, libro, pagina, numero) VALUES ('".$this->fecha."',".$this->parroquia.",4,".$this->lugar.",".$this->sacerdote.",".$this->certificante.",'".$this->libro."','".$this->pagina."','".$this->numero.")";
+        //$q="INSERT INTO certificado(fecha, idParroquia, idSacramento, idLugar, idSacerdote, idCertificante, libro, pagina, numero) VALUES ('".$this->fecha."',".$this->parroquia.",4,".$this->lugar.",".$this->sacerdote.",".$this->certificante.",'".$this->libro."','".$this->pagina."','".$this->numero.")";
         
         $q="INSERT INTO certificado(fecha, idParroquia, idSacramento, idLugar, idSacerdote, idCertificante, libro, pagina, numero) VALUES ('".$this->fecha."',".$this->parroquia.",3,".$this->lugar.",".$this->sacerdote.",".$this->certificante.",'".$this->libro."','".$this->pagina."','".$this->numero.")";
         $certnum=$this->dbh->insert($q);
@@ -376,10 +412,11 @@ class certificado
         $todo=array();
         $ar=$this->dbh->fetchrow($res);
         $idcert=$ar['idCertificado'];
+        //echo $idcert;
         $idesposo=$ar['idPersona'];
         array_push($todo,$ar);
         $ar=$this->dbh->fetchrow($res);
-        $idcert=$ar['idCertificado'];
+        //$idcert=$ar['idCertificado'];
         $idesposo=$ar['idPersona'];
         array_push($todo,$ar);
         $q="SELECT certificado.fecha, cu.Nombre as curanombre, cura.idSacerdote, cert.idSacerdote as idCertificante, cu.Apellido as curaapellido, ce.Nombre as certnombre, ce.Apellido as certapellido, parroquia.Nombre as parroquiamatrimonio, tcu.tipo as tipocura, tce.tipo as tipocert, registro_civil.oficialia, registro_civil.nro_libro, registro_civil.partida
@@ -393,8 +430,9 @@ class certificado
             and cert.idtipo_sacerdote=tce.idtipo_sacerdote
             and registro_civil.idCertificado=certificado.idCertificado
             and certificado.idCertificado=".$idcert;
+            //echo $q;
         $res=$this->dbh->exequery($q);
-       // echo $idcert;
+        //echo $idcert;
         $ar=$this->dbh->fetchrow($res);
         array_push($todo,$ar);
         return $todo;
@@ -479,7 +517,8 @@ class certificado
     }
 
 }
-//$as=new certificado("","",'','','');
-//print_r($as->get_matrimonio_info(16));
+$cert=new certificado("","","","","");
+  //             echo $cert->reg_matrimonio(fiel::withID($_GET['padrino1'])->id,fiel::withID($_GET['padrino2'])->id,fiel::withID($_GET['padrino3'])->id,fiel::withID($_GET['padrino4'])->id,fiel::withID($_GET['esposa'])->id,fiel::withID($_GET['esposo'])->id,$_GET['oficialia'],$_GET['numero'],$_GET['partido']);
+$cert->get_matrimonio_info(16);
 //echo "<br>";
 ?>

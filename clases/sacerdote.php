@@ -11,6 +11,9 @@ class sacerdote
     private $idpersona;
     private $idtipo;
     private $idparr;
+    public $nombre;
+    public $parroquia;
+    public $tipo;
 
     private $dbh;
     private $conexion;
@@ -97,6 +100,45 @@ class sacerdote
             printf("Errormessage: %s\n", $this->dbh->mysqli->error);
         }
         return $res;
+    }
+    public static function withname($name)                                        //llamada publica para otras clases
+    {
+        $instance = new self("","","","","");
+        $instance->loadByname($name);
+        return $instance;
+    }
+    
+    protected function loadByname($id)                                          //Buscar los atributos del ID
+    {
+        $q="DROP INDEX IF EXISTS Nombre ON persona;
+            ALTER TABLE persona ADD FULLTEXT(nombre, apellido);";
+        $this->dbh->exequery($q);
+
+        $q="SELECT sacerdote.idSacerdote, tipo_sacerdote.tipo,persona.Nombre,persona.Apellido, parroquia.Nombre as parroquia
+            from sacerdote, tipo_sacerdote,persona, parroquia
+            where sacerdote.idPersona=persona.idPersona
+            and sacerdote.idtipo_sacerdote=tipo_sacerdote.idtipo_sacerdote
+            and MATCH (persona.Nombre,persona.Apellido) AGAINST ('".$id."' IN BOOLEAN MODE)";
+        $res=$this->dbh->exequery($q);
+        if ($this->dbh->mysqli->error)
+        {
+            printf("Errormessage: %s\n", $this->dbh->mysqli->error);
+        }
+
+        $res=$this->dbh->fetchrow($res);
+        if(is_null($res))
+            $res = array('Nombre' =>"ERROR");
+        $this->fill($res);
+    }
+    protected function fill(array $row)                                       //llenar el objeto con los valores de la BDD
+    {
+        if($row['Nombre'] !="ERROR")
+        {
+            $this->parroquia=$row['parroquia'];
+            $this->nombre=$row['Nombre']." ".$row['Apellido'];
+            $this->tipo=$row['tipo'];
+        }
+        
     }
 
 

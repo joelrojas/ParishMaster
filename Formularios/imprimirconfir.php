@@ -30,7 +30,7 @@ $qr=new QR();
 
 
 $html= "<html><head>
-    <title>Matrimonio</title>
+    <title>Confirmacion</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script type='text/javascript' src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
@@ -42,7 +42,7 @@ $html= "<html><head>
       <div class='container'>
         <div class='row'>
           <div class='col-md-12'>
-            </b><h4 class='text-left' contenteditable='true'><b>CERTIFICADO DE MATRIMONIO</b></h4> <br>
+            </b><h4 class='text-left' contenteditable='true'><b>CERTIFICADO DE Confirmacion</b></h4> <br>
             <h4 contenteditable='true' class='text-center'><b>ARQUIDIOCESIS DE NUESTRA SEÑORA DE LA PAZ - BOLIVIA</b></h4> <br>
             <h4 class='text-center'><b> ".strtoupper($fila['parroquia'])."</b></h4>
             <br><br>

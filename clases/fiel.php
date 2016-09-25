@@ -60,7 +60,7 @@ class fiel
             }
             $res=$this->dbh->fetchrow($res);
             if(is_null($res))
-            $res = array('nombre' =>"ERROR" , 'apellido' =>"ERROR");
+            $res = array('nombre' =>"ERROR" , 'apellido' =>"ERROR", 'idPersona' =>"ERROR");
             $this->fill($res);
         }
         

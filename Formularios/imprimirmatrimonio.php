@@ -20,7 +20,7 @@ $mpdf= new mPDF('c','Letter');
 $css= file_get_contents('../Certificados/Nacimiento/nac.css');
 
 $c= new certificado('',"","","","");
-//$_SESSION['idPersona']=16;
+$_SESSION['idPersona']=16;
 $fila=$c->get_matrimonio_info($_SESSION['idPersona']);
 //$res2= new sacerdote("", '', "");
 //$tiposac=$res2->gettipo($fila[2]['idSacerdote']);
@@ -79,7 +79,7 @@ $html= "<html><head>
           <div class='col-md-7'>
             <p class='text-center cert' contenteditable='true'>
              --------------------------------------------------------------</p>
-            <p class='text-center cert '> ".$fila[2]['tipocert']." ".$fila[2]['certnombre']." ".$fila{2}['certapellido']."</p>
+            <p class='text-center cert '> ".$fila[2]['tipocert']." ".$fila[2]['certnombre']." ".$fila[2]['certapellido']."</p>
             ".$qr->crea($fila[0]['idCertificado'])."
             <hr>
           </div>

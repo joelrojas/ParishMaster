@@ -225,7 +225,7 @@
  			if(!empty($_GET['parroquia'])&&!empty($_GET['lugar'])&&!empty($_GET['presbitero'])&&!empty($_GET['fecha'])&&!empty($_GET['oficialia'])&&!empty($_GET['numero'])&&!empty($_GET['enviar'])) 
  			{
  				$cert=new certificado($_GET['parroquia'], $_GET['presbitero'], $_GET['presbitero'], $_GET['lugar'], $_GET['fecha']);
- 				$cert->setlibroinfo($_POST['libro'],$_POST['pagina'],$_POST['numeroli']);
+ 				$cert->setlibroinfo($_GET['libro'],$_GET['pagina'],$_GET['numeroli']);
  				$cert->reg_matrimonio(fiel::withID($_GET['padrino1'])->id,fiel::withID($_GET['padrino2'])->id,fiel::withID($_GET['padrino3'])->id,fiel::withID($_GET['padrino4'])->id,fiel::withID($_GET['esposa'])->id,fiel::withID($_GET['esposo'])->id,$_GET['oficialia'],$_GET['numero'],$_GET['partido']);
  				echo ("<SCRIPT LANGUAGE='JavaScript'>
  					window.alert('Se guardaron sus cambios')

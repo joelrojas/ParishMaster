@@ -23,6 +23,7 @@ class sacramento
 
     public function get_celebraciones($idSacerdote)
     {
+        $aux=(1==1)?"":"AND rm.fecha>= NOW()";
         $q="SELECT fiel.Nombre as nombrefiel, fiel.Apellido as apellidofiel, sacramento.Nombre as sacramento, parroquia.Nombre as parroquia, horario_misa.horario, rm.fecha, horario_misa.idhorario_misa
             FROM reserva_misa rm, sacramento, sacerdote, persona fiel, parroquia, horario_misa 
             WHERE rm.idSacramento=sacramento.idSacramento
@@ -30,9 +31,10 @@ class sacramento
             AND rm.idSacerdote=sacerdote.idSacerdote
             AND rm.idParroquia=parroquia.idParroquia
             AND rm.idhorario_misa=horario_misa.idhorario_misa
-            AND rm.fecha>= NOW()
+            ".$aux."
             AND rm.idSacerdote=".$idSacerdote."
-            ORDER BY fecha, horario_misa.idhorario_misa";         
+            ORDER BY fecha, horario_misa.idhorario_misa"; 
+            //echo $q;        
           $res=$this->dbh->exequery($q);
           if ($this->dbh->mysqli->error)
           {
