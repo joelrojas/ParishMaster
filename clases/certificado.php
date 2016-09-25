@@ -225,7 +225,7 @@ class certificado
 
 
     public function reg_matrimonio($cipadrino1,$cipadrino2,$cipadrino3,$cipadrino4,$ciesposo,$ciesposa,$oficialia,$nro_libro,$partida){
-        $q="INSERT INTO certificado(fecha, idParroquia, idSacramento, idLugar,idSacerdote,idCertificante) VALUES ('".$this->fecha."',".$this->parroquia.",4,".$this->lugar.",".$this->sacerdote.",".$this->certificante.")";
+        $q="INSERT INTO certificado(fecha, idParroquia, idSacramento, idLugar, idSacerdote, idCertificante, libro, pagina, numero) VALUES ('".$this->fecha."',".$this->parroquia.",4,".$this->lugar.",".$this->sacerdote.",".$this->certificante.",'".$this->libro."','".$this->pagina."','".$this->numero.")";
         $certnum=$this->dbh->insert($q);
         //        if ($this->dbh->mysqli->error)
         {
@@ -267,7 +267,9 @@ class certificado
         $res=$this->dbh->exequery($q);
     }
     public function reg_confirmacion($cipadrino1,$cipadrino2,$cipersona){
-        $q="INSERT INTO certificado(fecha, idParroquia, idSacramento, idLugar,idSacerdote,idCertificante) VALUES ('".$this->fecha."',".$this->parroquia.",3,".$this->lugar.",".$this->sacerdote.",".$this->certificante.")";
+        $q="INSERT INTO certificado(fecha, idParroquia, idSacramento, idLugar, idSacerdote, idCertificante, libro, pagina, numero) VALUES ('".$this->fecha."',".$this->parroquia.",4,".$this->lugar.",".$this->sacerdote.",".$this->certificante.",'".$this->libro."','".$this->pagina."','".$this->numero.")";
+        
+        $q="INSERT INTO certificado(fecha, idParroquia, idSacramento, idLugar, idSacerdote, idCertificante, libro, pagina, numero) VALUES ('".$this->fecha."',".$this->parroquia.",3,".$this->lugar.",".$this->sacerdote.",".$this->certificante.",'".$this->libro."','".$this->pagina."','".$this->numero.")";
         $certnum=$this->dbh->insert($q);
         //        if ($this->dbh->mysqli->error)
         {
@@ -352,7 +354,7 @@ class certificado
     
     public function get_matrimonio_info($idp)
     {
-        $q="SELECT cer.idCertificado, esposo.idPersona, esposo.Nombre, esposo.Apellido, parroquia.Nombre as parroquiabautizo, papa.Nombre as nombrepapa, papa.Apellido as apellidopapa, mama.Nombre as nombremama, mama.Apellido as apellidomama
+        $q="SELECT cer.idCertificado, cer.libro, cer.pagina, cer.numero, esposo.idPersona, esposo.Nombre, esposo.Apellido, parroquia.Nombre as parroquiabautizo, papa.Nombre as nombrepapa, papa.Apellido as apellidopapa, mama.Nombre as nombremama, mama.Apellido as apellidomama
             FROM certificado cer, persona esposo, certificado_beneficiario cbm, certificado bautizo, certificado_beneficiario cbb, parroquia, persona papa, persona mama, persona_padre pa, persona_padre ma
             WHERE cer.idSacramento=4
             and cbm.idCertificado=cer.idCertificado
@@ -401,7 +403,7 @@ class certificado
     public function get_confir_info($idp){
 
 
-        $q="SELECT certificado.idCertificado, certificado.fecha, parroquia.Nombre as parroquia, cura.Nombre as nombrecura, cura.Apellido as apellidocura, lugar.lugar, cert.Nombre as nombrecertificante,cert.Apellido as apellidocertificante,  fiel.Nombre as nombrefiel, fiel.Apellido as apellidofiel, padrino.Nombre as nombrepadrino, padrino.Apellido as apellidopadrino, ts.tipo as tipocura, tc.tipo as tipocert
+        $q="SELECT certificado.idCertificado, certificado.libro, certificado.pagina, certificado.numero, certificado.fecha, parroquia.Nombre as parroquia, cura.Nombre as nombrecura, cura.Apellido as apellidocura, lugar.lugar, cert.Nombre as nombrecertificante,cert.Apellido as apellidocertificante,  fiel.Nombre as nombrefiel, fiel.Apellido as apellidofiel, padrino.Nombre as nombrepadrino, padrino.Apellido as apellidopadrino, ts.tipo as tipocura, tc.tipo as tipocert
         from certificado, parroquia, persona cura, lugar, persona cert, persona fiel, certificado_beneficiario, persona padrino, sacerdote sac, sacerdote certificante, certificado_padrino, tipo_sacerdote ts, tipo_sacerdote tc
         where certificado.idParroquia=parroquia.idParroquia
         and sac.idPersona=cura.idPersona

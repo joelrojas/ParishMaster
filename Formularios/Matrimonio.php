@@ -92,6 +92,27 @@
 						<label for="fecha">Fecha Matrimonio:</label>
 						<input type="date" class="form-control" id="fecha" name="fecha">
 					</div>
+				</div>	
+			</div>
+
+			<div class = "panel panel-default">
+				<div class = "panel-heading">
+					<h3 class = "panel-title">Datos Libro</h3>
+				</div>
+				<div class = "panel-body">
+					
+					<div class="form-group">
+						<label for="libro">Libro:</label>
+						<input type="text" value="<?php if(isset($_POST['libro'])) echo $_POST['libro']; ?>" maxlength="20" required class="form-control" id="libro" name="libro">
+					</div>
+					<div class="form-group">
+						<label for="pagina">Pagina:</label>
+						<input type="text" value="<?php if(isset($_POST['pagina'])) echo $_POST['pagina']; ?>" maxlength="20" equired class="form-control" id="pagina" name="pagina">
+					</div>
+					<div class="form-group">
+						<label for="numero">Numero:</label>
+						<input type="text" value="<?php if(isset($_POST['numeroli'])) echo $_POST['numeroli']; ?>" maxlength="20" required class="form-control" id="numeroli" name="numeroli">
+					</div>
 				</div>
 			</div>
 
@@ -204,6 +225,7 @@
  			if(!empty($_GET['parroquia'])&&!empty($_GET['lugar'])&&!empty($_GET['presbitero'])&&!empty($_GET['fecha'])&&!empty($_GET['oficialia'])&&!empty($_GET['numero'])&&!empty($_GET['enviar'])) 
  			{
  				$cert=new certificado($_GET['parroquia'], $_GET['presbitero'], $_GET['presbitero'], $_GET['lugar'], $_GET['fecha']);
+ 				$cert->setlibroinfo($_POST['libro'],$_POST['pagina'],$_POST['numeroli']);
  				$cert->reg_matrimonio(fiel::withID($_GET['padrino1'])->id,fiel::withID($_GET['padrino2'])->id,fiel::withID($_GET['padrino3'])->id,fiel::withID($_GET['padrino4'])->id,fiel::withID($_GET['esposa'])->id,fiel::withID($_GET['esposo'])->id,$_GET['oficialia'],$_GET['numero'],$_GET['partido']);
  				echo ("<SCRIPT LANGUAGE='JavaScript'>
  					window.alert('Se guardaron sus cambios')

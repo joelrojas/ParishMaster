@@ -57,6 +57,7 @@ $html= "<html><head>
               
               <br>
               <br>Certifico: ".$fila['tipocert']." ".$fila['nombrecertificante']." ".$fila['apellidocertificante']."</p>
+              <br>Libro Nro ".$fila['libro1']." Pagina Nro ".$fila['pagina']." Registro Nro ".$fila['numero']."
           </div>
         </div>
         <div class='row'>

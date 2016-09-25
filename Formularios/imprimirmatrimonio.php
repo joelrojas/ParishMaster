@@ -56,7 +56,7 @@ $html= "<html><head>
                ".strtoupper($fila[1]['Nombre'])." ".strtoupper($fila[1]['Apellido'])." bautizado en la parroquia de ".$fila[1]['parroquiabautizo'].", hijo de ".$fila[1]['nombrepapa']." ".$fila[1]['apellidopapa']."
               y de ".$fila[1]['nombremama']." ".$fila[1]['apellidomama']."
               <br>
-              
+              <br>Libro Nro ".$fila[0]['libro']." Pagina Nro ".$fila[0]['pagina']." Registro Nro ".$fila[0]['numero']."
               <br>Oficialia del registro civil: ".$fila[2]['oficialia']."
                partida: ".$fila[2]['partida']."
                numero: ".$fila[2]['nro_libro']."
