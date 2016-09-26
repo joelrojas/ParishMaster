@@ -517,8 +517,8 @@ protected function loadByname($id)                                          //Bu
     }
 
 }
-$cert=new certificado("","","","","");
+//$cert=new certificado("","","","","");
   //             echo $cert->reg_matrimonio(fiel::withID($_GET['padrino1'])->id,fiel::withID($_GET['padrino2'])->id,fiel::withID($_GET['padrino3'])->id,fiel::withID($_GET['padrino4'])->id,fiel::withID($_GET['esposa'])->id,fiel::withID($_GET['esposo'])->id,$_GET['oficialia'],$_GET['numero'],$_GET['partido']);
-$cert->get_matrimonio_info(16);
+//$cert->get_matrimonio_info(16);
 //echo "<br>";
 ?>
