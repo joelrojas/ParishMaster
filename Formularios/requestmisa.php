@@ -13,7 +13,7 @@
 </head>
 <body>
 	<?php
-		require_once "../general/headersac.php";
+		require_once "../general/headerfiel.php";
 		require_once "../clases/parroquia.php";
 		require_once '../clases/certificado.php';
 		require_once '../clases/sacerdote.php';

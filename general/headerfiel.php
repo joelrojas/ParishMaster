@@ -14,6 +14,12 @@
                 <li class="">
                     <a href="../Principal/principalfiel.php">Inicio</a>
                 </li>
+                <li>
+                    <a href="../Formularios/buscarparrocos.php">Buscar Parroco</a>
+                </li>
+                 <li>
+                    <a href="../Formularios/busqueda.php">Buscar casados</a>
+                </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Solicitudes<span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
@@ -23,7 +29,7 @@
                         <li>
                             <a href="../Formularios/reqesp.php">Solicitud especial</a>
                         </li>
-
+                        
                     </ul>
 
                 </li>

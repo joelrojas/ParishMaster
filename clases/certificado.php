@@ -111,7 +111,8 @@ protected function loadByname($id)                                          //Bu
         and cer.idLugar=l.idLugar
         and ps.idPersona=sa.idPersona
         and cb.idCertificado=cer.idCertificado
-        and cb.idPersona=fiel.idPersona
+        and cb.idPersona=fiel.idPersona 
+        and cer.idSacramento=4
         and MATCH (fiel.Nombre,fiel.Apellido) AGAINST ('".$id."' IN BOOLEAN MODE)";
         $res=$this->dbh->exequery($q);
         if ($this->dbh->mysqli->error)
