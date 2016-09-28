@@ -13,7 +13,7 @@
 </head>
 <body>
 	<?php
-		require_once "../general/headersac.php";
+		//require_once "../general/headersac.php";
 		require_once '../clases/persona.php';
 		require_once '../clases/request.php';
 		$req=new request();
