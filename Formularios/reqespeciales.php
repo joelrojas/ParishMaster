@@ -42,6 +42,7 @@
 	        $reqs=$req->get_req($_GET['idreq']);
 	        $_SESSION['idPersona']=$reqs['idPersona'];
 			$idPersona=$_SESSION['idPersona'];
+			$req->set_respuesta($_GET['idreq'],'');
 			if(empty($req->isespecial($_GET['idreq']))) {
 				if($reqs['idSacramento']==1)
 				{
