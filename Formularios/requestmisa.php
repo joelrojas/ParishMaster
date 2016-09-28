@@ -22,7 +22,7 @@
 		require_once '../clases/sacramentos.php';
 
 
-
+		session_start();
 		//$_SESSION['idPersona']=16;
 		$idPersona=$_SESSION['idPersona'];
 		$fiel=new fiel();
