@@ -23,7 +23,7 @@
 
 
 
-		$_SESSION['idPersona']=16;
+		//$_SESSION['idPersona']=16;
 		$idPersona=$_SESSION['idPersona'];
 		$fiel=new fiel();
 		$fiel=fiel::withID2($idPersona);

@@ -20,6 +20,9 @@
                  <li>
                     <a href="../Formularios/busqueda.php">Buscar casados</a>
                 </li>
+                <li>
+                    <a href="../Formularios/requestmisa.php">Reservar misa</a>
+                </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Solicitudes<span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
