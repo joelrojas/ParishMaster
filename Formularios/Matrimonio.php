@@ -19,6 +19,8 @@
 		require_once '../clases/parroquia.php';
 		require_once '../clases/sacerdote.php';
 		require_once '../clases/fiel.php';
+		require_once '../clases/persona.php';
+
 		require_once '../clases/Lugar.php';
 		require_once '../clases/certificado.php';
 		function set_id($persona)
@@ -28,6 +30,24 @@
 			{
 				$esposo=new fiel();
 				$esposo=fiel::withID($_GET[$persona]);
+				$pp= new persona('','','','','','','','');
+				$res=$pp->buscarper($_GET[$persona]);
+				if($res!='ERROR') {
+					$fila=$res->fetch_array(MYSQLI_ASSOC);
+					$pid=$fila['idPersona'];
+				}
+				$msjnobautizo="<div class='alert alert-danger'><strong>Error!</strong> Esta persona no ha sido bautizada en la Fe Catolica.</div>";
+				$msjnocomunion="<div class='alert alert-danger'><strong>Error!</strong> Esta persona no ha realizado la primera comunion</div>";
+				$msjnoconfir="<div class='alert alert-danger'><strong>Error!</strong> Esta persona no ha realizado su conformacion</div>";
+				$v_b=$pp->tienesacramento($pid,1);
+				$v_pc=$pp->tienesacramento($pid,2);
+				$v_co=$pp->tienesacramento($pid,3);
+				$btrue=false;
+				$pctrue=false;
+				$cotrue=false;
+				if($v_b) $btrue=true;
+				if($v_pc) $pctrue=true;
+				if($v_co) $cotrue=true;
 				if($esposo->nombre=="ERROR")
 				{
 					echo "<label for='$persona'>ID $persona:</label>
@@ -53,6 +73,9 @@
 					echo "<label>Apellido $persona:</label>
 						  <input type='text' class='form-control'  value='".$esposo->apellido."' readonly>";	
 				}
+				if(!$v_b) echo $msjnobautizo;
+				if(!$v_pc) echo $msjnocomunion;
+				if(!$v_co) echo $msjnoconfir;
 				
 					  
 			}
@@ -65,6 +88,7 @@
 							</span>
 					  </div>";
 		}
+
 	?>
 	<div class="container">
 		<div class="page-header">

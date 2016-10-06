@@ -94,12 +94,12 @@
 							<div class="form-group">
 								<label for="horario">Horario:</label>
 								<?php echo "<select class='form-control' id='horario' name='horario' ";  
-									if(!isset($_GET['fecha'])) echo "disabled"; 
+									if(empty($_GET['fecha'])) echo "disabled"; 
 									echo ">";
 								?>
 									<option value="">Escoja un Horrario</option>
 									<?php
-									if(isset($_GET['fecha']))
+									if(!empty($_GET['fecha']))
 									{
 										$misa= new misa();
 										$horario=$misa->get_horarios($_GET['fecha'],$_GET['parroquia'],$_GET['presbitero']);
