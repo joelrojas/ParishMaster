@@ -71,7 +71,7 @@
 		
 	?>
 		
-	<div class="container">
+	<div class="container" style="max-width: 500px">
 		<div class="page-header">
 		  <h1>Respuesta a solicitud especial</h1>
 		</div> 	

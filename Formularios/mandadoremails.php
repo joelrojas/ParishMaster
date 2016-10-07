@@ -150,8 +150,8 @@
 
 </head>
 <body>
-<div class="container">
-    <div class="container">
+<div class="container" >
+    <div class="container" style="max-width: 500px">
         <?php
 
             if($mailexitoso) echo '<div class="alert alert-success" role="alert"<strong>Exito!</strong> Su mail ha sido enviado exitosamente!</div>';

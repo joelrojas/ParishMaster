@@ -19,7 +19,7 @@ require_once "../general/headerfiel.php";
 require_once "../clases/certificado.php";
 
 ?>
-<div class="container">
+<div class="container" style="max-width: 750px">
     <div class="page-header">
         <h1>Solicitud de copia de Certificado <small>Sacramentos</small></h1>
     </div>
