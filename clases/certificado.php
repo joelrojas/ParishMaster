@@ -306,7 +306,7 @@ protected function loadByname($id)                                          //Bu
     public function reg_confirmacion($cipadrino1,$cipadrino2,$cipersona){
         //$q="INSERT INTO certificado(fecha, idParroquia, idSacramento, idLugar, idSacerdote, idCertificante, libro, pagina, numero) VALUES ('".$this->fecha."',".$this->parroquia.",4,".$this->lugar.",".$this->sacerdote.",".$this->certificante.",'".$this->libro."','".$this->pagina."','".$this->numero.")";
         
-        $q="INSERT INTO certificado(fecha, idParroquia, idSacramento, idLugar, idSacerdote, idCertificante, libro, pagina, numero) VALUES ('".$this->fecha."',".$this->parroquia.",3,".$this->lugar.",".$this->sacerdote.",".$this->certificante.",'".$this->libro."','".$this->pagina."','".$this->numero.")";
+        $q="INSERT INTO certificado(fecha, idParroquia, idSacramento, idLugar, idSacerdote, idCertificante, libro, pagina, numero) VALUES ('".$this->fecha."',".$this->parroquia.",3,".$this->lugar.",".$this->sacerdote.",".$this->certificante.",'".$this->libro."','".$this->pagina."','".$this->numero."')";
         $certnum=$this->dbh->insert($q);
         //        if ($this->dbh->mysqli->error)
         {
@@ -518,8 +518,13 @@ protected function loadByname($id)                                          //Bu
     }
 
 }
-//$cert=new certificado("","","","","");
-  //             echo $cert->reg_matrimonio(fiel::withID($_GET['padrino1'])->id,fiel::withID($_GET['padrino2'])->id,fiel::withID($_GET['padrino3'])->id,fiel::withID($_GET['padrino4'])->id,fiel::withID($_GET['esposa'])->id,fiel::withID($_GET['esposo'])->id,$_GET['oficialia'],$_GET['numero'],$_GET['partido']);
-//$cert->get_matrimonio_info(16);
-//echo "<br>";
+/*if(!empty($_GET['parroquia'])&&!empty($_GET['lugar'])&&!empty($_GET['presbitero'])&&!empty($_GET['fecha'])&&!empty($_GET['fiel'])) 
+            {
+                $cert=new certificado($_GET['parroquia'], $_GET['presbitero'], $_GET['presbitero'], $_GET['lugar'], $_GET['fecha']);
+                $cert->setlibroinfo($_GET['libro'],$_GET['pagina'],$_GET['numeroli']);
+                $cert->reg_confirmacion(fiel::withID($_GET['padrino1'])->id,fiel::withID($_GET['padrino2'])->id,fiel::withID($_GET['fiel'])->id);
+                echo ("<SCRIPT LANGUAGE='JavaScript'>
+                    window.alert('Se guardaron sus cambios')
+                    window.location.href='Confirmacion.php';</SCRIPT>");
+            }*/
 ?>
