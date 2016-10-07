@@ -74,7 +74,7 @@
 
 
 	?>
-	<div class="container"  style="max-width: 700px">
+	<div class="container"  style="max-width: 500px">
 		<div class="page-header">
 		  <h1>Registro Canonico <small>Primera Comunion</small></h1>
 		</div>

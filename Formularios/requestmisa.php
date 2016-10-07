@@ -29,7 +29,7 @@
 		$fiel=fiel::withID2($idPersona);
 	?>
 		
-	<div class="container">
+	<div class="container" style="max-width: 500px">
 		<div class="page-header">
 		  <h1>Requerimientos de misas</h1>
 		</div>

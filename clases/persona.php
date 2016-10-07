@@ -173,12 +173,20 @@ class persona
         return $rows>=1;    
     }
 
-    public function GetEmailsSac($sacnum){
-        $q="SELECT cuenta.email from cuenta, persona, certificado, certificado_beneficiario
-            where cuenta.idPersona=persona.idPersona
+    public function GetEmailsSac($sacnum, $lug, $fecha, $parr, $pf,$edmin, $edmax){
+        $q="SELECT cuenta.email, (CURDATE() - persona.fechanac) / 365.242199 as edad  from cuenta, persona, certificado, certificado_beneficiario";
+        if($pf!="") $q.=", persona_padre ";
+        $q.=" where cuenta.idPersona=persona.idPersona
             and certificado.idCertificado=certificado_beneficiario.idCertificado
             and persona.idPersona=certificado_beneficiario.idPersona
             and certificado.idSacramento=".$sacnum;
+        if($lug!="") $q.=" and certificado.idLugar=".$lug;
+        if($fecha!="") $q.=" and certificado.fecha='".$fecha."'";
+        if($parr!="") $q.=" and certificado.idParroquia=".$parr;
+        if($edmin!="" && $edmax!="") $q.=" and ((CURDATE() - persona.fechanac) / 365.242199) BETWEEN ".$edmin." AND ".$edmax;
+        else if($edmin!="") $q.=" and  ((CURDATE() - persona.fechanac) / 365.242199) BETWEEN 0 AND ".$edmax;
+        else if($edmax!="") $q.=" and  ((CURDATE() - persona.fechanac) / 365.242199) BETWEEN ".$edmin." AND 99";
+        if($pf!="") $q.=" and persona.idPersona=persona_padre.idPadre";
         $res=$this->dbh->exequery($q);
         if ($this->dbh->mysqli->error)
         {
@@ -187,10 +195,12 @@ class persona
         return $res;
     }
 
-    public function GetEmailsSacerdotes(){
+
+    public function GetEmailsSacerdotes($parr){
         $q="SELECT cuenta.email from cuenta, persona, sacerdote
             where cuenta.idPersona=persona.idPersona
             and persona.idPersona=sacerdote.idPersona";
+        if($q!="") $q.=" and sacerdote.idParroquia=".$parr;
         $res=$this->dbh->exequery($q);
         if ($this->dbh->mysqli->error)
         {

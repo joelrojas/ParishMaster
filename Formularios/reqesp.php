@@ -32,7 +32,7 @@
 
 
 ?>
-<div class="container">
+<div class="container" style="max-width: 500px">
     <div class="page-header">
         <h1>Solicitudes especiales <small>Digitalizacion de certificados</small></h1>
     </div>

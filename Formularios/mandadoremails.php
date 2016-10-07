@@ -3,10 +3,21 @@
     require_once "../general/headersac.php";
 
     require_once "../clases/persona.php";
+    require_once '../clases/Lugar.php';
+    require_once '../clases/parroquia.php';
 
     session_start();
     $mailexitoso=false;
     $nadie=false;
+
+    $lug="";
+    $fecha="";
+    $parr="";
+    $pf="";
+    $edmin="";
+    $edmax="";
+
+    $parrsac="";
 
     if(!empty($_POST['bau']) )$bau=$_POST['bau'];
     if(!empty($_POST['confir'])) $confir=$_POST['confir'];
@@ -14,22 +25,34 @@
     if(!empty($_POST['sac'])) $sac=$_POST['sac'];
     if(!empty($_POST['pc'])) $pc=$_POST['pc'];
 
-    if(empty($_POST['bau']) && empty($_POST['confir']) && empty($_POST['matri']) && empty($_POST['sac']) && empty($_POST['pc']) && !empty($_POST))
-        $nadie=true;
+
+
+    //if(empty($_POST['bau']) && empty($_POST['confir']) && empty($_POST['matri']) && empty($_POST['sac']) && empty($_POST['pc']) && !empty($_POST))
+        //$nadie=true;
 
     if(!empty($_POST['asunto']) && !empty($_POST['mensaje'])){
         $asunto=$_POST['asunto'];
         $mensaje=$_POST['mensaje'];
     }
 
-    if(!empty($_POST) && !$nadie){
+    if(!empty($_POST)){ //&& !$nadie){
 
         $p = new persona("", "", "", "", "", "", "");
 
+        if(!empty($_POST['lugar']))$lug=$_POST['lugar'];
+        if(!empty($_POST['fecha']))$fecha=$_POST['fecha'];
+        if(!empty($_POST['parroquia']))$parr=$_POST['parroquia'];
+        if(!empty($_POST['padres']))$pf=$_POST['padres'];
+        if(!empty($_POST['edadmin']))$edmin=$_POST['edadmin'];
+        if(!empty($_POST['edadmax']))$edmax=$_POST['edadmax'];
+        if(!empty($_POST['parroquiasac'])) $parrsac=$_POST['parroquiasac'];
+
+
         $para="";
+
         if($bau=="si"){
             $cont=1;
-            $res=$p->GetEmailsSac(1);
+            $res=$p->GetEmailsSac(1,$lug,$fecha,$parr,$pf, $edmin,$edmax);
             while($fila=$res->fetch_array(MYSQLI_ASSOC)) {
                 if($cont==1) $para=$fila['email'];
                 else $para=$para.",".$fila['email'];
@@ -39,7 +62,7 @@
 
         if($pc=="si"){
             $cont=1;
-            $res=$p->GetEmailsSac(2);
+            $res=$p->GetEmailsSac(2,$lug,$fecha,$parr,$pf, $edmin,$edmax);
             while($fila=$res->fetch_array(MYSQLI_ASSOC)) {
                 if($cont==1) $para=$fila['email'];
                 else $para=$para.",".$fila['email'];
@@ -49,7 +72,7 @@
 
         if($confir=="si"){
             $cont=1;
-            $res=$p->GetEmailsSac(3);
+            $res=$p->GetEmailsSac(3,$lug,$fecha,$parr,$pf, $edmin,$edmax);
             while($fila=$res->fetch_array(MYSQLI_ASSOC)) {
                 if($cont==1) $para=$fila['email'];
                 else $para=$para.",".$fila['email'];
@@ -59,7 +82,7 @@
 
         if($matri=="si"){
             $cont=1;
-            $res=$p->GetEmailsSac(4);
+            $res=$p->GetEmailsSac(4,$lug,$fecha,$parr,$pf, $edmin,$edmax);
             while($fila=$res->fetch_array(MYSQLI_ASSOC)) {
                 if($cont==1) $para=$fila['email'];
                 else $para=$para.",".$fila['email'];
@@ -69,13 +92,15 @@
 
         if($sac=="si"){
             $cont=1;
-            $res=$p->GetEmailsSacerdotes();
+            $res=$p->GetEmailsSacerdotes($parrsac);
             while($fila=$res->fetch_array(MYSQLI_ASSOC)) {
                 if($cont==1) $para=$fila['email'];
                 else $para=$para.",".$fila['email'];
                 $cont++;
             }
         }
+
+
 
 
 
@@ -125,8 +150,8 @@
 
 </head>
 <body>
-<div class="container">
-    <div class="container">
+<div class="container" >
+    <div class="container" style="max-width: 500px">
         <?php
 
             if($mailexitoso) echo '<div class="alert alert-success" role="alert"<strong>Exito!</strong> Su mail ha sido enviado exitosamente!</div>';
@@ -157,7 +182,7 @@
             </div>
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title">A quienes desea mandar el email?</h3>
+                    <h3 class="panel-title">Opciones de envio - Grupos Focales - Sacramentos</h3>
                 </div>
                 <div class="panel-body">
                     <div class="form-group">
@@ -165,10 +190,111 @@
                         <label class="checkbox-inline"><input type="checkbox" value="si" name="pc">Con Primera Comunion</label>
                         <label class="checkbox-inline"><input type="checkbox" value="si" name="confir">Confirmados</label>
                         <label class="checkbox-inline"><input type="checkbox" value="si" name="matri">Casados</label>
-                        <label class="checkbox-inline"><input type="checkbox" value="si" name="sac">Sacerdotes</label>
+                        <br> <br>
+                        <div class="form-group">
+                            <label for="lugar">Lugar de realizacion de sacramento:</label>
+                            <select class="form-control" name="lugar">
+                                <option value="">Todos</option>
+                                <?php
+                                $lug= new Lugar();
+                                $lugs=$lug->GetAll();
+                                while($fila2=$lugs->fetch_array(MYSQLI_ASSOC)){
+                                    echo "<option value='".$fila2['idLugar']."'";
+                                    if(isset($_POST['lugar']))
+                                        if($_POST['lugar'] == $fila2['idLugar'])
+                                            echo("selected");
+                                    echo ">".$fila2['lugar']."</option>";
+                                }
+                                ?>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="fecha">Fecha de realizacion del Sacramento:</label>
+                            <input type="date" value="<?php if(isset($_POST['fecha'])) echo $_POST['fecha']; ?>"  class="form-control" id="fecha" name="fecha">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="parroquia">Parroquia donde se realizo el Sacramento:</label>
+                            <select class="form-control" name="parroquia" >
+                                <option value="">Cualquiera</option>
+                                <?php
+                                $parr= new parroquia(1,"aa");
+                                $parrs=$parr->GetAll();
+                                while($fila=$parrs->fetch_array(MYSQLI_ASSOC)){
+                                    echo "<option value='".$fila['idParroquia']."'";
+                                    if(isset($_POST['parroquia']))
+                                        if($_POST['parroquia'] == $fila['idParroquia'])
+                                            echo("selected");
+                                    echo ">".$fila['Nombre']."</option>";
+                                }
+                                ?>
+                            </select>
+                        </div>
+
                     </div>
                 </div>
             </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Opciones de envio - Grupos Focales - Otros</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label class="checkbox-inline"><input type="checkbox" value="si" name="padres">Padres de Familia</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Opciones de envio - Grupos Focales - Sacerdotes</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+
+                        <div class="form-group">
+                            <label class="checkbox-inline"><input type="checkbox" value="si" name="sac">Sacerdotes</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="parroquiasac">Parroquia a la que pertenecen:</label>
+                            <select class="form-control" name="parroquiasac" >
+                                <option value="">Cualquiera</option>
+                                <?php
+                                $parr= new parroquia(1,"aa");
+                                $parrs=$parr->GetAll();
+                                while($fila=$parrs->fetch_array(MYSQLI_ASSOC)){
+                                    echo "<option value='".$fila['idParroquia']."'";
+                                    if(isset($_POST['parroquia']))
+                                        if($_POST['parroquia'] == $fila['idParroquia'])
+                                            echo("selected");
+                                    echo ">".$fila['Nombre']."</option>";
+                                }
+                                ?>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Opciones de envio - Datos Personales</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <div class="form-group">
+                            <label for="edadmin">Edad Minima:</label>
+                            <input  value="" placeholder="0"  type="text" class="form-control" id="edadmin" name="edadmin"></input>
+                        </div>
+                        <div class="form-group">
+                            <label for="edadmax">Edad Maxima:</label>
+                            <input  value="" placeholder="99" type="text" class="form-control" id="edadmax" name="edadmax"></input>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <button type="submit" class="btn btn-success btn-lg btn-block">Enviar</button>
         </form>
 
