@@ -28,7 +28,7 @@
           <div class = "panel-body">
             <div class="form-group">
               <form>
-              <label>Inrese el ID del fiel:</label>
+              <label>ID del fiel:</label>
               <input type="text" class="form-control" id="id" name="id" min="0" <?php if(isset($_GET['id']))echo "value='".$_GET['id']."'";?> disabled>
               <?php
               $existe=true;

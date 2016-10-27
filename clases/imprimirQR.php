@@ -5,7 +5,7 @@
     class QR
     {
     	private $name="temp01.png";
-    	private $url="http://localhost/ParishMaster/Formularios/comprobaciondeexistencia.php?id=";
+    	private $url="http://www.parishmaster.gwiddle.co.uk/Formularios/comprobaciondeexistencia.php?id=";
 
     	public function crea($id,$guardar=false,$name=null)
     	{
