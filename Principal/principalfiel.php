@@ -25,7 +25,7 @@
                 <a href="../Formularios/reqreimp.php"> <img src="../img/printer.png" class="center-block img-circle img-responsive"></a>
             </div>
             <div class="col-md-4">
-                <h3 class="text-left"> Solicitud de copia</h3>
+                <h3 class="text-left"> Solicitud de certificado</h3>
                 <p class="text-left">Solicite una copia de un certificado registrado anteriormente.</p>
             </div>
             <div class="col-md-2">

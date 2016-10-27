@@ -27,7 +27,7 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Solicitudes<span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
                         <li>
-                            <a href="../Formularios/reqreimp.php">Solicitud de copia</a>
+                            <a href="../Formularios/reqreimp.php">Solicitud de certificado</a>
                         </li>
                         <li>
                             <a href="../Formularios/reqesp.php">Solicitud especial</a>
