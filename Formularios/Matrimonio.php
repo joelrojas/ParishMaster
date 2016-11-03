@@ -114,7 +114,7 @@
 					</div>
 					<div class="form-group">
 						<label for="fecha">Fecha Matrimonio:</label>
-						<input type="date" class="form-control" id="fecha" name="fecha">
+						<input type="date" class="form-control" id="fecha" name="fecha" value="<?php if(isset($_GET['fecha'])) echo $_GET['fecha']; ?>">
 					</div>
 				</div>	
 			</div>
@@ -127,15 +127,15 @@
 					
 					<div class="form-group">
 						<label for="libro">Libro:</label>
-						<input type="text" value="<?php if(isset($_POST['libro'])) echo $_POST['libro']; ?>" maxlength="20" required class="form-control" id="libro" name="libro">
+						<input type="text" value="<?php if(isset($_GET['libro'])) echo $_GET['libro']; ?>" maxlength="20" required class="form-control" id="libro" name="libro">
 					</div>
 					<div class="form-group">
 						<label for="pagina">Pagina:</label>
-						<input type="text" value="<?php if(isset($_POST['pagina'])) echo $_POST['pagina']; ?>" maxlength="20" equired class="form-control" id="pagina" name="pagina">
+						<input type="text" value="<?php if(isset($_GET['pagina'])) echo $_GET['pagina']; ?>" maxlength="20" equired class="form-control" id="pagina" name="pagina">
 					</div>
 					<div class="form-group">
 						<label for="numero">Numero:</label>
-						<input type="text" value="<?php if(isset($_POST['numeroli'])) echo $_POST['numeroli']; ?>" maxlength="20" required class="form-control" id="numeroli" name="numeroli">
+						<input type="text" value="<?php if(isset($_GET['numeroli'])) echo $_GET['numeroli']; ?>" maxlength="20" required class="form-control" id="numeroli" name="numeroli">
 					</div>
 				</div>
 			</div>
@@ -233,11 +233,11 @@
 				<div class = "panel-body">
 					<div class="form-group">
 						<label for="oficialia">Oficialia del Registo Civil:</label>
-						<input type="text" class="form-control" id="oficialia" name="oficialia">
+						<input type="text" class="form-control" id="oficialia" name="oficialia" value="<?php if(isset($_GET['oficialia'])) echo $_GET['oficialia']; ?>">
 						<label for="partido">Partido:</label>
-						<input type="text" class="form-control" id="partido" name="partido">
+						<input type="text" class="form-control" id="partido" name="partido" value="<?php if(isset($_GET['partido'])) echo $_GET['partido']; ?>">
 						<label for="numero">Numero:</label>
-						<input type="text" class="form-control" id="numero" name="numero">
+						<input type="text" class="form-control" id="numero" name="numero" value="<?php if(isset($_GET['numero'])) echo $_GET['numero']; ?>">
 					</div>
 					
 				</div>
