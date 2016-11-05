@@ -36,7 +36,7 @@
     }
 
     if($para!=""){
-        $asunto="Feliz Cumpleaños te desea la iglesia catolica Boliviana!";
+        $asunto="Feliz Cumpleaños te desea la Iglesia Católica en Bolivia!";
         $mensaje=
             "Que la fe, la esperanza y el amor llenen cada uno de tus días!
         Feliz Cumpleaños! 

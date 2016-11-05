@@ -44,6 +44,9 @@
                        
                     </ul>
                 </li>
+                <li class="">
+                    <a href="../Formularios/login/index.php">Salir</a>
+                </li>
             </ul>
         </div>
     </div>

@@ -37,8 +37,11 @@
                 <li class="">
                     <a href="../Formularios/sacerdotereg.php">Registrar Sacerdote</a>
                 </li>
+                 <li>
+                    <a href="../Formularios/dash.php">Requerimientos</a>
+                </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sacramentos<span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Registro Canonico<span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
                         <li>
                             <a href="../Formularios/NacimientoReg.php">Bautizo</a>
@@ -52,7 +55,11 @@
                         <li>
                             <a href="../Formularios/Matrimonio.php">Matrimonio</a>
                         </li>
+                       
                     </ul>
+                </li>
+                <li class="">
+                    <a href="../Formularios/login/index.php">Salir</a>
                 </li>
             </ul>
         </div>
