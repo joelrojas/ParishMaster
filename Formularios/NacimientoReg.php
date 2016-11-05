@@ -176,15 +176,15 @@
 
 			<div class="form-group">
 				<label for="libro">Libro:</label>
-				<input type="text" value="<?php if(isset($_POST['libro'])) echo $_POST['libro']; ?>" maxlength="20" required class="form-control" id="libro" name="libro">
+				<input type="text"  value="<?php if(isset($_POST['libro'])) echo $_POST['libro']; ?>" maxlength="20" required class="form-control" id="libro" name="libro">
 			</div>
 			<div class="form-group">
 				<label for="pagina">Pagina:</label>
-				<input type="text" value="<?php if(isset($_POST['pagina'])) echo $_POST['pagina']; ?>" maxlength="20" equired class="form-control" id="pagina" name="pagina">
+				<input type="text"  value="<?php if(isset($_POST['pagina'])) echo $_POST['pagina']; ?>" maxlength="20" required class="form-control" id="pagina" name="pagina">
 			</div>
 			<div class="form-group">
 				<label for="numero">Numero:</label>
-				<input type="text" value="<?php if(isset($_POST['numero'])) echo $_POST['numero']; ?>" maxlength="20" required class="form-control" id="numero" name="numero">
+				<input type="text"  value="<?php if(isset($_POST['numero'])) echo $_POST['numero']; ?>" maxlength="20" required class="form-control" id="numero" name="numero">
 			</div>
 
 			<hr>
