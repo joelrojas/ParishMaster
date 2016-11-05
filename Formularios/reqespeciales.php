@@ -28,7 +28,7 @@
 		$headers = 'From:'. $pues['tipo']." ".$_SESSION['nombre']." ".$_SESSION['apellido'].' <'.$mail.'>'. "\r\n" .
             'Reply-To:'. $pues['tipo']." ".$_SESSION['nombre']." ".$_SESSION['apellido'].' <'.$mail.'>' . "\r\n" .
             'X-Mailer: PHP/' . phpversion();
-		if(isset($_GET['mensaje']))
+		if(!empty($_GET['mensaje']))
 		{
 			mail($para, "Requisito atendido", $_GET['mensaje'], $headers);
 			$req->set_respuesta($_GET['idreq'],$_GET['mensaje']);
@@ -42,8 +42,9 @@
 	        $reqs=$req->get_req($_GET['idreq']);
 	        $_SESSION['idPersona']=$reqs['idPersona'];
 			$idPersona=$_SESSION['idPersona'];
-			$req->set_respuesta($_GET['idreq'],'');
+			
 			if(empty($req->isespecial($_GET['idreq']))) {
+				$req->set_respuesta($_GET['idreq'],'');
 				if($reqs['idSacramento']==1)
 				{
 					header("Location: imprimirnac.php");
@@ -80,7 +81,7 @@
 			<table class="table table-hover">
      			<tbody>
   					<?php
-  						$req=new request();
+  						$req=new request();	
   						$fila=$req->get_req($_GET['idreq']);
 							echo "<tr><th>Nombre Fiel</th><td>".$fila['Nombre']." ".$fila['Apellido']."</td></tr>";
 							echo "<tr><th>Sacramento</th><td>".$fila['sacramento']."</td></tr>";

@@ -9,7 +9,7 @@
 	<!-- Bootstrap css -->
 	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
 
-	<title>Busqueda de certificados</title>
+	<title>Busqueda de personas casadas</title>
 </head>
 <body>
 	<?php
@@ -36,7 +36,7 @@
 							if(isset($_GET['id']))
     						{
     							$cer=certificado::withname($_GET['id']);
-    							if($cer->getid()=="ERROR") echo "<div class='alert alert-danger'><strong>Error!</strong> No se encontro resultados con este ID.</div>";
+    							if($cer->getid()=="ERROR") echo "<div class='alert alert-danger'><strong>Error!</strong> No se encontro resultados con este Nombre.</div>";
     						}
     						?>
 							<button type="submit" class="btn btn-success btn-lg btn-block" name="Buscar" value="true">Buscar</button>

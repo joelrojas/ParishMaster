@@ -114,8 +114,14 @@
 					</div>
 					<div class="form-group">
 						<label for="fecha">Fecha Matrimonio:</label>
+						<div class="input-group">
 						<input type="date" class="form-control" id="fecha" name="fecha" value="<?php if(isset($_GET['fecha'])) echo $_GET['fecha']; ?>">
+						<span class = 'input-group-btn'>
+								<button class = 'btn btn-info' type = 'button' onclick = 'this.form.submit()'>Verificar</button>
+						</span>
+						<div class="form-group">
 					</div>
+
 				</div>	
 			</div>
 
@@ -184,25 +190,30 @@
 
 					<div class="form-group">
 						<label for="presbitero">Presbitero:</label>
-						<?php
-						echo "<select class='form-control' name='presbitero'";
-						if(!isset($_GET['parroquia'])|| empty($_GET['parroquia'])) echo "disabled";
-						 	echo ">";
-							
-							echo "<option value=''>Escoja un Presbitero</option>";
-							if(isset($_GET['parroquia'])|| !empty($_GET['parroquia']))
-							{
-								$sac= new sacerdote(1,"aa","a");
-								$sacs=$sac->get_sac_parr($_GET['parroquia']);
-								while($fila=DatabaseHandler::fetchrow($sacs)){
-									echo "<option value='".$fila['idSacerdote']."'";
-									if(isset($_GET['presbitero']))if($_GET['presbitero'] == $fila['idSacerdote']){echo("selected");}
-									echo">".$fila['Nombre']." ".$fila['Apellido']."</option>";
+						<div class = 'input-group'>
+								<?php
+								echo "<select class='form-control' name='presbitero'";
+								if(!isset($_GET['parroquia'])|| empty($_GET['parroquia'])) echo "disabled";
+								 	echo ">";
+									
+									echo "<option value=''>Escoja un Presbitero</option>";
+									if(isset($_GET['parroquia'])|| !empty($_GET['parroquia']))
+									{
+										$sac= new sacerdote(1,"aa","a");
+										$sacs=$sac->get_sac_parr($_GET['parroquia']);
+										while($fila=DatabaseHandler::fetchrow($sacs)){
+											echo "<option value='".$fila['idSacerdote']."'";
+											if(isset($_GET['presbitero']))if($_GET['presbitero'] == $fila['idSacerdote']){echo("selected");}
+											echo">".$fila['Nombre']." ".$fila['Apellido']."</option>";
 
+									}
 								}
-							}
-							?>
+								?>
 						</select>
+						<span class = 'input-group-btn'>
+								<button class = 'btn btn-info' type = 'button' onclick = 'this.form.submit()'>Verificar</button>
+							</span>
+					  </div>
 					</div>
      			</div>
      		</div>

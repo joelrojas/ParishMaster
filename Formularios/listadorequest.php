@@ -13,6 +13,7 @@
 </head>
 <body>
 	<?php
+	ini_set("display_errors", TRUE);
 		require_once '../clases/request.php';
 		$_SESSION['idPersona']=5;
 		$idPersona=$_SESSION['idPersona'];

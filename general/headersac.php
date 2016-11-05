@@ -18,9 +18,6 @@
                     <a href="../Formularios/mandadoremails.php">Enviar Mails</a>
                 </li>
                 <li class="">
-                    <a href="../Formularios/busqueda.php">Buscar Certificado</a>
-                </li>
-                <li class="">
                     <a href="../Formularios/sacerdotereg.php">Registrar Sacerdote</a>
                 </li>
                  <li>
