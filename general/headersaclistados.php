@@ -26,40 +26,40 @@
         <div class="collapse navbar-collapse" id="navbar-ex-collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li class="">
-                    <a href="../Principal/principal.php">Inicio</a>
+                    <a href="../Principal/principal.php" target="_top">Inicio</a>
                 </li>
                 <li class="">
-                    <a href="../Formularios/mandadoremails.php">Enviar Mails</a>
+                    <a href="../Formularios/mandadoremails.php" target="_top">Enviar Mails</a>
                 </li>
                 <li class="">
-                    <a href="../Formularios/busqueda.php">Buscar Certificado</a>
+                    <a href="../Formularios/busqueda.php" target="_top">Buscar Certificado</a>
                 </li>
                 <li class="">
-                    <a href="../Formularios/sacerdotereg.php">Registrar Sacerdote</a>
+                    <a href="../Formularios/sacerdotereg.php" target="_top">Registrar Sacerdote</a>
                 </li>
                  <li>
-                    <a href="../Formularios/dash.php">Requerimientos</a>
+                    <a href="../Formularios/dash.php" target="_top">Requerimientos</a>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Registro Canonico<span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
                         <li>
-                            <a href="../Formularios/NacimientoReg.php">Bautizo</a>
+                            <a href="../Formularios/NacimientoReg.php" target="_top">Bautizo</a>
                         </li>
                         <li>
-                            <a href="../Formularios/ComunionReg.php">Comunion</a>
+                            <a href="../Formularios/ComunionReg.php" target="_top">Comunion</a>
                         </li>
                         <li>
-                            <a href="../Formularios/Confirmacion.php">Confirmacion</a>
+                            <a href="../Formularios/Confirmacion.php" target="_top">Confirmacion</a>
                         </li>
                         <li>
-                            <a href="../Formularios/Matrimonio.php">Matrimonio</a>
+                            <a href="../Formularios/Matrimonio.php" target="_top">Matrimonio</a>
                         </li>
                        
                     </ul>
                 </li>
                 <li class="">
-                    <a href="../Formularios/login/index.php">Salir</a>
+                    <a href="../Formularios/login/index.php" target="_top">Salir</a>
                 </li>
             </ul>
         </div>

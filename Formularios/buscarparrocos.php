@@ -13,7 +13,11 @@
 </head>
 <body>
     <?php
-        require_once "../general/headersac.php";
+        session_start();
+        if($_SESSION['sacerdote']==1)
+            require_once "../general/headersac.php";
+        else 
+            require_once "../general/headerfiel.php";
 
         require_once '../clases/sacerdote.php';
     ?>
